@@ -1,0 +1,56 @@
+{
+  "seconds_including_first_asr_load": 20.050134699995397,
+  "document": {
+    "transcript": "Что вас беспокоит? У меня сухой кашел, когда он появился. Кашел на часа три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашел. Что вы принимали? Сегодня утром выпил теплый чай.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Что вас беспокоит?",
+        "start": 0,
+        "end": 18
+      },
+      {
+        "section": "complaints",
+        "quote": "У меня сухой кашел, когда он появился.",
+        "start": 19,
+        "end": 57
+      },
+      {
+        "section": "complaints",
+        "quote": "Кашел на часа три дня назад.",
+        "start": 58,
+        "end": 86
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Было ли подобное раньше?",
+        "start": 87,
+        "end": 111
+      },
+      {
+        "section": "anamnesis",
+        "quote": "В прошлом году уже был похожий кашел.",
+        "start": 112,
+        "end": 149
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Что вы принимали?",
+        "start": 150,
+        "end": 167
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Сегодня утром выпил теплый чай.",
+        "start": 168,
+        "end": 199
+      }
+    ],
+    "sections": {
+      "complaints": "Что вас беспокоит?\nУ меня сухой кашел, когда он появился.\nКашел на часа три дня назад.",
+      "anamnesis": "Было ли подобное раньше?\nВ прошлом году уже был похожий кашел.\nЧто вы принимали?\nСегодня утром выпил теплый чай."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\audio\\dev01.wav"
+  }
+}

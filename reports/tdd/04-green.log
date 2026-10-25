@@ -1,0 +1,9 @@
+test_a01_supported_audio_produces_document (test_session.SessionTests.test_a01_supported_audio_produces_document) ... ok
+test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error) ... ok
+test_a03_no_recognized_speech_is_not_a_completed_form (test_session.SessionTests.test_a03_no_recognized_speech_is_not_a_completed_form) ... ok
+test_a04_model_failure_allows_next_attempt (test_session.SessionTests.test_a04_model_failure_allows_next_attempt) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.015s
+
+OK

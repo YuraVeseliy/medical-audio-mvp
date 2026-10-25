@@ -1,0 +1,29 @@
+C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv\Lib\site-packages\ctranslate2\__init__.py:8: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+INFO:faster_whisper:Processing audio with duration 00:15.706
+INFO:faster_whisper:VAD filter removed 00:00.000 of audio
+INFO:faster_whisper:Processing audio with duration 00:15.706
+INFO:faster_whisper:VAD filter removed 00:00.000 of audio
+faster-whisper dev01 #1: completed 3.699s
+INFO:faster_whisper:Processing audio with duration 00:18.318
+INFO:faster_whisper:VAD filter removed 00:00.000 of audio
+faster-whisper dev02 #1: completed 4.068s
+{
+  "attempted": 2,
+  "completed": 2,
+  "failed": 0,
+  "seconds": {
+    "median": 3.883163999998942,
+    "min": 3.698749000002863,
+    "max": 4.067578999995021
+  },
+  "word_counts": {
+    "errors": 7,
+    "reference_words": 66,
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 1
+  },
+  "corpus_wer": 0.10606060606060606,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

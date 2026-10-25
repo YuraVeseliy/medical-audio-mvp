@@ -1,0 +1,17 @@
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8082/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+ERROR:buzz-experiment:AI Summary request failed: Error code: 503
+buzz dev01 #1: failed 1.576s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8082/v1/chat/completions "HTTP/1.1 503 Service Unavailable"
+ERROR:buzz-experiment:AI Summary request failed: Error code: 503
+buzz dev02 #1: failed 0.322s
+{
+  "attempted": 2,
+  "completed": 0,
+  "failed": 2,
+  "true_positive": 0,
+  "predicted": 0,
+  "expected_in_completed_runs": 0,
+  "precision": null,
+  "recall": null,
+  "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+}

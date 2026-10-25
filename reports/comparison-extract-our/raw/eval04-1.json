@@ -1,0 +1,138 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Расскажите, что беспокоит.",
+      "start": 0,
+      "end": 26
+    },
+    {
+      "section": "complaints",
+      "quote": "Кружится голова при вставании.",
+      "start": 27,
+      "end": 57
+    },
+    {
+      "section": "complaints",
+      "quote": "Что ещё ощущаете?",
+      "start": 58,
+      "end": 75
+    },
+    {
+      "section": "complaints",
+      "quote": "Иногда темнеет в глазах.",
+      "start": 76,
+      "end": 100
+    },
+    {
+      "section": "complaints",
+      "quote": "Когда это началось?",
+      "start": 101,
+      "end": 120
+    },
+    {
+      "section": "complaints",
+      "quote": "Эти ощущения появились неделю назад.",
+      "start": 121,
+      "end": 157
+    },
+    {
+      "section": "complaints",
+      "quote": "Что происходило перед началом жалоб?",
+      "start": 158,
+      "end": 194
+    },
+    {
+      "section": "complaints",
+      "quote": "На прошлой неделе несколько дней мало спал.",
+      "start": 195,
+      "end": 238
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Расскажите, что беспокоит.",
+      "start": 0,
+      "end": 26
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Кружится голова при вставании.",
+      "start": 27,
+      "end": 57
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Что ещё ощущаете?",
+      "start": 58,
+      "end": 75
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Иногда темнеет в глазах.",
+      "start": 76,
+      "end": 100
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда это началось?",
+      "start": 101,
+      "end": 120
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Эти ощущения появились неделю назад.",
+      "start": 121,
+      "end": 157
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Что происходило перед началом жалоб?",
+      "start": 158,
+      "end": 194
+    },
+    {
+      "section": "anamnesis",
+      "quote": "На прошлой неделе несколько дней мало спал.",
+      "start": 195,
+      "end": 238
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Расскажите, что беспокоит.\"},{\"quote\":\"Кружится голова при вставании.\"},{\"quote\":\"Что ещё ощущаете?\"},{\"quote\":\"Иногда темнеет в глазах.\"},{\"quote\":\"Когда это началось?\"},{\"quote\":\"Эти ощущения появились неделю назад.\"},{\"quote\":\"Что происходило перед началом жалоб?\"},{\"quote\":\"На прошлой неделе несколько дней мало спал.\"}],\"anamnesis\":[{\"quote\":\"Расскажите, что беспокоит.\"},{\"quote\":\"Кружится голова при вставании.\"},{\"quote\":\"Что ещё ощущаете?\"},{\"quote\":\"Иногда темнеет в глазах.\"},{\"quote\":\"Когда это началось?\"},{\"quote\":\"Эти ощущения появились неделю назад.\"},{\"quote\":\"Что происходило перед началом жалоб?\"},{\"quote\":\"На прошлой неделе несколько дней мало спал.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869440,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 223,
+      "prompt_tokens": 705,
+      "total_tokens": 928,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-jWUheovSQQ7YzaNMSNgd4GIPx9T9pwY7",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 81,
+      "prompt_ms": 366.387,
+      "prompt_per_token_ms": 4.523296296296296,
+      "prompt_per_second": 221.07771291011966,
+      "predicted_n": 223,
+      "predicted_ms": 8202.229,
+      "predicted_per_token_ms": 36.946977477477475,
+      "predicted_per_second": 27.06581345144107
+    }
+  },
+  "prompt_tokens": 705
+}

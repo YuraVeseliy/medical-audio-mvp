@@ -1,0 +1,429 @@
+{
+  "id": "enc_1792869031677",
+  "mode": "hybrid",
+  "providers": {
+    "transcription": "mock",
+    "note": "openai"
+  },
+  "transcript": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+  "transcriptDocument": {
+    "schemaVersion": 1,
+    "rawText": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+    "text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+    "language": "ru",
+    "locale": "",
+    "country": "",
+    "durationSec": null,
+    "words": [
+      {
+        "index": 0,
+        "text": "Что",
+        "normalized": "что",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 0,
+        "charEnd": 3
+      },
+      {
+        "index": 1,
+        "text": "вас",
+        "normalized": "вас",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 4,
+        "charEnd": 7
+      },
+      {
+        "index": 2,
+        "text": "беспокоит",
+        "normalized": "беспокоит",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 8,
+        "charEnd": 17
+      },
+      {
+        "index": 3,
+        "text": "У",
+        "normalized": "у",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 19,
+        "charEnd": 20
+      },
+      {
+        "index": 4,
+        "text": "меня",
+        "normalized": "меня",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 21,
+        "charEnd": 25
+      },
+      {
+        "index": 5,
+        "text": "сухой",
+        "normalized": "сухои",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 26,
+        "charEnd": 31
+      },
+      {
+        "index": 6,
+        "text": "кашель",
+        "normalized": "кашель",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 32,
+        "charEnd": 38
+      },
+      {
+        "index": 7,
+        "text": "Когда",
+        "normalized": "когда",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 40,
+        "charEnd": 45
+      },
+      {
+        "index": 8,
+        "text": "он",
+        "normalized": "он",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 46,
+        "charEnd": 48
+      },
+      {
+        "index": 9,
+        "text": "появился",
+        "normalized": "появился",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 49,
+        "charEnd": 57
+      },
+      {
+        "index": 10,
+        "text": "Кашель",
+        "normalized": "кашель",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 59,
+        "charEnd": 65
+      },
+      {
+        "index": 11,
+        "text": "начался",
+        "normalized": "начался",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 66,
+        "charEnd": 73
+      },
+      {
+        "index": 12,
+        "text": "три",
+        "normalized": "три",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 74,
+        "charEnd": 77
+      },
+      {
+        "index": 13,
+        "text": "дня",
+        "normalized": "дня",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 78,
+        "charEnd": 81
+      },
+      {
+        "index": 14,
+        "text": "назад",
+        "normalized": "назад",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 82,
+        "charEnd": 87
+      },
+      {
+        "index": 15,
+        "text": "Было",
+        "normalized": "было",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 89,
+        "charEnd": 93
+      },
+      {
+        "index": 16,
+        "text": "ли",
+        "normalized": "ли",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 94,
+        "charEnd": 96
+      },
+      {
+        "index": 17,
+        "text": "подобное",
+        "normalized": "подобное",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 97,
+        "charEnd": 105
+      },
+      {
+        "index": 18,
+        "text": "раньше",
+        "normalized": "раньше",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 106,
+        "charEnd": 112
+      },
+      {
+        "index": 19,
+        "text": "В",
+        "normalized": "в",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 114,
+        "charEnd": 115
+      },
+      {
+        "index": 20,
+        "text": "прошлом",
+        "normalized": "прошлом",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 116,
+        "charEnd": 123
+      },
+      {
+        "index": 21,
+        "text": "году",
+        "normalized": "году",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 124,
+        "charEnd": 128
+      },
+      {
+        "index": 22,
+        "text": "уже",
+        "normalized": "уже",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 129,
+        "charEnd": 132
+      },
+      {
+        "index": 23,
+        "text": "был",
+        "normalized": "был",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 133,
+        "charEnd": 136
+      },
+      {
+        "index": 24,
+        "text": "похожий",
+        "normalized": "похожии",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 137,
+        "charEnd": 144
+      },
+      {
+        "index": 25,
+        "text": "кашель",
+        "normalized": "кашель",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 145,
+        "charEnd": 151
+      },
+      {
+        "index": 26,
+        "text": "Что",
+        "normalized": "что",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 153,
+        "charEnd": 156
+      },
+      {
+        "index": 27,
+        "text": "вы",
+        "normalized": "вы",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 157,
+        "charEnd": 159
+      },
+      {
+        "index": 28,
+        "text": "принимали",
+        "normalized": "принимали",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 160,
+        "charEnd": 169
+      },
+      {
+        "index": 29,
+        "text": "Сегодня",
+        "normalized": "сегодня",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 171,
+        "charEnd": 178
+      },
+      {
+        "index": 30,
+        "text": "утром",
+        "normalized": "утром",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 179,
+        "charEnd": 184
+      },
+      {
+        "index": 31,
+        "text": "выпил",
+        "normalized": "выпил",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 185,
+        "charEnd": 190
+      },
+      {
+        "index": 32,
+        "text": "тёплый",
+        "normalized": "теплыи",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 191,
+        "charEnd": 197
+      },
+      {
+        "index": 33,
+        "text": "чай",
+        "normalized": "чаи",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 198,
+        "charEnd": 201
+      }
+    ],
+    "segments": [
+      {
+        "index": 0,
+        "text": "Что вас беспокоит У меня сухой кашель Когда он появился Кашель начался три дня назад Было ли подобное раньше В прошлом году уже был похожий кашель Что вы принимали Сегодня утром выпил тёплый чай",
+        "normalizedText": "Что вас беспокоит У меня сухой кашель Когда он появился Кашель начался три дня назад Было ли подобное раньше В прошлом году уже был похожий кашель Что вы принимали Сегодня утром выпил тёплый чай",
+        "startSec": null,
+        "endSec": null,
+        "speaker": null,
+        "wordStartIndex": 0,
+        "wordEndIndex": 33
+      }
+    ],
+    "meta": {
+      "wordCount": 34,
+      "segmentCount": 1,
+      "hasWordTimestamps": false,
+      "hasSegmentTimestamps": false,
+      "normalization": "whitespace-collapse"
+    }
+  },
+  "noteDraft": "Что вас беспокоит? У меня сухой кашель. Кашель начался три дня назад. В прошлом году уже был похожий кашель.",
+  "sections": {},
+  "codingHints": [],
+  "followUpQuestions": [],
+  "warnings": [],
+  "prompt": {
+    "system": "Ты извлекаешь дословные цитаты из вымышленного диалога врача и пациента.\nВерни только JSON с ключами noteText, sections, codingHints, followUpQuestions, warnings.\nsections содержит два массива: complaints (нынешние жалобы, симптомы и их отрицания)\nи anamnesis (начало и развитие состояния, предшествующие события, перенесённые состояния,\nвмешательства и предпринятые действия). Каждый элемент массива — объект {\"quote\": \"дословная цитата\"}.\nОдна цитата должна выражать один факт. Сохраняй отрицания, время и сторону тела.\nИзвлекай только ответы пациента. Не переписывай вопросы врача как факты.\nКопируй цитаты из исходного текста буквально. Не ставь диагноз и ничего не додумывай.\nОтсутствующие сведения не добавляй. Не придумывай обязательные поля или рекомендации.\nnoteText — пустая строка; codingHints, followUpQuestions, warnings — пустые массивы.",
+    "user": "{\n  \"patientContext\": {},\n  \"clinicianContext\": {},\n  \"transcript\": \"Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.\"\n}"
+  },
+  "meta": {
+    "noteStyle": "custom",
+    "specialty": "primary-care",
+    "redactionApplied": false,
+    "redactionSummary": [],
+    "generatedAt": "2026-10-24T19:10:31.677Z"
+  }
+}

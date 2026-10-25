@@ -1,0 +1,78 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит шов на животе.",
+      "start": 21,
+      "end": 41
+    },
+    {
+      "section": "complaints",
+      "quote": "Что ещё беспокоит?",
+      "start": 42,
+      "end": 60
+    },
+    {
+      "section": "complaints",
+      "quote": "Во рту сильно пересохло.",
+      "start": 61,
+      "end": 85
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда была операция?",
+      "start": 86,
+      "end": 106
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Операцию сделали вчера утром.",
+      "start": 107,
+      "end": 136
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Как чувствовали себя до операции?",
+      "start": 137,
+      "end": 170
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3,4],\"anamnesis\":[5,6,7]}"
+        }
+      }
+    ],
+    "created": 1792876247,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 547,
+      "total_tokens": 570,
+      "prompt_tokens_details": {
+        "cached_tokens": 546
+      }
+    },
+    "id": "chatcmpl-8fmvdGWBui1fbhdSbodyzPI9vqV6T1W4",
+    "timings": {
+      "cache_n": 546,
+      "prompt_n": 1,
+      "prompt_ms": 89.303,
+      "prompt_per_token_ms": 89.303,
+      "prompt_per_second": 11.197832099705497,
+      "predicted_n": 23,
+      "predicted_ms": 1881.44,
+      "predicted_per_token_ms": 85.52,
+      "predicted_per_second": 11.693171188026193
+    }
+  },
+  "prompt_tokens": 547
+}

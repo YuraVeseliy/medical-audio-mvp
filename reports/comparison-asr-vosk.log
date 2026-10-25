@@ -1,0 +1,37 @@
+vosk eval01 #1: completed 1.590s
+vosk eval01 #2: completed 1.567s
+vosk eval01 #3: completed 1.584s
+vosk eval02 #1: completed 1.613s
+vosk eval02 #2: completed 1.620s
+vosk eval02 #3: completed 1.610s
+vosk eval03 #1: completed 1.679s
+vosk eval03 #2: completed 1.680s
+vosk eval03 #3: completed 1.580s
+vosk eval04 #1: completed 1.680s
+vosk eval04 #2: completed 1.648s
+vosk eval04 #3: completed 1.646s
+vosk eval05 #1: completed 1.676s
+vosk eval05 #2: completed 1.660s
+vosk eval05 #3: completed 1.725s
+vosk eval06 #1: completed 1.790s
+vosk eval06 #2: completed 1.843s
+vosk eval06 #3: completed 1.837s
+{
+  "attempted": 18,
+  "completed": 18,
+  "failed": 0,
+  "seconds": {
+    "median": 1.6540047499947832,
+    "min": 1.5670630000095116,
+    "max": 1.8430941000115126
+  },
+  "word_counts": {
+    "errors": 66,
+    "reference_words": 606,
+    "substitutions": 54,
+    "deletions": 12,
+    "insertions": 0
+  },
+  "corpus_wer": 0.10891089108910891,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

@@ -1,0 +1,63 @@
+{
+  "runs": [
+    {
+      "id": "dev01",
+      "split": "development",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.698749000002863,
+      "duration_seconds": 15.706125,
+      "rtf": 0.23549723435938927,
+      "audio_sha256": "24542d7e592ef86c101b8c6b233c8495d0d5e30383f3419c638a09242733f8ad",
+      "transcript": "Что вас беспокоит? У меня сухой кашел, когда он появился. Кашел на часа три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашел. Что вы принимали? Сегодня утром выпил теплый чай.",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 35,
+        "substitutions": 4,
+        "deletions": 0,
+        "insertions": 1,
+        "errors": 5,
+        "wer": 0.14705882352941177
+      }
+    },
+    {
+      "id": "dev02",
+      "split": "development",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.067578999995021,
+      "duration_seconds": 18.318375,
+      "rtf": 0.22204911734774624,
+      "audio_sha256": "07ef3dc6f6289dad7ca2c322daa22419dc28db90c9664da5753565d6fcc60f98",
+      "transcript": "Какие сейчас жалобы? Болит голова в области висков, когда началось бол. Голова заболела сегодня после обеда. Боль постоянная. Боль усиливается при ярком свете. Бывали такие приступы раньше. Раньше подобных приступов не было.",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 32,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 2,
+        "wer": 0.0625
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 2,
+    "completed": 2,
+    "failed": 0,
+    "seconds": {
+      "median": 3.883163999998942,
+      "min": 3.698749000002863,
+      "max": 4.067578999995021
+    },
+    "word_counts": {
+      "errors": 7,
+      "reference_words": 66,
+      "substitutions": 6,
+      "deletions": 0,
+      "insertions": 1
+    },
+    "corpus_wer": 0.10606060606060606,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

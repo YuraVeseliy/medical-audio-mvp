@@ -1,0 +1,55 @@
+{
+  "started_at": "2026-10-24T19:10:04.300726+00:00",
+  "operation": "extract",
+  "arguments": {
+    "operation": "extract",
+    "manifest": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\manifest.json",
+    "split": "development",
+    "engine": "our",
+    "model": "medical-local",
+    "endpoint": "http://127.0.0.1:8081",
+    "buzz_source": "",
+    "transcript_dir": "",
+    "prompt_file": null,
+    "repeat": 1,
+    "ids": "",
+    "threads": 8,
+    "warmup": "dev01",
+    "out": "reports\\comparison-extract-our-development"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "logical_cpus": 16,
+    "packages": {
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.6.0",
+      "vosk": "0.3.45",
+      "soundfile": "0.13.1",
+      "numpy": "2.2.6",
+      "openai": null,
+      "buzz-captions": null
+    }
+  },
+  "manifest_sha256": "774dde4be54822f40f927c896759e68a1e294c9d8df483155a0a28dfd6018c4c",
+  "prompt_sha256": "34e7521d6fd4c9beec28eadb7c27885c51e8c3136eb45777d257b48774aa59f4",
+  "dataset_validation": "Эталон равен входному тексту синтеза; независимая сверка человеком с аудио ещё не выполнена. Разделы и факты подготовлены разработчиком, медицинская приёмка отсутствует.",
+  "scope": "our local extraction adapter",
+  "scoring": "literal one-to-one evidence matching with declared section and source grounding; not independent semantic or clinical assessment",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 1024,
+    "response_format": "application JSON schema",
+    "source_quote_filter": true
+  },
+  "comparison_limit": "Штатные адаптеры используют разные схемы, подсказки и настройки. Это сравнение конфигураций компонентов на одной задаче, не изолированное сравнение архитектур и не оценка всего GUI.",
+  "adapter_load_seconds": 4.679999256040901e-05,
+  "warmup": {
+    "id": "dev01",
+    "seconds": 7.237790200000745,
+    "status": "completed"
+  }
+}

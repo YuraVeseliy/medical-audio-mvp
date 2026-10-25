@@ -1,0 +1,8 @@
+{
+  "exit_code": -1,
+  "wall_seconds": 210.2698435,
+  "hf_offline": "1",
+  "scope": "Actual portable EXE, own packaged runtime, development WAV, no microphone",
+  "exe_sha256": "8e3b0949ef0e811715ab0f802e8867044b54f84f6a04b1402e104cde5198e8e6",
+  "time_utc": "2026-10-24T21:21:59.2518090Z"
+}

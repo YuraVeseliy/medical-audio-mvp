@@ -1,0 +1,800 @@
+{
+  "method": "Recomputed preserved development outputs with exactquote metric v2; not new model calls",
+  "experiments": {
+    "our-development": {
+      "summary": {
+        "attempted": 2,
+        "completed": 2,
+        "failed": 0,
+        "seconds": {
+          "median": 6.0180835999999545,
+          "min": 5.941511900004116,
+          "max": 6.094655299995793
+        },
+        "true_positive": 0,
+        "predicted": 4,
+        "expected_in_completed_runs": 8,
+        "precision": 0.0,
+        "recall": 0.0,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "source": "reports\\comparison-extract-our-development\\results.json",
+      "runs": [
+        {
+          "id": "dev01",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 6.094655299995793,
+          "input_text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай."
+            }
+          ],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 2,
+            "expected": 4,
+            "false_positive": 2,
+            "false_negative": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+                "grounded": true
+              },
+              {
+                "prediction_index": 1,
+                "section": "anamnesis",
+                "quote": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+                "grounded": true
+              }
+            ],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "У меня сухой кашель.",
+                "needles": [
+                  "сухой кашель"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Кашель начался три дня назад.",
+                "needles": [
+                  "кашель начался три дня назад"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "anamnesis",
+                "quote": "В прошлом году уже был похожий кашель.",
+                "needles": [
+                  "в прошлом году уже был похожий кашель"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Сегодня утром выпил тёплый чай.",
+                "needles": [
+                  "сегодня утром выпил тёплый чай"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dev02",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 5.941511900004116,
+          "input_text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было."
+            }
+          ],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 2,
+            "expected": 4,
+            "false_positive": 2,
+            "false_negative": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+                "grounded": true
+              },
+              {
+                "prediction_index": 1,
+                "section": "anamnesis",
+                "quote": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+                "grounded": true
+              }
+            ],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков.",
+                "needles": [
+                  "болит голова в области висков"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Голова заболела сегодня после обеда.",
+                "needles": [
+                  "голова заболела сегодня после обеда"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "complaints",
+                "quote": "Боль усиливается при ярком свете.",
+                "needles": [
+                  "боль усиливается при ярком свете"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Раньше подобных приступов не было.",
+                "needles": [
+                  "раньше подобных приступов не было"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "our-development2": {
+      "summary": {
+        "attempted": 2,
+        "completed": 2,
+        "failed": 0,
+        "seconds": {
+          "median": 2.9654435499978717,
+          "min": 2.612829399993643,
+          "max": 3.3180577000021003
+        },
+        "true_positive": 7,
+        "predicted": 8,
+        "expected_in_completed_runs": 8,
+        "precision": 0.875,
+        "recall": 0.875,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "source": "reports\\comparison-extract-our-development2\\results.json",
+      "runs": [
+        {
+          "id": "dev01",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 2.612829399993643,
+          "input_text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "У меня сухой кашель."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Кашель начался три дня назад."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "В прошлом году уже был похожий кашель."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Сегодня утром выпил тёплый чай."
+            }
+          ],
+          "metrics": {
+            "true_positive": 4,
+            "predicted": 4,
+            "expected": 4,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "ungrounded_predictions": 0,
+            "matched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "У меня сухой кашель.",
+                "grounded": true,
+                "expected_index": 0
+              },
+              {
+                "prediction_index": 1,
+                "section": "anamnesis",
+                "quote": "Кашель начался три дня назад.",
+                "grounded": true,
+                "expected_index": 1
+              },
+              {
+                "prediction_index": 2,
+                "section": "anamnesis",
+                "quote": "В прошлом году уже был похожий кашель.",
+                "grounded": true,
+                "expected_index": 2
+              },
+              {
+                "prediction_index": 3,
+                "section": "anamnesis",
+                "quote": "Сегодня утром выпил тёплый чай.",
+                "grounded": true,
+                "expected_index": 3
+              }
+            ],
+            "unmatched": [],
+            "missed": []
+          }
+        },
+        {
+          "id": "dev02",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 3.3180577000021003,
+          "input_text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "Болит голова в области висков."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Голова заболела сегодня после обеда."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Боль усиливается при ярком свете."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Раньше подобных приступов не было."
+            }
+          ],
+          "metrics": {
+            "true_positive": 3,
+            "predicted": 4,
+            "expected": 4,
+            "false_positive": 1,
+            "false_negative": 1,
+            "precision": 0.75,
+            "recall": 0.75,
+            "ungrounded_predictions": 0,
+            "matched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков.",
+                "grounded": true,
+                "expected_index": 0
+              },
+              {
+                "prediction_index": 1,
+                "section": "anamnesis",
+                "quote": "Голова заболела сегодня после обеда.",
+                "grounded": true,
+                "expected_index": 1
+              },
+              {
+                "prediction_index": 3,
+                "section": "anamnesis",
+                "quote": "Раньше подобных приступов не было.",
+                "grounded": true,
+                "expected_index": 3
+              }
+            ],
+            "unmatched": [
+              {
+                "prediction_index": 2,
+                "section": "anamnesis",
+                "quote": "Боль усиливается при ярком свете.",
+                "grounded": true
+              }
+            ],
+            "missed": [
+              {
+                "expected_index": 2,
+                "section": "complaints",
+                "quote": "Боль усиливается при ярком свете.",
+                "needles": [
+                  "боль усиливается при ярком свете"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "oms-development": {
+      "summary": {
+        "attempted": 2,
+        "completed": 2,
+        "failed": 0,
+        "seconds": {
+          "median": 8.08672574999946,
+          "min": 6.257852399998228,
+          "max": 9.91559910000069
+        },
+        "true_positive": 0,
+        "predicted": 0,
+        "expected_in_completed_runs": 8,
+        "precision": null,
+        "recall": 0.0,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "source": "reports\\comparison-extract-oms-development\\results.json",
+      "runs": [
+        {
+          "id": "dev01",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 6.257852399998228,
+          "input_text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+          "predictions": [],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 0,
+            "expected": 4,
+            "false_positive": 0,
+            "false_negative": 4,
+            "precision": null,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "У меня сухой кашель.",
+                "needles": [
+                  "сухой кашель"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Кашель начался три дня назад.",
+                "needles": [
+                  "кашель начался три дня назад"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "anamnesis",
+                "quote": "В прошлом году уже был похожий кашель.",
+                "needles": [
+                  "в прошлом году уже был похожий кашель"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Сегодня утром выпил тёплый чай.",
+                "needles": [
+                  "сегодня утром выпил тёплый чай"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dev02",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 9.91559910000069,
+          "input_text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+          "predictions": [],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 0,
+            "expected": 4,
+            "false_positive": 0,
+            "false_negative": 4,
+            "precision": null,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков.",
+                "needles": [
+                  "болит голова в области висков"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Голова заболела сегодня после обеда.",
+                "needles": [
+                  "голова заболела сегодня после обеда"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "complaints",
+                "quote": "Боль усиливается при ярком свете.",
+                "needles": [
+                  "боль усиливается при ярком свете"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Раньше подобных приступов не было.",
+                "needles": [
+                  "раньше подобных приступов не было"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "oms-development3": {
+      "summary": {
+        "attempted": 2,
+        "completed": 2,
+        "failed": 0,
+        "seconds": {
+          "median": 2.9848447000040323,
+          "min": 2.6712341000093147,
+          "max": 3.29845529999875
+        },
+        "true_positive": 1,
+        "predicted": 4,
+        "expected_in_completed_runs": 8,
+        "precision": 0.25,
+        "recall": 0.125,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "source": "reports\\comparison-extract-oms-development3\\results.json",
+      "runs": [
+        {
+          "id": "dev01",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 2.6712341000093147,
+          "input_text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+          "predictions": [],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 0,
+            "expected": 4,
+            "false_positive": 0,
+            "false_negative": 4,
+            "precision": null,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "У меня сухой кашель.",
+                "needles": [
+                  "сухой кашель"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Кашель начался три дня назад.",
+                "needles": [
+                  "кашель начался три дня назад"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "anamnesis",
+                "quote": "В прошлом году уже был похожий кашель.",
+                "needles": [
+                  "в прошлом году уже был похожий кашель"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Сегодня утром выпил тёплый чай.",
+                "needles": [
+                  "сегодня утром выпил тёплый чай"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "id": "dev02",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 3.29845529999875,
+          "input_text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "Болит голова в области висков."
+            },
+            {
+              "section": "complaints",
+              "quote": "Голова заболела сегодня после обеда."
+            },
+            {
+              "section": "complaints",
+              "quote": "Боль постоянная? Боль усиливается при ярком свете."
+            },
+            {
+              "section": "complaints",
+              "quote": "Бывали такие приступы раньше? Раньше подобных приступов не было."
+            }
+          ],
+          "metrics": {
+            "true_positive": 1,
+            "predicted": 4,
+            "expected": 4,
+            "false_positive": 3,
+            "false_negative": 3,
+            "precision": 0.25,
+            "recall": 0.25,
+            "ungrounded_predictions": 0,
+            "matched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков.",
+                "grounded": true,
+                "expected_index": 0
+              }
+            ],
+            "unmatched": [
+              {
+                "prediction_index": 1,
+                "section": "complaints",
+                "quote": "Голова заболела сегодня после обеда.",
+                "grounded": true
+              },
+              {
+                "prediction_index": 2,
+                "section": "complaints",
+                "quote": "Боль постоянная? Боль усиливается при ярком свете.",
+                "grounded": true
+              },
+              {
+                "prediction_index": 3,
+                "section": "complaints",
+                "quote": "Бывали такие приступы раньше? Раньше подобных приступов не было.",
+                "grounded": true
+              }
+            ],
+            "missed": [
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Голова заболела сегодня после обеда.",
+                "needles": [
+                  "голова заболела сегодня после обеда"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "complaints",
+                "quote": "Боль усиливается при ярком свете.",
+                "needles": [
+                  "боль усиливается при ярком свете"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Раньше подобных приступов не было.",
+                "needles": [
+                  "раньше подобных приступов не было"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "buzz-development2": {
+      "summary": {
+        "attempted": 2,
+        "completed": 2,
+        "failed": 0,
+        "seconds": {
+          "median": 3.2358208500008914,
+          "min": 3.0771747999970103,
+          "max": 3.3944669000047725
+        },
+        "true_positive": 4,
+        "predicted": 5,
+        "expected_in_completed_runs": 8,
+        "precision": 0.8,
+        "recall": 0.5,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "source": "reports\\comparison-extract-buzz-development2\\results.json",
+      "runs": [
+        {
+          "id": "dev01",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 3.0771747999970103,
+          "input_text": "Что вас беспокоит? У меня сухой кашель. Когда он появился? Кашель начался три дня назад. Было ли подобное раньше? В прошлом году уже был похожий кашель. Что вы принимали? Сегодня утром выпил тёплый чай.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "У меня сухой кашель."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Кашель начался три дня назад."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "В прошлом году уже был похожий кашель."
+            },
+            {
+              "section": "anamnesis",
+              "quote": "Сегодня утром выпил тёплый чай."
+            }
+          ],
+          "metrics": {
+            "true_positive": 4,
+            "predicted": 4,
+            "expected": 4,
+            "false_positive": 0,
+            "false_negative": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "ungrounded_predictions": 0,
+            "matched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "У меня сухой кашель.",
+                "grounded": true,
+                "expected_index": 0
+              },
+              {
+                "prediction_index": 1,
+                "section": "anamnesis",
+                "quote": "Кашель начался три дня назад.",
+                "grounded": true,
+                "expected_index": 1
+              },
+              {
+                "prediction_index": 2,
+                "section": "anamnesis",
+                "quote": "В прошлом году уже был похожий кашель.",
+                "grounded": true,
+                "expected_index": 2
+              },
+              {
+                "prediction_index": 3,
+                "section": "anamnesis",
+                "quote": "Сегодня утром выпил тёплый чай.",
+                "grounded": true,
+                "expected_index": 3
+              }
+            ],
+            "unmatched": [],
+            "missed": []
+          }
+        },
+        {
+          "id": "dev02",
+          "split": "development",
+          "repetition": 1,
+          "status": "completed",
+          "seconds": 3.3944669000047725,
+          "input_text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+          "predictions": [
+            {
+              "section": "complaints",
+              "quote": "Раньше подобных приступов не было."
+            }
+          ],
+          "metrics": {
+            "true_positive": 0,
+            "predicted": 1,
+            "expected": 4,
+            "false_positive": 1,
+            "false_negative": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "ungrounded_predictions": 0,
+            "matched": [],
+            "unmatched": [
+              {
+                "prediction_index": 0,
+                "section": "complaints",
+                "quote": "Раньше подобных приступов не было.",
+                "grounded": true
+              }
+            ],
+            "missed": [
+              {
+                "expected_index": 0,
+                "section": "complaints",
+                "quote": "Болит голова в области висков.",
+                "needles": [
+                  "болит голова в области висков"
+                ]
+              },
+              {
+                "expected_index": 1,
+                "section": "anamnesis",
+                "quote": "Голова заболела сегодня после обеда.",
+                "needles": [
+                  "голова заболела сегодня после обеда"
+                ]
+              },
+              {
+                "expected_index": 2,
+                "section": "complaints",
+                "quote": "Боль усиливается при ярком свете.",
+                "needles": [
+                  "боль усиливается при ярком свете"
+                ]
+              },
+              {
+                "expected_index": 3,
+                "section": "anamnesis",
+                "quote": "Раньше подобных приступов не было.",
+                "needles": [
+                  "раньше подобных приступов не было"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

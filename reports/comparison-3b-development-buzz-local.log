@@ -1,0 +1,20 @@
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8082/v1/chat/completions "HTTP/1.1 200 OK"
+buzz dev01 #1: completed 5.474s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8082/v1/chat/completions "HTTP/1.1 200 OK"
+buzz dev02 #1: completed 3.248s
+{
+  "attempted": 2,
+  "completed": 2,
+  "failed": 0,
+  "seconds": {
+    "median": 4.361013349996938,
+    "min": 3.2476081999921007,
+    "max": 5.474418500001775
+  },
+  "true_positive": 7,
+  "predicted": 8,
+  "expected_in_completed_runs": 8,
+  "precision": 0.875,
+  "recall": 0.875,
+  "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+}

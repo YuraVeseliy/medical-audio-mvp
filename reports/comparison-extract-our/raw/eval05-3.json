@@ -1,0 +1,57 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Заложен нос с обеих сторон.",
+      "start": 22,
+      "end": 49
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Каждую весну несколько дней беспокоит насморк.",
+      "start": 178,
+      "end": 224
+    }
+  ],
+  "warnings": [
+    "Жалобы: цитата отклонена — точного совпадения в тексте нет.",
+    "Анамнез: цитата отклонена — точного совпадения в тексте нет."
+  ],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Заложен нос с обеих сторон.\"},{\"quote\":\"Бывали подобные состояния раньше.\"}],\"anamnesis\":[{\"quote\":\"Заложило позавчера утром.\"},{\"quote\":\"Каждую весну несколько дней беспокоит насморк.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869460,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 709,
+      "total_tokens": 783,
+      "prompt_tokens_details": {
+        "cached_tokens": 708
+      }
+    },
+    "id": "chatcmpl-BamMhXJhWZFgtQb8NgNFGIf0FzwzThEN",
+    "timings": {
+      "cache_n": 708,
+      "prompt_n": 1,
+      "prompt_ms": 34.353,
+      "prompt_per_token_ms": 34.353,
+      "prompt_per_second": 29.109539195994525,
+      "predicted_n": 74,
+      "predicted_ms": 2822.076,
+      "predicted_per_token_ms": 38.65857534246575,
+      "predicted_per_second": 25.867481953001974
+    }
+  },
+  "prompt_tokens": 709
+}

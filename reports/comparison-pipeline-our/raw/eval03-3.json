@@ -1,0 +1,60 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Какая у вас жалоба, ноет поясница при наклоне, куда отдает бол, боли отдает в левую ягодицу.",
+      "start": 0,
+      "end": 92
+    },
+    {
+      "section": "anamnesis",
+      "quote": "С чего все началось? Поясница заболела после переноса тяжелой сумки.",
+      "start": 93,
+      "end": 161
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Были ли раньше операции? Операции на позвоночнике не было.",
+      "start": 162,
+      "end": 220
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Какая у вас жалоба, ноет поясница при наклоне, куда отдает бол, боли отдает в левую ягодицу.\"}],\"anamnesis\":[{\"quote\":\"С чего все началось? Поясница заболела после переноса тяжелой сумки.\"},{\"quote\":\"Были ли раньше операции? Операции на позвоночнике не было.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869749,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 106,
+      "prompt_tokens": 713,
+      "total_tokens": 819,
+      "prompt_tokens_details": {
+        "cached_tokens": 712
+      }
+    },
+    "id": "chatcmpl-KR9uIFb7J299BfB06EcFE091yydKhSo1",
+    "timings": {
+      "cache_n": 712,
+      "prompt_n": 1,
+      "prompt_ms": 35.656,
+      "prompt_per_token_ms": 35.656,
+      "prompt_per_second": 28.045770697778774,
+      "predicted_n": 106,
+      "predicted_ms": 3704.623,
+      "predicted_per_token_ms": 35.28212380952381,
+      "predicted_per_second": 28.342964992659173
+    }
+  },
+  "prompt_tokens": 713
+}

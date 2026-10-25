@@ -1,0 +1,89 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Тошнит после воды.",
+      "start": 28,
+      "end": 46
+    },
+    {
+      "section": "complaints",
+      "quote": "Живот кажется вздутым.",
+      "start": 65,
+      "end": 87
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда началась тошнота?",
+      "start": 88,
+      "end": 111
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Были операции на животе раньше?",
+      "start": 145,
+      "end": 176
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше операций на животе не было.",
+      "start": 177,
+      "end": 211
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"sections\":{\"complaints\":[2,4],\"anamnesis\":[5,7,8]}}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Что чувствуете после питья?",
+      "start": 0,
+      "end": 27
+    },
+    {
+      "number": 2,
+      "quote": "Тошнит после воды.",
+      "start": 28,
+      "end": 46
+    },
+    {
+      "number": 3,
+      "quote": "Что ещё ощущаете?",
+      "start": 47,
+      "end": 64
+    },
+    {
+      "number": 4,
+      "quote": "Живот кажется вздутым.",
+      "start": 65,
+      "end": 87
+    },
+    {
+      "number": 5,
+      "quote": "Когда началась тошнота?",
+      "start": 88,
+      "end": 111
+    },
+    {
+      "number": 6,
+      "quote": "Тошнота началась после завтрака.",
+      "start": 112,
+      "end": 144
+    },
+    {
+      "number": 7,
+      "quote": "Были операции на животе раньше?",
+      "start": 145,
+      "end": 176
+    },
+    {
+      "number": 8,
+      "quote": "Раньше операций на животе не было.",
+      "start": 177,
+      "end": 211
+    }
+  ]
+}

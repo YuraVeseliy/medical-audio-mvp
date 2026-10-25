@@ -1,0 +1,16 @@
+test_d01_cancel_save_dialog_keeps_stopped_recording (test_regressions.RegressionTests.test_d01_cancel_save_dialog_keeps_stopped_recording) ... ok
+test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported) ... ok
+test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable (test_regressions.RegressionTests.test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable) ... FAIL
+
+======================================================================
+FAIL: test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable (test_regressions.RegressionTests.test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_regressions.py", line 34, in test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable
+    self.assertIsNot(partial, previous)
+AssertionError: unexpectedly identical: Document(transcript='Болит колено. Началось вчера.', evidence=[Evidence(section='complaints', quote='Болит колено.', start=0, end=13), Evidence(section='anamnesis', quote='Началось вчера.', start=14, end=29)], sections={'complaints': 'Болит колено.', 'anamnesis': 'Началось вчера.'}, warnings=[], source='C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\tests\\fixtures\\float32.wav')
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.356s
+
+FAILED (failures=1)

@@ -1,0 +1,37 @@
+test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported) ... ERROR
+
+======================================================================
+ERROR: test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\audio_mvp\session.py", line 38, in _process_file
+    with wave.open(str(path), "rb") as source:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chern\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\wave.py", line 649, in open
+    return Wave_read(f)
+           ^^^^^^^^^^^^
+  File "C:\Users\chern\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\wave.py", line 286, in __init__
+    self.initfp(f)
+  File "C:\Users\chern\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\wave.py", line 266, in initfp
+    self._read_fmt_chunk(chunk)
+  File "C:\Users\chern\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\wave.py", line 383, in _read_fmt_chunk
+    raise Error('unknown format: %r' % (wFormatTag,))
+wave.Error: unknown format: 3
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_regressions.py", line 12, in test_d02_valid_float_wav_is_supported
+    document = Session(Recognizer(), Extractor()).process_file(source)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\audio_mvp\session.py", line 25, in process_file
+    return self._process_file(path)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\audio_mvp\session.py", line 42, in _process_file
+    raise AppError("Не удалось открыть аудиофайл: проверьте формат и содержимое.") from exc
+audio_mvp.model.AppError: Не удалось открыть аудиофайл: проверьте формат и содержимое.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.009s
+
+FAILED (errors=1)

@@ -1,0 +1,199 @@
+{
+  "status": "Historical intermediate snapshot; completed final results are in comparison-final-summary.json",
+  "date": "2026-10-25",
+  "metric": "Strict normalized quote equality, correctsection,one-to-one; not semanticorclinicalaccuracy",
+  "records": [
+    {
+      "label": "ASR faster-whisper A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-asr-fw\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 3.975439150002785,
+        "min": 3.502925000007963,
+        "max": 4.387588400000823
+      },
+      "corpus_wer": 0.10396039603960396,
+      "counts_all_repetitions": {
+        "errors": 63,
+        "reference_words": 606,
+        "substitutions": 51,
+        "deletions": 6,
+        "insertions": 6
+      },
+      "unique_reference_words": 202,
+      "unique_errors": 21,
+      "rtf_median": 0.2232201308423155
+    },
+    {
+      "label": "ASR Vosk A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-asr-vosk\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 1.6540047499947832,
+        "min": 1.5670630000095116,
+        "max": 1.8430941000115126
+      },
+      "corpus_wer": 0.10891089108910891,
+      "counts_all_repetitions": {
+        "errors": 66,
+        "reference_words": 606,
+        "substitutions": 54,
+        "deletions": 12,
+        "insertions": 0
+      },
+      "unique_reference_words": 202,
+      "unique_errors": 22,
+      "rtf_median": 0.0948581215105227
+    },
+    {
+      "label": "Our freequote A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-extract-our\\results.json",
+      "attempted": 18,
+      "completed": 15,
+      "failed": 3,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 4.063822699987213,
+        "min": 2.709484299994074,
+        "max": 8.615324699989287
+      },
+      "TP": 31,
+      "FP": 56,
+      "FN_completed": 29,
+      "expected_completed": 60,
+      "expected_all_attempts": 72,
+      "FN_all_attempts": 41,
+      "precision": 0.3563218390804598,
+      "recall_completed": 0.5166666666666667,
+      "effective_recall_all_attempts": 0.4305555555555556
+    },
+    {
+      "label": "OMS freequote A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-extract-oms\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 2.926761400005489,
+        "min": 1.3410202000086429,
+        "max": 7.970553700011806
+      },
+      "TP": 13,
+      "FP": 41,
+      "FN_completed": 59,
+      "expected_completed": 72,
+      "expected_all_attempts": 72,
+      "FN_all_attempts": 59,
+      "precision": 0.24074074074074073,
+      "recall_completed": 0.18055555555555555,
+      "effective_recall_all_attempts": 0.18055555555555555
+    },
+    {
+      "label": "Buzz freequote A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-extract-buzz\\results.json",
+      "attempted": 18,
+      "completed": 17,
+      "failed": 1,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 3.612724899998284,
+        "min": 1.230501700003515,
+        "max": 6.168468200005009
+      },
+      "TP": 23,
+      "FP": 49,
+      "FN_completed": 45,
+      "expected_completed": 68,
+      "expected_all_attempts": 72,
+      "FN_all_attempts": 49,
+      "precision": 0.3194444444444444,
+      "recall_completed": 0.3382352941176471,
+      "effective_recall_all_attempts": 0.3194444444444444
+    },
+    {
+      "label": "Our extraction onASR A",
+      "phase": "A",
+      "raw_results": "reports\\comparison-pipeline-our\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 3.7669859000016004,
+        "min": 2.6451124000013806,
+        "max": 6.855468199995812
+      },
+      "TP": 18,
+      "FP": 54,
+      "FN_completed": 54,
+      "expected_completed": 72,
+      "expected_all_attempts": 72,
+      "FN_all_attempts": 54,
+      "precision": 0.25,
+      "recall_completed": 0.25,
+      "effective_recall_all_attempts": 0.25
+    },
+    {
+      "label": "ASR faster-whisper B1.0",
+      "phase": "B1.0-ASR",
+      "raw_results": "reports\\comparison-b-asr-fw\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 3.5737476499925833,
+        "min": 3.0204311999987112,
+        "max": 3.8957026999996742
+      },
+      "corpus_wer": 0.1878453038674033,
+      "counts_all_repetitions": {
+        "errors": 102,
+        "reference_words": 543,
+        "substitutions": 87,
+        "deletions": 15,
+        "insertions": 0
+      },
+      "unique_reference_words": 181,
+      "unique_errors": 34,
+      "rtf_median": 0.22209238305357804
+    },
+    {
+      "label": "ASR Vosk B1.0",
+      "phase": "B1.0-ASR",
+      "raw_results": "reports\\comparison-b-asr-vosk\\results.json",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "unique_cases": 6,
+      "timing_completed_seconds": {
+        "median": 1.4842560999968555,
+        "min": 1.4034971999935806,
+        "max": 1.580336900005932
+      },
+      "corpus_wer": 0.19337016574585636,
+      "counts_all_repetitions": {
+        "errors": 105,
+        "reference_words": 543,
+        "substitutions": 84,
+        "deletions": 6,
+        "insertions": 15
+      },
+      "unique_reference_words": 181,
+      "unique_errors": 35,
+      "rtf_median": 0.09422145727199549
+    }
+  ]
+}

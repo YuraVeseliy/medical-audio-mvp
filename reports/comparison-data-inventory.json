@@ -1,0 +1,77 @@
+{
+  "manifest_sha256": "774dde4be54822f40f927c896759e68a1e294c9d8df483155a0a28dfd6018c4c",
+  "data": [
+    {
+      "id": "dev01",
+      "split": "development",
+      "exists": true,
+      "seconds": 15.706125,
+      "sha256": "24542d7e592ef86c101b8c6b233c8495d0d5e30383f3419c638a09242733f8ad",
+      "expected_facts": 4
+    },
+    {
+      "id": "dev02",
+      "split": "development",
+      "exists": true,
+      "seconds": 18.318375,
+      "sha256": "07ef3dc6f6289dad7ca2c322daa22419dc28db90c9664da5753565d6fcc60f98",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 16.61175,
+      "sha256": "7bb4cf48ccb626152bb43cadcaf3e5f8d9cac5460a1180b5f155fabd507f9a3b",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 16.4608125,
+      "sha256": "177d0c2d6377e982a8b3c6b6c7829462ecab819907107b16e610e799c0685657",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 18.1094375,
+      "sha256": "d46897c687db87138ef716a0bbf7d22f50add0bd2573540cad33b75edf70c383",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 18.2255,
+      "sha256": "b770b2e226c2b38903a04dad30e6af1b85c1c523aeeae7cac005acbb822e8bf2",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 18.0745625,
+      "sha256": "e9a79bddbc01b986b632720be3cf8b089511a181e1348669e14510d83dc9bc5b",
+      "expected_facts": 4
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "exists": true,
+      "seconds": 18.24875,
+      "sha256": "fcd393d25bd4b764ae076e3cba418c6af0b84233771081c701581a0d4a347b06",
+      "expected_facts": 4
+    },
+    {
+      "id": "silence",
+      "split": "control",
+      "exists": true,
+      "seconds": 3.0,
+      "sha256": "d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8",
+      "expected_facts": 0
+    }
+  ]
+}

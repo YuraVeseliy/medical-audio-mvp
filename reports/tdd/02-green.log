@@ -1,0 +1,7 @@
+test_a01_supported_audio_produces_document (test_session.SessionTests.test_a01_supported_audio_produces_document) ... ok
+test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.014s
+
+OK

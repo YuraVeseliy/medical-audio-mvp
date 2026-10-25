@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-25",
+  "url": "http://127.0.0.1:8787/app",
+  "title": "Eir Scribe App",
+  "method": "browser accessibility observation and screenshot",
+  "observed": [
+    "Local beta control",
+    "Note styles Journal SOAP Progress H&P DAP Procedure",
+    "Language sv",
+    "Editable note area"
+  ],
+  "inference_via_ui": false,
+  "microphone_used": false,
+  "screenshot": "reports/screenshots/oms-ui.png",
+  "numerical_inference": "separate actual backend API configured to local 8082"
+}

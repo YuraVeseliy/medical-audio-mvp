@@ -1,0 +1,18 @@
+oms dev01 #1: completed 11.582s
+oms dev02 #1: completed 5.305s
+{
+  "attempted": 2,
+  "completed": 2,
+  "failed": 0,
+  "seconds": {
+    "median": 8.443148299993481,
+    "min": 5.30464389998815,
+    "max": 11.581652699998813
+  },
+  "true_positive": 5,
+  "predicted": 8,
+  "expected_in_completed_runs": 8,
+  "precision": 0.625,
+  "recall": 0.625,
+  "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+}

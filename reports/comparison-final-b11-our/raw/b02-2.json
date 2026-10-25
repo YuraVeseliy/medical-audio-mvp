@@ -1,0 +1,72 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "На что жалуетесь сейчас?",
+      "start": 48,
+      "end": 72
+    },
+    {
+      "section": "complaints",
+      "quote": "Сильно знобит.",
+      "start": 73,
+      "end": 87
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда появился озноб?",
+      "start": 0,
+      "end": 21
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Ночью получал обезболивающее.",
+      "start": 114,
+      "end": 143
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Есть боль в груди?",
+      "start": 144,
+      "end": 162
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[3,4],\"anamnesis\":[1,6,7]}"
+        }
+      }
+    ],
+    "created": 1792876252,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 545,
+      "total_tokens": 566,
+      "prompt_tokens_details": {
+        "cached_tokens": 544
+      }
+    },
+    "id": "chatcmpl-CTI52l9KnoR2gaMTdLCVQP4JFUURXmMg",
+    "timings": {
+      "cache_n": 544,
+      "prompt_n": 1,
+      "prompt_ms": 74.172,
+      "prompt_per_token_ms": 74.172,
+      "prompt_per_second": 13.482176562584264,
+      "predicted_n": 21,
+      "predicted_ms": 1591.256,
+      "predicted_per_token_ms": 79.56280000000001,
+      "predicted_per_second": 12.568687879260157
+    }
+  },
+  "prompt_tokens": 545
+}

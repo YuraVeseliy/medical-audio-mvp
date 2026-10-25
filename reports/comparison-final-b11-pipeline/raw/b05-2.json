@@ -1,0 +1,124 @@
+{
+  "document": {
+    "transcript": "Какая жалоба сейчас? Правая кисть анимела. Кто ощущаете в пальцах? Пальцы на правой руке холодные. Когда заметили анимение, анимение заметил после сна. Такое бывало раньше. Такое случилось впервые.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Правая кисть анимела.",
+        "start": 21,
+        "end": 42
+      },
+      {
+        "section": "complaints",
+        "quote": "Кто ощущаете в пальцах?",
+        "start": 43,
+        "end": 66
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Пальцы на правой руке холодные.",
+        "start": 67,
+        "end": 98
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Когда заметили анимение, анимение заметил после сна.",
+        "start": 99,
+        "end": 151
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Такое бывало раньше.",
+        "start": 152,
+        "end": 172
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Такое случилось впервые.",
+        "start": 173,
+        "end": 197
+      }
+    ],
+    "sections": {
+      "complaints": "Правая кисть анимела.\nКто ощущаете в пальцах?",
+      "anamnesis": "Пальцы на правой руке холодные.\nКогда заметили анимение, анимение заметил после сна.\nТакое бывало раньше.\nТакое случилось впервые."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b05.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3],\"anamnesis\":[4,5,6,7]}"
+        }
+      }
+    ],
+    "created": 1792876536,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 551,
+      "total_tokens": 574,
+      "prompt_tokens_details": {
+        "cached_tokens": 550
+      }
+    },
+    "id": "chatcmpl-tqthNCRR94Iso0UqMt4PT1yriFseLglR",
+    "timings": {
+      "cache_n": 550,
+      "prompt_n": 1,
+      "prompt_ms": 117.305,
+      "prompt_per_token_ms": 117.305,
+      "prompt_per_second": 8.524785814756404,
+      "predicted_n": 23,
+      "predicted_ms": 2467.994,
+      "predicted_per_token_ms": 112.18154545454546,
+      "predicted_per_second": 8.914122157509297
+    }
+  },
+  "prompt_tokens": 551,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Правая кисть анимела.",
+      "start": 21,
+      "end": 42
+    },
+    {
+      "section": "complaints",
+      "quote": "Кто ощущаете в пальцах?",
+      "start": 43,
+      "end": 66
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Пальцы на правой руке холодные.",
+      "start": 67,
+      "end": 98
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда заметили анимение, анимение заметил после сна.",
+      "start": 99,
+      "end": 151
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое бывало раньше.",
+      "start": 152,
+      "end": 172
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое случилось впервые.",
+      "start": 173,
+      "end": 197
+    }
+  ]
+}

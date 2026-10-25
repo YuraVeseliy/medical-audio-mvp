@@ -1,0 +1,83 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "У меня сухой кашель.",
+      "start": 19,
+      "end": 39
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Кашель начался три дня назад.",
+      "start": 59,
+      "end": 88
+    },
+    {
+      "section": "anamnesis",
+      "quote": "В прошлом году уже был похожий кашель.",
+      "start": 114,
+      "end": 152
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Сегодня утром выпил тёплый чай.",
+      "start": 171,
+      "end": 202
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"noteText\":\"\",\"sections\":{\"complaints\":[2],\"anamnesis\":[4,6,8]},\"codingHints\":[],\"followUpQuestions\":[],\"warnings\":[]}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Что вас беспокоит?",
+      "start": 0,
+      "end": 18
+    },
+    {
+      "number": 2,
+      "quote": "У меня сухой кашель.",
+      "start": 19,
+      "end": 39
+    },
+    {
+      "number": 3,
+      "quote": "Когда он появился?",
+      "start": 40,
+      "end": 58
+    },
+    {
+      "number": 4,
+      "quote": "Кашель начался три дня назад.",
+      "start": 59,
+      "end": 88
+    },
+    {
+      "number": 5,
+      "quote": "Было ли подобное раньше?",
+      "start": 89,
+      "end": 113
+    },
+    {
+      "number": 6,
+      "quote": "В прошлом году уже был похожий кашель.",
+      "start": 114,
+      "end": 152
+    },
+    {
+      "number": 7,
+      "quote": "Что вы принимали?",
+      "start": 153,
+      "end": 170
+    },
+    {
+      "number": 8,
+      "quote": "Сегодня утром выпил тёплый чай.",
+      "start": 171,
+      "end": 202
+    }
+  ]
+}

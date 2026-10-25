@@ -1,0 +1,84 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Тянет живот около пупка.",
+      "start": 26,
+      "end": 50
+    },
+    {
+      "section": "complaints",
+      "quote": "Живот начал болеть ночью.",
+      "start": 114,
+      "end": 139
+    },
+    {
+      "section": "complaints",
+      "quote": "Похожая боль была месяц назад.",
+      "start": 161,
+      "end": 191
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Тошноты нет.",
+      "start": 65,
+      "end": 77
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Тянет живот около пупка.",
+      "start": 26,
+      "end": 50
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Живот начал болеть ночью.",
+      "start": 114,
+      "end": 139
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Похожая боль была месяц назад.",
+      "start": 161,
+      "end": 191
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Тянет живот около пупка.\"},{\"quote\":\"Живот начал болеть ночью.\"},{\"quote\":\"Похожая боль была месяц назад.\"}],\"anamnesis\":[{\"quote\":\"Тошноты нет.\"},{\"quote\":\"Тянет живот около пупка.\"},{\"quote\":\"Живот начал болеть ночью.\"},{\"quote\":\"Тошноты нет.\"},{\"quote\":\"Живот начал болеть ночью.\"},{\"quote\":\"Похожая боль была месяц назад.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869410,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 117,
+      "prompt_tokens": 697,
+      "total_tokens": 814,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-lTAhp9uHIfms00LnwAyi6YvFMXJch0QI",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 73,
+      "prompt_ms": 333.0,
+      "prompt_per_token_ms": 4.561643835616438,
+      "prompt_per_second": 219.2192192192192,
+      "predicted_n": 117,
+      "predicted_ms": 4046.585,
+      "predicted_per_token_ms": 34.88435344827586,
+      "predicted_per_second": 28.66614688681938
+    }
+  },
+  "prompt_tokens": 697
+}

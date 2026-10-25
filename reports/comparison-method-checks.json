@@ -1,0 +1,207 @@
+{
+  "checks": 8,
+  "status": "passed",
+  "cases": [
+    {
+      "check": "WER",
+      "reference": "один два",
+      "hypothesis": "один два",
+      "result": {
+        "reference_words": 2,
+        "hypothesis_words": 2,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 0,
+        "wer": 0.0
+      }
+    },
+    {
+      "check": "WER",
+      "reference": "один два",
+      "hypothesis": "один три",
+      "result": {
+        "reference_words": 2,
+        "hypothesis_words": 2,
+        "substitutions": 1,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 1,
+        "wer": 0.5
+      }
+    },
+    {
+      "check": "WER",
+      "reference": "один два",
+      "hypothesis": "один",
+      "result": {
+        "reference_words": 2,
+        "hypothesis_words": 1,
+        "substitutions": 0,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 1,
+        "wer": 0.5
+      }
+    },
+    {
+      "check": "WER",
+      "reference": "один",
+      "hypothesis": "один два",
+      "result": {
+        "reference_words": 1,
+        "hypothesis_words": 2,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 1,
+        "errors": 1,
+        "wer": 1.0
+      }
+    },
+    {
+      "check": "strict evidence",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит голова."
+        }
+      ],
+      "result": {
+        "true_positive": 1,
+        "predicted": 1,
+        "expected": 1,
+        "false_positive": 0,
+        "false_negative": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит голова.",
+            "grounded": true,
+            "expected_index": 0
+          }
+        ],
+        "unmatched": [],
+        "missed": []
+      }
+    },
+    {
+      "check": "strict evidence",
+      "predictions": [
+        {
+          "section": "anamnesis",
+          "quote": "Болит голова."
+        }
+      ],
+      "result": {
+        "true_positive": 0,
+        "predicted": 1,
+        "expected": 1,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 0,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "anamnesis",
+            "quote": "Болит голова.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Болит голова.",
+            "needles": [
+              "болит голова"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "check": "strict evidence",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Что беспокоит? Болит голова. Вчера заболела."
+        }
+      ],
+      "result": {
+        "true_positive": 0,
+        "predicted": 1,
+        "expected": 1,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 0,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Что беспокоит? Болит голова. Вчера заболела.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Болит голова.",
+            "needles": [
+              "болит голова"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "check": "strict evidence",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит нога."
+        }
+      ],
+      "result": {
+        "true_positive": 0,
+        "predicted": 1,
+        "expected": 1,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 1,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит нога.",
+            "grounded": false
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Болит голова.",
+            "needles": [
+              "болит голова"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "note": "Проверки вычисления метрик, не автотесты приложения."
+}

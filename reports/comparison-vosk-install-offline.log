@@ -1,0 +1,9 @@
+Processing c:\users\chern\documents\codex\2026-09-30\cnbkm\project\medical_audio_mvp\.runtime\downloads\setuptools-80.9.0-py3-none-any.whl
+Processing c:\users\chern\documents\codex\2026-09-30\cnbkm\project\medical_audio_mvp\.runtime\downloads\vosk-0.3.45-py3-none-win_amd64.whl
+Processing c:\users\chern\documents\codex\2026-09-30\cnbkm\project\medical_audio_mvp\.runtime\downloads\websockets-15.0.1-cp312-cp312-win_amd64.whl
+Installing collected packages: websockets, vosk, setuptools
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 84.2.1
+    Uninstalling setuptools-84.2.1:
+      Successfully uninstalled setuptools-84.2.1
+Successfully installed setuptools-80.9.0 vosk-0.3.45 websockets-15.0.1

@@ -1,0 +1,66 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Тошнит после воды.",
+      "start": 28,
+      "end": 46
+    },
+    {
+      "section": "complaints",
+      "quote": "Что ещё ощущаете?",
+      "start": 47,
+      "end": 64
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Тошнота началась после завтрака.",
+      "start": 112,
+      "end": 144
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше операций на животе не было.",
+      "start": 177,
+      "end": 211
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3],\"anamnesis\":[6,8]}"
+        }
+      }
+    ],
+    "created": 1792876260,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 19,
+      "prompt_tokens": 558,
+      "total_tokens": 577,
+      "prompt_tokens_details": {
+        "cached_tokens": 557
+      }
+    },
+    "id": "chatcmpl-5DWSCcdjwMBgJURqaRSj2nhhYSXmH5M1",
+    "timings": {
+      "cache_n": 557,
+      "prompt_n": 1,
+      "prompt_ms": 72.087,
+      "prompt_per_token_ms": 72.087,
+      "prompt_per_second": 13.872126735749857,
+      "predicted_n": 19,
+      "predicted_ms": 1417.095,
+      "predicted_per_token_ms": 78.7275,
+      "predicted_per_second": 12.702041853227906
+    }
+  },
+  "prompt_tokens": 558
+}

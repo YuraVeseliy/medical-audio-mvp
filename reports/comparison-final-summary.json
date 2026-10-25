@@ -1,0 +1,103 @@
+{
+  "updated_at_utc": "2026-10-24T21:20:21.494289+00:00",
+  "status": "Technical experiments completed; human M01–M06 pending; quality defect D05 open",
+  "initial_A": "reports/comparison-initial-overview.json",
+  "final_B11": [
+    {
+      "configuration": "Наш IndexedExtractor",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "seconds": {
+        "median": 1.8331016000011005,
+        "min": 1.4715442000015173,
+        "max": 3.0779177000076743
+      },
+      "true_positive": 51,
+      "predicted": 93,
+      "expected_in_completed_runs": 72,
+      "precision": 0.5483870967741935,
+      "recall": 0.7083333333333334,
+      "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями.",
+      "FP": 42,
+      "FN_all_attempts": 21,
+      "expected_all_attempts": 72,
+      "raw_results": "reports/comparison-final-b11-our/results.json"
+    },
+    {
+      "configuration": "OMS API",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "seconds": {
+        "median": 3.4803963499944075,
+        "min": 2.7628584999911254,
+        "max": 4.71118060000299
+      },
+      "true_positive": 45,
+      "predicted": 96,
+      "expected_in_completed_runs": 72,
+      "precision": 0.46875,
+      "recall": 0.625,
+      "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями.",
+      "FP": 51,
+      "FN_all_attempts": 27,
+      "expected_all_attempts": 72,
+      "raw_results": "reports/comparison-final-b11-oms/results.json"
+    },
+    {
+      "configuration": "Buzz AI Summary",
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "seconds": {
+        "median": 2.583224000001792,
+        "min": 1.7099181999947177,
+        "max": 4.542002099988167
+      },
+      "true_positive": 52,
+      "predicted": 90,
+      "expected_in_completed_runs": 72,
+      "precision": 0.5777777777777777,
+      "recall": 0.7222222222222222,
+      "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями.",
+      "FP": 38,
+      "FN_all_attempts": 20,
+      "expected_all_attempts": 72,
+      "raw_results": "reports/comparison-final-b11-buzz/results.json"
+    }
+  ],
+  "pipeline": {
+    "attempted": 18,
+    "completed": 18,
+    "failed": 0,
+    "seconds": {
+      "median": 8.586440749997564,
+      "min": 7.7052903000003425,
+      "max": 10.71353779999481
+    },
+    "true_positive": 18,
+    "predicted": 96,
+    "expected_in_completed_runs": 72,
+    "precision": 0.1875,
+    "recall": 0.25,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями.",
+    "WER_counts": {
+      "errors": 90,
+      "reference_words": 543,
+      "substitutions": 78,
+      "deletions": 9,
+      "insertions": 3
+    },
+    "RTF_median": 0.5328784338463671,
+    "raw_results": "reports/comparison-final-b11-pipeline/results.json"
+  },
+  "limitations": [
+    "synthetic one voice",
+    "6 unique evaluation cases, not 18 independent patients",
+    "developer references, no physician validation",
+    "component comparison, not whole Buzz GUI",
+    "different native wrappers/settings",
+    "no tuning on final B11"
+  ]
+}

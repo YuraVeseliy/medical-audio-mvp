@@ -1,0 +1,4 @@
+{
+  "component": "AISummaryPlugin._summarize",
+  "raw_text": "{\"sections\":{\"complaints\":[{\"quote\":\"Болит голова в области висков.\",\"quote\":\"Голова заболела сегодня после обеда.\",\"quote\":\"Боли постоянная.\",\"quote\":\"Боль усиливается при ярком свете.\",\"quote\":\"Раньше подобных приступов не было.\"}]},\"codingHints\":[],\"followUpQuestions\":[],\"warnings\":[]}"
+}

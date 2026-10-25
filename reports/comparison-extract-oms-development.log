@@ -1,0 +1,18 @@
+oms dev01 #1: completed 6.258s
+oms dev02 #1: completed 9.916s
+{
+  "attempted": 2,
+  "completed": 2,
+  "failed": 0,
+  "seconds": {
+    "median": 8.08672574999946,
+    "min": 6.257852399998228,
+    "max": 9.91559910000069
+  },
+  "true_positive": 0,
+  "predicted": 0,
+  "expected_in_completed_runs": 8,
+  "precision": null,
+  "recall": 0.0,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

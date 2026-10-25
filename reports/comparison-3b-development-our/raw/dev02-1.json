@@ -1,0 +1,72 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит голова в области висков.",
+      "start": 21,
+      "end": 51
+    },
+    {
+      "section": "complaints",
+      "quote": "Когда началась боль?",
+      "start": 52,
+      "end": 72
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Голова заболела сегодня после обеда.",
+      "start": 73,
+      "end": 109
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Боль усиливается при ярком свете.",
+      "start": 127,
+      "end": 160
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше подобных приступов не было.",
+      "start": 191,
+      "end": 225
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3],\"anamnesis\":[4,6,8]}"
+        }
+      }
+    ],
+    "created": 1792876083,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 552,
+      "total_tokens": 573,
+      "prompt_tokens_details": {
+        "cached_tokens": 459
+      }
+    },
+    "id": "chatcmpl-lGexDM2YmA2P7f4KTdoLe5QQrCWtQInO",
+    "timings": {
+      "cache_n": 459,
+      "prompt_n": 93,
+      "prompt_ms": 1423.144,
+      "prompt_per_token_ms": 15.302623655913978,
+      "prompt_per_second": 65.34827115175976,
+      "predicted_n": 21,
+      "predicted_ms": 2163.795,
+      "predicted_per_token_ms": 108.18975,
+      "predicted_per_second": 9.243019786994608
+    }
+  },
+  "prompt_tokens": 552
+}

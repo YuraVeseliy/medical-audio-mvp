@@ -1,0 +1,8 @@
+{
+  "logical_cpus": 16,
+  "physical_cpus": 8,
+  "physical_ram_bytes": 16539357184,
+  "cpu_name": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "gpu_used": false,
+  "notes": "ASR and LLM CPU only. No simultaneous model inference during benchmark; other desktop/background activity not fully controlled."
+}

@@ -1,0 +1,168 @@
+[
+  {
+    "id": "dev01",
+    "seconds": 2.7600439000088954,
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "У меня сухой кашель.",
+        "start": 19,
+        "end": 39
+      },
+      {
+        "section": "complaints",
+        "quote": "Кашель начался три дня назад.",
+        "start": 59,
+        "end": 88
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Было ли подобное раньше?",
+        "start": 89,
+        "end": 113
+      },
+      {
+        "section": "anamnesis",
+        "quote": "В прошлом году уже был похожий кашель.",
+        "start": 114,
+        "end": 152
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Сегодня утром выпил тёплый чай.",
+        "start": 171,
+        "end": 202
+      }
+    ],
+    "warnings": [],
+    "raw": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"complaints\":[2,4],\"anamnesis\":[5,6,8]}"
+          }
+        }
+      ],
+      "created": 1792869886,
+      "model": "medical-local",
+      "system_fingerprint": "b11669-620d2225c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 21,
+        "prompt_tokens": 549,
+        "total_tokens": 570,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        }
+      },
+      "id": "chatcmpl-29n3DPdCnd0RDrpzka41BzLBaSKa7RoD",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 549,
+        "prompt_ms": 2015.09,
+        "prompt_per_token_ms": 3.670473588342441,
+        "prompt_per_second": 272.4444069495655,
+        "predicted_n": 21,
+        "predicted_ms": 689.831,
+        "predicted_per_token_ms": 34.491550000000004,
+        "predicted_per_second": 28.992608334505118
+      }
+    },
+    "prompt_tokens": 549
+  },
+  {
+    "id": "dev02",
+    "seconds": 1.4592455999954836,
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Какие сейчас жалобы?",
+        "start": 0,
+        "end": 20
+      },
+      {
+        "section": "complaints",
+        "quote": "Болит голова в области висков.",
+        "start": 21,
+        "end": 51
+      },
+      {
+        "section": "complaints",
+        "quote": "Когда началась боль?",
+        "start": 52,
+        "end": 72
+      },
+      {
+        "section": "complaints",
+        "quote": "Голова заболела сегодня после обеда.",
+        "start": 73,
+        "end": 109
+      },
+      {
+        "section": "complaints",
+        "quote": "Боль постоянная?",
+        "start": 110,
+        "end": 126
+      },
+      {
+        "section": "complaints",
+        "quote": "Боль усиливается при ярком свете.",
+        "start": 127,
+        "end": 160
+      },
+      {
+        "section": "complaints",
+        "quote": "Бывали такие приступы раньше?",
+        "start": 161,
+        "end": 190
+      },
+      {
+        "section": "complaints",
+        "quote": "Раньше подобных приступов не было.",
+        "start": 191,
+        "end": 225
+      }
+    ],
+    "warnings": [],
+    "raw": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "index": 0,
+          "message": {
+            "role": "assistant",
+            "content": "{\"complaints\":[1,2,3,4,5,6,7,8],\"anamnesis\":[]}"
+          }
+        }
+      ],
+      "created": 1792869887,
+      "model": "medical-local",
+      "system_fingerprint": "b11669-620d2225c",
+      "object": "chat.completion",
+      "usage": {
+        "completion_tokens": 28,
+        "prompt_tokens": 552,
+        "total_tokens": 580,
+        "prompt_tokens_details": {
+          "cached_tokens": 459
+        }
+      },
+      "id": "chatcmpl-4ycRD2RdFluIULLK5z9trEA7nu5pmEd4",
+      "timings": {
+        "cache_n": 459,
+        "prompt_n": 93,
+        "prompt_ms": 352.828,
+        "prompt_per_token_ms": 3.793849462365591,
+        "prompt_per_second": 263.5845227703017,
+        "predicted_n": 28,
+        "predicted_ms": 1063.959,
+        "predicted_per_token_ms": 39.40588888888889,
+        "predicted_per_second": 25.37691771957378
+      }
+    },
+    "prompt_tokens": 552
+  }
+]

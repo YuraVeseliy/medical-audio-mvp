@@ -1,0 +1,4 @@
+{
+  "component": "AISummaryPlugin._summarize",
+  "raw_text": "{\n  \"noteText\": \"\",\n  \"sections\": {\n    \"complaints\": [\n      {\n        \"quote\": \"Заложен нос с обеих сторон.\"\n      },\n      {\n        \"quote\": \"Бывали подобные состояния раньше?\"\n      }\n    ],\n    \"anamnesis\": [\n      {\n        \"quote\": \"Нос заложило позавчера утром.\"\n      },\n      {\n        \"quote\": \"Каждую весну несколько дней беспокоит насморк.\"\n      }\n    ]\n  },\n  \"codingHints\": [],\n  \"followUpQuestions\": [],\n  \"warnings\": []\n}"
+}

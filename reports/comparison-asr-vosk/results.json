@@ -1,0 +1,383 @@
+{
+  "runs": [
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.5895117000036407,
+      "duration_seconds": 16.61175,
+      "rtf": 0.09568598732846574,
+      "audio_sha256": "7bb4cf48ccb626152bb43cadcaf3e5f8d9cac5460a1180b5f155fabd507f9a3b",
+      "transcript": "на что жалуетесь болит правое колено при ходьбе то ещё беспокоит колено кажется скованным по утрам когда появилась бол боль появилась вчера вечером перед этим была травма два дня назад подвернул ногу на лестнице",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 34,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 2,
+        "wer": 0.058823529411764705
+      }
+    },
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.5670630000095116,
+      "duration_seconds": 16.61175,
+      "rtf": 0.09433461254891938,
+      "audio_sha256": "7bb4cf48ccb626152bb43cadcaf3e5f8d9cac5460a1180b5f155fabd507f9a3b",
+      "transcript": "на что жалуетесь болит правое колено при ходьбе то ещё беспокоит колено кажется скованным по утрам когда появилась бол боль появилась вчера вечером перед этим была травма два дня назад подвернул ногу на лестнице",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 34,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 2,
+        "wer": 0.058823529411764705
+      }
+    },
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.5844557999953395,
+      "duration_seconds": 16.61175,
+      "rtf": 0.09538163047212601,
+      "audio_sha256": "7bb4cf48ccb626152bb43cadcaf3e5f8d9cac5460a1180b5f155fabd507f9a3b",
+      "transcript": "на что жалуетесь болит правое колено при ходьбе то ещё беспокоит колено кажется скованным по утрам когда появилась бол боль появилась вчера вечером перед этим была травма два дня назад подвернул ногу на лестнице",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 34,
+        "substitutions": 2,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 2,
+        "wer": 0.058823529411764705
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.613357399997767,
+      "duration_seconds": 16.4608125,
+      "rtf": 0.09801201489888589,
+      "audio_sha256": "177d0c2d6377e982a8b3c6b6c7829462ecab819907107b16e610e799c0685657",
+      "transcript": "вас беспокоит сейчас тянет живот около пупка есть тошнота тошноты нет когда начались неприятное ощущение живот начал болит ночью такое уже случалось похожая боль была месяц назад",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 27,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.14285714285714285
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.6196726999914972,
+      "duration_seconds": 16.4608125,
+      "rtf": 0.09839567153756823,
+      "audio_sha256": "177d0c2d6377e982a8b3c6b6c7829462ecab819907107b16e610e799c0685657",
+      "transcript": "вас беспокоит сейчас тянет живот около пупка есть тошнота тошноты нет когда начались неприятное ощущение живот начал болит ночью такое уже случалось похожая боль была месяц назад",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 27,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.14285714285714285
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.610072700001183,
+      "duration_seconds": 16.4608125,
+      "rtf": 0.09781246824852559,
+      "audio_sha256": "177d0c2d6377e982a8b3c6b6c7829462ecab819907107b16e610e799c0685657",
+      "transcript": "вас беспокоит сейчас тянет живот около пупка есть тошнота тошноты нет когда начались неприятное ощущение живот начал болит ночью такое уже случалось похожая боль была месяц назад",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 27,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.14285714285714285
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.67850009999529,
+      "duration_seconds": 18.1094375,
+      "rtf": 0.09268648460203638,
+      "audio_sha256": "d46897c687db87138ef716a0bbf7d22f50add0bd2573540cad33b75edf70c383",
+      "transcript": "какая у вас жалоба ноет поясница при наклоне куда отдаёт булл более отдают в левую ягодицу с чего все началось поясница заболела после переноса тяжёлые сумки были раньше операции операции на позвоночнике не было",
+      "metrics": {
+        "reference_words": 35,
+        "hypothesis_words": 34,
+        "substitutions": 5,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.17142857142857143
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.680369800000335,
+      "duration_seconds": 18.1094375,
+      "rtf": 0.09278972911225626,
+      "audio_sha256": "d46897c687db87138ef716a0bbf7d22f50add0bd2573540cad33b75edf70c383",
+      "transcript": "какая у вас жалоба ноет поясница при наклоне куда отдаёт булл более отдают в левую ягодицу с чего все началось поясница заболела после переноса тяжёлые сумки были раньше операции операции на позвоночнике не было",
+      "metrics": {
+        "reference_words": 35,
+        "hypothesis_words": 34,
+        "substitutions": 5,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.17142857142857143
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.579918599993107,
+      "duration_seconds": 18.1094375,
+      "rtf": 0.08724283125818276,
+      "audio_sha256": "d46897c687db87138ef716a0bbf7d22f50add0bd2573540cad33b75edf70c383",
+      "transcript": "какая у вас жалоба ноет поясница при наклоне куда отдаёт булл более отдают в левую ягодицу с чего все началось поясница заболела после переноса тяжёлые сумки были раньше операции операции на позвоночнике не было",
+      "metrics": {
+        "reference_words": 35,
+        "hypothesis_words": 34,
+        "substitutions": 5,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.17142857142857143
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.6804201000049943,
+      "duration_seconds": 18.2255,
+      "rtf": 0.09220159117747082,
+      "audio_sha256": "b770b2e226c2b38903a04dad30e6af1b85c1c523aeeae7cac005acbb822e8bf2",
+      "transcript": "расскажите что беспокоит кружится голова приставания то ещё ощущаете иногда темнеет в глазах когда это началось эти ощущения появились неделю назад что происходило перед началом жалоб на прошлой неделе несколько дней мало спал",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 33,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.08823529411764706
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.6476410999894142,
+      "duration_seconds": 18.2255,
+      "rtf": 0.09040306713063642,
+      "audio_sha256": "b770b2e226c2b38903a04dad30e6af1b85c1c523aeeae7cac005acbb822e8bf2",
+      "transcript": "расскажите что беспокоит кружится голова приставания то ещё ощущаете иногда темнеет в глазах когда это началось эти ощущения появились неделю назад что происходило перед началом жалоб на прошлой неделе несколько дней мало спал",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 33,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.08823529411764706
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.6455963000043994,
+      "duration_seconds": 18.2255,
+      "rtf": 0.09029087267863155,
+      "audio_sha256": "b770b2e226c2b38903a04dad30e6af1b85c1c523aeeae7cac005acbb822e8bf2",
+      "transcript": "расскажите что беспокоит кружится голова приставания то ещё ощущаете иногда темнеет в глазах когда это началось эти ощущения появились неделю назад что происходило перед началом жалоб на прошлой неделе несколько дней мало спал",
+      "metrics": {
+        "reference_words": 34,
+        "hypothesis_words": 33,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.08823529411764706
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.67576569999801,
+      "duration_seconds": 18.0745625,
+      "rtf": 0.0927140394130154,
+      "audio_sha256": "e9a79bddbc01b986b632720be3cf8b089511a181e1348669e14510d83dc9bc5b",
+      "transcript": "какие жалобы сегодня заложен нос с обеих сторон есть боль в горле горло не болит когда началась заложенность носа заложила позавчера утром бывали подобное состояние раньше каждую весну несколько дней беспокоит насморк",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 32,
+        "substitutions": 4,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.125
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.6603684000001522,
+      "duration_seconds": 18.0745625,
+      "rtf": 0.09186216263879982,
+      "audio_sha256": "e9a79bddbc01b986b632720be3cf8b089511a181e1348669e14510d83dc9bc5b",
+      "transcript": "какие жалобы сегодня заложен нос с обеих сторон есть боль в горле горло не болит когда началась заложенность носа заложила позавчера утром бывали подобное состояние раньше каждую весну несколько дней беспокоит насморк",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 32,
+        "substitutions": 4,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.125
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.7253709999931743,
+      "duration_seconds": 18.0745625,
+      "rtf": 0.09545852077986255,
+      "audio_sha256": "e9a79bddbc01b986b632720be3cf8b089511a181e1348669e14510d83dc9bc5b",
+      "transcript": "какие жалобы сегодня заложен нос с обеих сторон есть боль в горле горло не болит когда началась заложенность носа заложила позавчера утром бывали подобное состояние раньше каждую весну несколько дней беспокоит насморк",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 32,
+        "substitutions": 4,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.125
+      }
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 1.7899143000104232,
+      "duration_seconds": 18.24875,
+      "rtf": 0.09808421398783057,
+      "audio_sha256": "fcd393d25bd4b764ae076e3cba418c6af0b84233771081c701581a0d4a347b06",
+      "transcript": "то мешает вам сейчас не хватает воздуха при подъёме по лестнице покоя это бывает в покое дышу свободно когда заметили эту жалобу одышку заметил около двух недель назад какие заболевания были раньше в детстве несколько раз переносил бронхит",
+      "metrics": {
+        "reference_words": 39,
+        "hypothesis_words": 38,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.07692307692307693
+      }
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 1.8430941000115126,
+      "duration_seconds": 18.24875,
+      "rtf": 0.10099837523181109,
+      "audio_sha256": "fcd393d25bd4b764ae076e3cba418c6af0b84233771081c701581a0d4a347b06",
+      "transcript": "то мешает вам сейчас не хватает воздуха при подъёме по лестнице покоя это бывает в покое дышу свободно когда заметили эту жалобу одышку заметил около двух недель назад какие заболевания были раньше в детстве несколько раз переносил бронхит",
+      "metrics": {
+        "reference_words": 39,
+        "hypothesis_words": 38,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.07692307692307693
+      }
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 1.836855799992918,
+      "duration_seconds": 18.24875,
+      "rtf": 0.10065652715900639,
+      "audio_sha256": "fcd393d25bd4b764ae076e3cba418c6af0b84233771081c701581a0d4a347b06",
+      "transcript": "то мешает вам сейчас не хватает воздуха при подъёме по лестнице покоя это бывает в покое дышу свободно когда заметили эту жалобу одышку заметил около двух недель назад какие заболевания были раньше в детстве несколько раз переносил бронхит",
+      "metrics": {
+        "reference_words": 39,
+        "hypothesis_words": 38,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.07692307692307693
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 18,
+    "completed": 18,
+    "failed": 0,
+    "seconds": {
+      "median": 1.6540047499947832,
+      "min": 1.5670630000095116,
+      "max": 1.8430941000115126
+    },
+    "word_counts": {
+      "errors": 66,
+      "reference_words": 606,
+      "substitutions": 54,
+      "deletions": 12,
+      "insertions": 0
+    },
+    "corpus_wer": 0.10891089108910891,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

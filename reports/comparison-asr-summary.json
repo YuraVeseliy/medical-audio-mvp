@@ -1,0 +1,56 @@
+{
+  "fw": {
+    "summary": {
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "seconds": {
+        "median": 3.975439150002785,
+        "min": 3.502925000007963,
+        "max": 4.387588400000823
+      },
+      "word_counts": {
+        "errors": 63,
+        "reference_words": 606,
+        "substitutions": 51,
+        "deletions": 6,
+        "insertions": 6
+      },
+      "corpus_wer": 0.10396039603960396,
+      "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+    },
+    "rtf_median": 0.2232201308423155,
+    "rtf_min": 0.2128038940974489,
+    "rtf_max": 0.2422818709858229,
+    "unique_scenarios": 6,
+    "unique_reference_words": 202,
+    "unique_errors": 21
+  },
+  "vosk": {
+    "summary": {
+      "attempted": 18,
+      "completed": 18,
+      "failed": 0,
+      "seconds": {
+        "median": 1.6540047499947832,
+        "min": 1.5670630000095116,
+        "max": 1.8430941000115126
+      },
+      "word_counts": {
+        "errors": 66,
+        "reference_words": 606,
+        "substitutions": 54,
+        "deletions": 12,
+        "insertions": 0
+      },
+      "corpus_wer": 0.10891089108910891,
+      "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+    },
+    "rtf_median": 0.0948581215105227,
+    "rtf_min": 0.08724283125818276,
+    "rtf_max": 0.10099837523181109,
+    "unique_scenarios": 6,
+    "unique_reference_words": 202,
+    "unique_errors": 22
+  }
+}

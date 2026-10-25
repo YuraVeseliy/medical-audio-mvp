@@ -1,0 +1,66 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит правое колено при ходьбе.",
+      "start": 18,
+      "end": 49
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Колено кажется скованным по утрам.",
+      "start": 69,
+      "end": 103
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Боль появилась вчера вечером.",
+      "start": 126,
+      "end": 155
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+      "start": 156,
+      "end": 221
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Болит правое колено при ходьбе.\"}],\"anamnesis\":[{\"quote\":\"Колено кажется скованным по утрам.\"},{\"quote\":\"Боль появилась вчера вечером.\"},{\"quote\":\"Перед этим была травма? Два дня назад подвернул ногу на лестнице.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869400,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 84,
+      "prompt_tokens": 705,
+      "total_tokens": 789,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-6STyVlbBUkZHcUckwTJ5dzKuwNlbzeg0",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 81,
+      "prompt_ms": 361.686,
+      "prompt_per_token_ms": 4.465259259259259,
+      "prompt_per_second": 223.95116205769645,
+      "predicted_n": 84,
+      "predicted_ms": 2906.36,
+      "predicted_per_token_ms": 35.01638554216868,
+      "predicted_per_second": 28.558058877771508
+    }
+  },
+  "prompt_tokens": 705
+}

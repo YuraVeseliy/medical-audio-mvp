@@ -1,0 +1,72 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Что беспокоит при дыхании?",
+      "start": 58,
+      "end": 84
+    },
+    {
+      "section": "complaints",
+      "quote": "Трудно глубоко вдохнуть.",
+      "start": 85,
+      "end": 109
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Вчера вечером упал с велосипеда.",
+      "start": 25,
+      "end": 57
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Эта боль появилась после падения.",
+      "start": 137,
+      "end": 170
+    },
+    {
+      "section": "anamnesis",
+      "quote": "При кашле болит справа под рёбрами.",
+      "start": 191,
+      "end": 226
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[3,4],\"anamnesis\":[2,6,8]}"
+        }
+      }
+    ],
+    "created": 1792876266,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 561,
+      "total_tokens": 582,
+      "prompt_tokens_details": {
+        "cached_tokens": 560
+      }
+    },
+    "id": "chatcmpl-iRHdv4HPtdpp7nG4nPafYhp5XVM8eMz7",
+    "timings": {
+      "cache_n": 560,
+      "prompt_n": 1,
+      "prompt_ms": 72.579,
+      "prompt_per_token_ms": 72.579,
+      "prompt_per_second": 13.778090081152952,
+      "predicted_n": 21,
+      "predicted_ms": 1485.559,
+      "predicted_per_token_ms": 74.27795,
+      "predicted_per_second": 13.46294559825628
+    }
+  },
+  "prompt_tokens": 561
+}

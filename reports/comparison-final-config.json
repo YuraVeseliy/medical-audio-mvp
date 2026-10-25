@@ -1,0 +1,26 @@
+{
+  "frozen_at_utc": "2026-10-24T21:10:13.160367+00:00",
+  "status": "configuration selected on dev01/dev02 before B1.1 LLM calls",
+  "candidate": "IndexedExtractor Qwen2.5-3B Q4_K_M",
+  "model_sha256": "626b4a6678b86442240e33df819e00132d3ba7dddfe1cdc4fbb18e0a9615c62d",
+  "indexed_code_sha256": "3a4803a8d61c3fe1d4619160dd65c86c4ed49e85328b1b35f9678313598a3da1",
+  "manifest_sha256": "398987ac014ba65eb2056dd6ef116cc956775b98dfa1c210f1376efc0394db3c",
+  "development_our": {
+    "attempted": 2,
+    "completed": 2,
+    "failed": 0,
+    "seconds": {
+      "median": 6.5602257500067935,
+      "min": 3.6519696000032127,
+      "max": 9.468481900010374
+    },
+    "true_positive": 7,
+    "predicted": 9,
+    "expected_in_completed_runs": 8,
+    "precision": 0.7777777777777778,
+    "recall": 0.875,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  },
+  "reason": "Better dev precision/recall than small indexed1.5B; bounded source-ID output. No further tuning on B. Model size and output representation changed together, not isolated causal experiment.",
+  "analog_environment": "NO_PROXY=127.0.0.1,localhost,::1; HTTP/HTTPS/ALL proxy unset for native Buzz SDK; setup503 attempt preserved."
+}

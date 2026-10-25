@@ -1,0 +1,112 @@
+{
+  "document": {
+    "transcript": "Что ощущаете сейчас? Болит шов на животе. Кто еще беспокоит? Ворта усильно пересохла. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Болит шов на животе.",
+        "start": 21,
+        "end": 41
+      },
+      {
+        "section": "complaints",
+        "quote": "Кто еще беспокоит?",
+        "start": 42,
+        "end": 60
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Когда была операция?",
+        "start": 86,
+        "end": 106
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Операцию сделали вчера утром.",
+        "start": 107,
+        "end": 136
+      },
+      {
+        "section": "anamnesis",
+        "quote": "До операции два дня болел живот.",
+        "start": 171,
+        "end": 203
+      }
+    ],
+    "sections": {
+      "complaints": "Болит шов на животе.\nКто еще беспокоит?",
+      "anamnesis": "Когда была операция?\nОперацию сделали вчера утром.\nДо операции два дня болел живот."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b01.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3],\"anamnesis\":[5,6,8]}"
+        }
+      }
+    ],
+    "created": 1792876420,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 550,
+      "total_tokens": 571,
+      "prompt_tokens_details": {
+        "cached_tokens": 460
+      }
+    },
+    "id": "chatcmpl-Wzu7aupPi29wMnvXxFGB36R1TkGi5UxC",
+    "timings": {
+      "cache_n": 460,
+      "prompt_n": 90,
+      "prompt_ms": 1377.77,
+      "prompt_per_token_ms": 15.308555555555555,
+      "prompt_per_second": 65.32294940374663,
+      "predicted_n": 21,
+      "predicted_ms": 2024.377,
+      "predicted_per_token_ms": 101.21885,
+      "predicted_per_second": 9.879582706185657
+    }
+  },
+  "prompt_tokens": 550,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит шов на животе.",
+      "start": 21,
+      "end": 41
+    },
+    {
+      "section": "complaints",
+      "quote": "Кто еще беспокоит?",
+      "start": 42,
+      "end": 60
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда была операция?",
+      "start": 86,
+      "end": 106
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Операцию сделали вчера утром.",
+      "start": 107,
+      "end": 136
+    },
+    {
+      "section": "anamnesis",
+      "quote": "До операции два дня болел живот.",
+      "start": 171,
+      "end": 203
+    }
+  ]
+}

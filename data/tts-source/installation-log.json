@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-24T17:38:10.627873+00:00",
+  "files": [
+    {
+      "name": "piper_windows_amd64.zip",
+      "url": "https://github.com/rhasspy/piper/releases/download/2023.11.14-2/piper_windows_amd64.zip",
+      "bytes": 22477236,
+      "sha256": "f3c58906402b24f3a96d92145f58acba6d86c9b5db896d207f78dc80811efcea"
+    },
+    {
+      "name": "ru_RU-irina-medium.onnx",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/ru/ru_RU/irina/medium/ru_RU-irina-medium.onnx",
+      "bytes": 63201294,
+      "sha256": "8ff38212d23da300bbe3705c645e6e5b9475f0bfde01558eb17813e22acaaaaa"
+    },
+    {
+      "name": "ru_RU-irina-medium.onnx.json",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/ru/ru_RU/irina/medium/ru_RU-irina-medium.onnx.json",
+      "bytes": 4765,
+      "sha256": "c2ec28bb38e2b59e93b959b3e40348c1afebbd272f30fed5d41205d08e98a9d7"
+    },
+    {
+      "name": "MODEL_CARD",
+      "url": "https://huggingface.co/rhasspy/piper-voices/resolve/main/ru/ru_RU/irina/medium/MODEL_CARD",
+      "bytes": 271,
+      "sha256": "f4fc2deb0e8c6219f29202b8dd06c9638c5ffd50ad5c6b2c90cf1aa59d507593"
+    }
+  ]
+}

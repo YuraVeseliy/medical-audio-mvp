@@ -1,0 +1,89 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит шов на животе.",
+      "start": 21,
+      "end": 41
+    },
+    {
+      "section": "complaints",
+      "quote": "Во рту сильно пересохло.",
+      "start": 61,
+      "end": 85
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда была операция?",
+      "start": 86,
+      "end": 106
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Операцию сделали вчера утром.",
+      "start": 107,
+      "end": 136
+    },
+    {
+      "section": "anamnesis",
+      "quote": "До операции два дня болел живот.",
+      "start": 171,
+      "end": 203
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"sections\":{\"complaints\":[2,4],\"anamnesis\":[5,6,8]}}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Что ощущаете сейчас?",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "number": 2,
+      "quote": "Болит шов на животе.",
+      "start": 21,
+      "end": 41
+    },
+    {
+      "number": 3,
+      "quote": "Что ещё беспокоит?",
+      "start": 42,
+      "end": 60
+    },
+    {
+      "number": 4,
+      "quote": "Во рту сильно пересохло.",
+      "start": 61,
+      "end": 85
+    },
+    {
+      "number": 5,
+      "quote": "Когда была операция?",
+      "start": 86,
+      "end": 106
+    },
+    {
+      "number": 6,
+      "quote": "Операцию сделали вчера утром.",
+      "start": 107,
+      "end": 136
+    },
+    {
+      "number": 7,
+      "quote": "Как чувствовали себя до операции?",
+      "start": 137,
+      "end": 170
+    },
+    {
+      "number": 8,
+      "quote": "До операции два дня болел живот.",
+      "start": 171,
+      "end": 203
+    }
+  ]
+}

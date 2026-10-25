@@ -1,0 +1,89 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Какая жалоба сейчас?",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "section": "complaints",
+      "quote": "Правая кисть онемела.",
+      "start": 21,
+      "end": 42
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда заметили онемение?",
+      "start": 99,
+      "end": 123
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое бывало раньше?",
+      "start": 152,
+      "end": 172
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое случилось впервые.",
+      "start": 173,
+      "end": 197
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"sections\":{\"complaints\":[1,2],\"anamnesis\":[5,7,8]}}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Какая жалоба сейчас?",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "number": 2,
+      "quote": "Правая кисть онемела.",
+      "start": 21,
+      "end": 42
+    },
+    {
+      "number": 3,
+      "quote": "Что ощущаете в пальцах?",
+      "start": 43,
+      "end": 66
+    },
+    {
+      "number": 4,
+      "quote": "Пальцы на правой руке холодные.",
+      "start": 67,
+      "end": 98
+    },
+    {
+      "number": 5,
+      "quote": "Когда заметили онемение?",
+      "start": 99,
+      "end": 123
+    },
+    {
+      "number": 6,
+      "quote": "Онемение заметил после сна.",
+      "start": 124,
+      "end": 151
+    },
+    {
+      "number": 7,
+      "quote": "Такое бывало раньше?",
+      "start": 152,
+      "end": 172
+    },
+    {
+      "number": 8,
+      "quote": "Такое случилось впервые.",
+      "start": 173,
+      "end": 197
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+Запуск MedicalAudio; CLI=True
+Traceback (most recent call last):
+  File "run_app.pyw", line 29, in <module>
+    raise SystemExit(entry())
+                     ^^^^^^^
+  File "run_app.pyw", line 11, in entry
+    return cli_main(arguments)
+           ^^^^^^^^^^^^^^^^^^^
+  File "audio_mvp\cli.py", line 26, in main
+    runtime.ensure_server()
+  File "audio_mvp\providers.py", line 243, in ensure_server
+    if self._compatible_server():
+       ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "audio_mvp\providers.py", line 231, in _compatible_server
+    health = _json_request(self.base_url, "/health", timeout=2)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "audio_mvp\providers.py", line 81, in _json_request
+    opener = request.build_opener(request.ProxyHandler({}))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "urllib\request.py", line 593, in build_opener
+  File "urllib\request.py", line 1386, in __init__
+  File "http\client.py", line 848, in _create_https_context
+  File "ssl.py", line 702, in create_default_context
+  File "ssl.py", line 440, in __new__
+FileNotFoundError: [Errno 2] No such file or directory
+Запуск MedicalAudio; CLI=True
+Готово: C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\reports\portable-smoke; обработка 20.05 с

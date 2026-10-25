@@ -1,0 +1,53 @@
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval01 #1: completed 4.000s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval01 #2: completed 3.653s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval01 #3: completed 2.701s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval02 #1: completed 2.838s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval02 #2: completed 1.672s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval02 #3: completed 1.231s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval03 #1: failed 4.307s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval03 #2: completed 3.989s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval03 #3: completed 4.002s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval04 #1: completed 6.168s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval04 #2: completed 3.683s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval04 #3: completed 3.613s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval05 #1: completed 5.480s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval05 #2: completed 1.365s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval05 #3: completed 2.672s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval06 #1: completed 3.714s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval06 #2: completed 2.844s
+INFO:httpx:HTTP Request: POST http://127.0.0.1:8081/v1/chat/completions "HTTP/1.1 200 OK"
+buzz eval06 #3: completed 2.960s
+{
+  "attempted": 18,
+  "completed": 17,
+  "failed": 1,
+  "seconds": {
+    "median": 3.612724899998284,
+    "min": 1.230501700003515,
+    "max": 6.168468200005009
+  },
+  "true_positive": 23,
+  "predicted": 72,
+  "expected_in_completed_runs": 68,
+  "precision": 0.3194444444444444,
+  "recall": 0.3382352941176471,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

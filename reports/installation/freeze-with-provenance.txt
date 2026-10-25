@@ -1,0 +1,52 @@
+altgraph==0.17.4
+annotated-types @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/annotated_types-0.8.0-py3-none-any.whl#sha256=f072f4d804ea359e4eaf198b1af7a8b0943881a87f31bb764f8bf219bb9419e0
+anyio @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/anyio-4.15.1-py3-none-any.whl#sha256=6152fdbbf9a77fdec97731721bebf7c4c44f7c29b424b0065826173efc7ed101
+av==16.0.1
+certifi==2026.10.23
+cffi==2.1.1
+charset-normalizer==3.5.2
+colorama==0.4.6
+coloredlogs==15.0.1
+ctranslate2==4.6.0
+distro @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/distro-1.9.0-py3-none-any.whl#sha256=7bffd925d65168f85027d8da9af6bddab658135b840670a223589bc0c8ef02b2
+faster-whisper==1.2.1
+filelock==4.2.4
+flatbuffers==25.12.19
+fsspec==2026.9.0
+h11 @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/h11-0.16.0-py3-none-any.whl#sha256=63cf8bbe7522de3bf65932fda1d9c2772064ffb3dae62d55932da54b31cb6c86
+httpcore @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/httpcore-1.0.9-py3-none-any.whl#sha256=2d400746a40668fc9dec9810239072b40b4484b640a8c38fd654a024c7a1bf55
+httpx @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/httpx-0.28.1-py3-none-any.whl#sha256=d909fcccc110f8c7faf814ca82a9a4d816bc5a6dbfea25d6591d6985b8ba59ad
+huggingface-hub==0.36.0
+humanfriendly==10.0
+idna==3.20
+jiter @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/jiter-0.18.0-cp312-cp312-win_amd64.whl#sha256=79d1fe529bd7065c6f3f50279a08c2ab82eaa0631a6f5dfafa9c65105eeaaafa
+mpmath==1.3.0
+numpy==2.2.6
+onnxruntime==1.23.2
+openai @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/openai-1.109.1-py3-none-any.whl#sha256=6bcaf57086cf59159b8e27447e4e7dd019db5d29a438072fbd49c290c7e65315
+packaging==26.3
+pefile==2023.2.7
+protobuf==7.36.2
+psutil==7.1.1
+pycparser==3.12
+pydantic @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/pydantic-2.14.1-py3-none-any.whl#sha256=9195d967ec791692a04438115466764fb8b9a27b31f14a760437694f40d6b454
+pydantic_core @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/pydantic_core-2.50.1-cp312-cp312-win_amd64.whl#sha256=132529c83901437ff642f585216831bf5fd7a91df66829907e155192ead62498
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2025.9
+pyreadline3==3.5.6
+pywin32-ctypes==0.2.3
+PyYAML==6.0.3
+requests==2.34.2
+setuptools @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/setuptools-80.9.0-py3-none-any.whl#sha256=062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922
+sniffio @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/sniffio-1.3.1-py3-none-any.whl#sha256=2f6da418d1f1e0fddd844478f41680e794e6051915791a034ff65e5f100525a2
+sounddevice==0.5.3
+soundfile==0.13.1
+srt @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/srt-source/srt-3.5.3/dist/srt-3.5.3-py3-none-any.whl#sha256=4f99be270aff37544591b251fd715b605c8729c26a6cf0e301ecf2f3083da74e
+sympy==1.14.0
+tokenizers==0.23.3
+tqdm==4.70.1
+typing-inspection @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/buzz-deps/typing_inspection-0.4.4-py3-none-any.whl#sha256=65b8397ba37ccbce054456aaccddfc91e6e3083c92824df348d96ca832f3f147
+typing_extensions==4.16.0
+urllib3==2.8.0
+vosk @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/vosk-0.3.45-py3-none-win_amd64.whl#sha256=6994ddc68556c7e5730c3b6f6bad13320e3519b13ce3ed2aa25a86724e7c10ac
+websockets @ file:///C:/Users/chern/Documents/Codex/2026-09-30/cnbkm/project/medical_audio_mvp/.runtime/downloads/websockets-15.0.1-cp312-cp312-win_amd64.whl#sha256=fcd5cf9e305d7b8338754470cf69cf81f420459dbae8a3b40cee57417f4614a7

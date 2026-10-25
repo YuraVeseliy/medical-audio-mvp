@@ -1,0 +1,114 @@
+{
+  "document": {
+    "transcript": "когда появился озноб, а озноб появился час назад. Нашто жалуетесь сейчас? Сильно знабит, какие лекарства получали? Ночью получала безболивающее. Есть боль в груди? Боли в груди нет.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "когда появился озноб, а озноб появился час назад.",
+        "start": 0,
+        "end": 49
+      },
+      {
+        "section": "complaints",
+        "quote": "Ночью получала безболивающее.",
+        "start": 115,
+        "end": 144
+      },
+      {
+        "section": "anamnesis",
+        "quote": "когда появился озноб, а озноб появился час назад.",
+        "start": 0,
+        "end": 49
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Сильно знабит, какие лекарства получали?",
+        "start": 74,
+        "end": 114
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Есть боль в груди?",
+        "start": 145,
+        "end": 163
+      }
+    ],
+    "sections": {
+      "complaints": "когда появился озноб, а озноб появился час назад.\nНочью получала безболивающее.",
+      "anamnesis": "когда появился озноб, а озноб появился час назад.\nСильно знабит, какие лекарства получали?\nЕсть боль в груди?"
+    },
+    "warnings": [
+      "Фрагмент 1 выбран в оба раздела; проверьте распределение."
+    ],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b02.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[1,4],\"anamnesis\":[1,3,5]}"
+        }
+      }
+    ],
+    "created": 1792876462,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 541,
+      "total_tokens": 562,
+      "prompt_tokens_details": {
+        "cached_tokens": 540
+      }
+    },
+    "id": "chatcmpl-MbAhInPGSzxKzkwkyeI4sD0Zq7lBS91i",
+    "timings": {
+      "cache_n": 540,
+      "prompt_n": 1,
+      "prompt_ms": 119.262,
+      "prompt_per_token_ms": 119.262,
+      "prompt_per_second": 8.384900471231406,
+      "predicted_n": 21,
+      "predicted_ms": 2953.069,
+      "predicted_per_token_ms": 147.65345,
+      "predicted_per_second": 6.772615201337998
+    }
+  },
+  "prompt_tokens": 541,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "когда появился озноб, а озноб появился час назад.",
+      "start": 0,
+      "end": 49
+    },
+    {
+      "section": "complaints",
+      "quote": "Ночью получала безболивающее.",
+      "start": 115,
+      "end": 144
+    },
+    {
+      "section": "anamnesis",
+      "quote": "когда появился озноб, а озноб появился час назад.",
+      "start": 0,
+      "end": 49
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Сильно знабит, какие лекарства получали?",
+      "start": 74,
+      "end": 114
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Есть боль в груди?",
+      "start": 145,
+      "end": 163
+    }
+  ]
+}

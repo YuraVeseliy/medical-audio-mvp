@@ -1,0 +1,287 @@
+244 INFO: PyInstaller: 6.16.0, contrib hooks: 2025.9
+244 INFO: Python: 3.12.14
+294 INFO: Platform: Windows-10-10.0.19045-SP0
+295 INFO: Python environment: C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv
+746 WARNING: Failed to collect submodules for 'onnxruntime.quantization' because importing 'onnxruntime.quantization' raised: ModuleNotFoundError: No module named 'onnx'
+9138 WARNING: collect_data_files - skipping data collection for module 'sounddevice' as it is not a package.
+9138 WARNING: collect_dynamic_libs - skipping library collection for module 'sounddevice' as it is not a package.
+10228 WARNING: collect_data_files - skipping data collection for module 'soundfile' as it is not a package.
+10229 WARNING: collect_dynamic_libs - skipping library collection for module 'soundfile' as it is not a package.
+12780 INFO: Module search paths (PYTHONPATH):
+['C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp',
+ 'C:\\Users\\chern\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python312.zip',
+ 'C:\\Users\\chern\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\DLLs',
+ 'C:\\Users\\chern\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\Lib',
+ 'C:\\Users\\chern\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python',
+ 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv',
+ 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages',
+ 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\setuptools\\_vendor',
+ 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp',
+ 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp']
+14278 INFO: Appending 'binaries' from .spec
+14279 INFO: Appending 'datas' from .spec
+14379 INFO: checking Analysis
+14582 INFO: Building because excludes changed
+14582 INFO: Looking for Python shared library...
+14582 INFO: Using Python shared library: C:\Users\chern\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python312.dll
+14583 INFO: Running Analysis Analysis-00.toc
+14583 INFO: Target bytecode optimization level: 0
+14583 INFO: Initializing module dependency graph...
+14591 INFO: Initializing module graph hook caches...
+14694 INFO: Analyzing modules for base_library.zip ...
+18654 INFO: Processing standard module hook 'hook-encodings.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+19881 INFO: Processing standard module hook 'hook-heapq.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+22516 INFO: Processing standard module hook 'hook-pickle.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+25381 INFO: Caching module dependency graph...
+25581 INFO: Analyzing C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\run_app.pyw
+26154 INFO: Processing standard module hook 'hook-av.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+27735 INFO: Processing standard module hook 'hook-numpy.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+28773 INFO: Processing standard module hook 'hook-platform.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+28931 INFO: Processing standard module hook 'hook-sysconfig.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+32621 INFO: Processing standard module hook 'hook-difflib.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+32977 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+33168 INFO: Processing standard module hook 'hook-xml.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+33437 INFO: Processing standard module hook 'hook-_ctypes.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+34587 INFO: Processing standard module hook 'hook-psutil.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+35592 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+35594 INFO: SetuptoolsInfo: initializing cached setuptools info...
+40012 INFO: Processing standard module hook 'hook-charset_normalizer.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+40649 INFO: Processing standard module hook 'hook-pkg_resources.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+41057 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41345 INFO: Processing pre-safe-import-module hook 'hook-jaraco.text.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41346 INFO: Setuptools: 'jaraco.text' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.text'!
+41361 INFO: Processing standard module hook 'hook-setuptools.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+41373 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41398 INFO: Processing pre-safe-import-module hook 'hook-jaraco.functools.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41400 INFO: Setuptools: 'jaraco.functools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.functools'!
+41410 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41411 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+41697 INFO: Processing pre-safe-import-module hook 'hook-importlib_metadata.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41698 INFO: Setuptools: 'importlib_metadata' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.importlib_metadata'!
+41719 INFO: Processing standard module hook 'hook-setuptools._vendor.importlib_metadata.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+41722 INFO: Processing pre-safe-import-module hook 'hook-zipp.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41723 INFO: Setuptools: 'zipp' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.zipp'!
+41948 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+41949 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+42389 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42390 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+42588 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+42591 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42592 INFO: Processing pre-safe-import-module hook 'hook-jaraco.context.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42593 INFO: Setuptools: 'jaraco.context' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco.context'!
+42600 INFO: Processing pre-safe-import-module hook 'hook-backports.tarfile.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42601 INFO: Setuptools: 'backports.tarfile' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.backports.tarfile'!
+42677 INFO: Processing standard module hook 'hook-backports.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+42679 INFO: Processing pre-safe-import-module hook 'hook-platformdirs.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+42680 INFO: Setuptools: 'platformdirs' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.platformdirs'!
+42818 INFO: Processing pre-safe-import-module hook 'hook-tensorflow.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\pre_safe_import_module'
+43210 INFO: Processing standard module hook 'hook-urllib3.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+43775 INFO: Processing standard module hook 'hook-certifi.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+44101 INFO: Processing standard module hook 'hook-pydantic.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+45070 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+46050 INFO: Processing standard module hook 'hook-sqlite3.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+47110 INFO: Processing standard module hook 'hook-fsspec.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+48198 INFO: Processing standard module hook 'hook-onnxruntime.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+48321 INFO: Processing pre-find-module-path hook 'hook-tkinter.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_find_module_path'
+48322 INFO: TclTkInfo: initializing cached Tcl/Tk info...
+48632 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+48746 INFO: Processing standard module hook 'hook-sounddevice.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+48779 INFO: Processing standard module hook 'hook-soundfile.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+48787 INFO: Analyzing hidden import 'faster_whisper.assets'
+48787 INFO: Analyzing hidden import 'ctranslate2.converters.eole_ct2'
+48796 INFO: Analyzing hidden import 'av.__main__'
+48799 INFO: Analyzing hidden import 'av.bytesource'
+48799 INFO: Analyzing hidden import 'av.container.pyio'
+48800 INFO: Analyzing hidden import 'av.datasets'
+48803 INFO: Analyzing hidden import 'av.dictionary'
+48804 INFO: Analyzing hidden import 'av.filter.link'
+48805 INFO: Analyzing hidden import 'av.opaque'
+48805 INFO: Analyzing hidden import 'av.utils'
+48808 INFO: Analyzing hidden import 'av.video.reformatter'
+48810 INFO: Analyzing hidden import 'tokenizers.tools'
+48819 INFO: Analyzing hidden import 'onnxruntime.capi.convert_npz_to_onnx_adapter'
+48821 INFO: Analyzing hidden import 'onnxruntime.datasets'
+48822 INFO: Analyzing hidden import 'onnxruntime.tools'
+48827 INFO: Analyzing hidden import 'onnxruntime.tools.check_onnx_model_mobile_usability'
+48856 INFO: Analyzing hidden import 'onnxruntime.tools.convert_onnx_models_to_ort'
+48891 INFO: Analyzing hidden import 'onnxruntime.tools.make_dynamic_shape_fixed'
+48893 INFO: Analyzing hidden import 'onnxruntime.tools.offline_tuning'
+48899 INFO: Analyzing hidden import 'onnxruntime.tools.onnx_randomizer'
+48903 INFO: Analyzing hidden import 'onnxruntime.tools.onnxruntime_test'
+48914 INFO: Analyzing hidden import 'onnxruntime.tools.optimize_onnx_model'
+48916 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py'
+48917 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs'
+48918 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.ArgType'
+48919 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.ArgTypeAndIndex'
+48950 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Attribute'
+48961 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.AttributeType'
+48962 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Checkpoint'
+48967 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DeprecatedKernelCreateInfos'
+48971 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DeprecatedNodeIndexAndKernelDefHash'
+48973 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DeprecatedSessionState'
+48977 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DeprecatedSubGraphSessionState'
+48979 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Dimension'
+48982 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DimensionValue'
+48985 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.DimensionValueType'
+48985 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.EdgeEnd'
+48987 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.FloatProperty'
+48990 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Graph'
+48999 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.InferenceSession'
+49003 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.IntProperty'
+49005 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.KernelTypeStrArgsEntry'
+49008 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.KernelTypeStrResolver'
+49011 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.MapType'
+49014 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Model'
+49021 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.ModuleState'
+49025 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Node'
+49035 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.NodeEdge'
+49040 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.NodeType'
+49041 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.NodesToOptimizeIndices'
+49046 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.OpIdKernelTypeStrArgsEntry'
+49049 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.OperatorSetId'
+49051 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.OptimizerGroup'
+49055 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.ParameterOptimizerState'
+49058 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.PropertyBag'
+49063 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.RuntimeOptimizationRecord'
+49067 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.RuntimeOptimizationRecordContainerEntry'
+49070 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.RuntimeOptimizations'
+49073 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.SequenceType'
+49075 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Shape'
+49078 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.SparseTensor'
+49081 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.StringProperty'
+49084 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.StringStringEntry'
+49086 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.Tensor'
+49092 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.TensorDataType'
+49093 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.TensorTypeAndShape'
+49096 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.TypeInfo'
+49099 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.TypeInfoValue'
+49099 INFO: Analyzing hidden import 'onnxruntime.tools.ort_format_model.ort_flatbuffers_py.fbs.ValueInfo'
+49102 INFO: Analyzing hidden import 'onnxruntime.tools.pytorch_export_contrib_ops'
+49106 INFO: Analyzing hidden import 'onnxruntime.tools.qdq_helpers'
+49106 INFO: Analyzing hidden import 'onnxruntime.tools.qdq_helpers.optimize_qdq_model'
+49108 INFO: Analyzing hidden import 'onnxruntime.tools.reduced_build_config_parser'
+49112 INFO: Analyzing hidden import 'onnxruntime.tools.remove_initializer_from_input'
+49114 INFO: Analyzing hidden import 'onnxruntime.tools.symbolic_shape_infer'
+65104 INFO: Processing standard module hook 'hook-xml.dom.domreg.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+66255 INFO: Analyzing hidden import 'onnxruntime.tools.update_onnx_opset'
+66256 INFO: Analyzing hidden import 'onnxruntime.transformers.affinity_helper'
+66258 INFO: Analyzing hidden import 'onnxruntime.transformers.benchmark'
+66284 INFO: Analyzing hidden import 'onnxruntime.transformers.benchmark_helper'
+66402 INFO: Analyzing hidden import 'onnxruntime.transformers.bert_perf_test'
+66416 INFO: Analyzing hidden import 'onnxruntime.transformers.bert_test_data'
+66430 INFO: Analyzing hidden import 'onnxruntime.transformers.compare_bert_results'
+66436 INFO: Analyzing hidden import 'onnxruntime.transformers.constants'
+66437 INFO: Analyzing hidden import 'onnxruntime.transformers.convert_generation'
+66618 INFO: Analyzing hidden import 'onnxruntime.transformers.convert_tf_models_to_pytorch'
+66624 INFO: Analyzing hidden import 'onnxruntime.transformers.convert_to_packing_mode'
+66636 INFO: Analyzing hidden import 'onnxruntime.transformers.dynamo_onnx_helper'
+66643 INFO: Analyzing hidden import 'onnxruntime.transformers.float16'
+66657 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_attention'
+66686 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_attention_clip'
+66694 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_attention_sam2'
+66705 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_attention_unet'
+66736 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_attention_vae'
+66743 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_bart_attention'
+66754 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_base'
+66758 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_bias_add'
+66761 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_biasgelu'
+66763 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_biassplitgelu'
+66766 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_conformer_attention'
+66771 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_constant_fold'
+66776 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_embedlayer'
+66806 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_fastgelu'
+66817 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gelu'
+66823 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gelu_approximation'
+66824 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gemmfastgelu'
+66828 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gpt_attention'
+66839 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gpt_attention_megatron'
+66848 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_gpt_attention_no_past'
+66854 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_group_norm'
+66859 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_layernorm'
+66870 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_mha_mmdit'
+66882 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_nhwc_conv'
+66885 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_options'
+66891 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_qordered_attention'
+66901 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_qordered_gelu'
+66903 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_qordered_layernorm'
+66906 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_qordered_matmul'
+66911 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_quickgelu'
+66913 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_reshape'
+66918 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_rotary_attention'
+66953 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_shape'
+66956 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_simplified_layernorm'
+66961 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_skip_group_norm'
+66967 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_skiplayernorm'
+66973 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_transpose'
+66977 INFO: Analyzing hidden import 'onnxruntime.transformers.fusion_utils'
+66987 INFO: Analyzing hidden import 'onnxruntime.transformers.huggingface_models'
+66989 INFO: Analyzing hidden import 'onnxruntime.transformers.import_utils'
+66990 INFO: Analyzing hidden import 'onnxruntime.transformers.io_binding_helper'
+67002 INFO: Analyzing hidden import 'onnxruntime.transformers.large_model_exporter'
+67014 INFO: Analyzing hidden import 'onnxruntime.transformers.metrics'
+67019 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_exporter'
+67050 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model'
+67099 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_bart'
+67105 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_bert'
+67127 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_bert_keras'
+67140 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_bert_tf'
+67155 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_clip'
+67158 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_conformer'
+67161 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_gpt2'
+67165 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_mmdit'
+67172 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_phi'
+67199 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_sam2'
+67204 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_t5'
+67223 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_tnlr'
+67229 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_unet'
+67239 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_model_vae'
+67242 INFO: Analyzing hidden import 'onnxruntime.transformers.onnx_utils'
+67244 INFO: Analyzing hidden import 'onnxruntime.transformers.optimizer'
+67260 INFO: Analyzing hidden import 'onnxruntime.transformers.past_helper'
+67264 INFO: Analyzing hidden import 'onnxruntime.transformers.profile_result_processor'
+67273 INFO: Analyzing hidden import 'onnxruntime.transformers.profiler'
+67281 INFO: Analyzing hidden import 'onnxruntime.transformers.quantize_helper'
+67752 INFO: Analyzing hidden import 'onnxruntime.transformers.shape_infer_helper'
+67756 INFO: Analyzing hidden import 'onnxruntime.transformers.shape_optimizer'
+67767 INFO: Analyzing hidden import 'onnxruntime.transformers.torch_onnx_export_helper'
+67768 INFO: Processing module hooks (post-graph stage)...
+67770 WARNING: Hidden import "charset_normalizer.md__mypyc" not found!
+68260 WARNING: Hidden import "tzdata" not found!
+68505 INFO: Processing standard module hook 'hook-_tkinter.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+68541 INFO: Performing binary vs. data reclassification (1568 entries)
+68914 INFO: Looking for ctypes DLLs
+69027 INFO: Analyzing run-time hooks ...
+69036 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69039 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69046 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69051 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69057 INFO: Including run-time hook 'pyi_rth_pkgres.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69068 INFO: Including run-time hook 'pyi_rth__tkinter.py' from 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+69138 INFO: Creating base_library.zip...
+69158 INFO: Looking for dynamic libraries
+C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv\Lib\site-packages\PyInstaller\building\build_main.py:227: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__(package)
+72388 INFO: Extra DLL search directories (AddDllDirectory): ['C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\numpy.libs', 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\av.libs', 'C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Lib\\site-packages\\ctranslate2']
+72388 INFO: Extra DLL search directories (PATH): []
+74137 INFO: Warnings written to C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\build\portable-cli\MedicalAudio\warn-MedicalAudio.txt
+74341 INFO: Graph cross-reference written to C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\build\portable-cli\MedicalAudio\xref-MedicalAudio.html
+74445 INFO: checking PYZ
+74542 INFO: checking PKG
+74553 INFO: Building because C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\run_app.pyw changed
+74553 INFO: Building PKG (CArchive) MedicalAudio.pkg
+74585 INFO: Building PKG (CArchive) MedicalAudio.pkg completed successfully.
+74587 INFO: Bootloader C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+74588 INFO: checking EXE
+74615 INFO: Rebuilding EXE-00.toc because pkg is more recent
+74615 INFO: Building EXE from EXE-00.toc
+74616 INFO: Copying bootloader EXE to C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\build\portable-cli\MedicalAudio\MedicalAudio.exe
+74668 INFO: Copying icon to EXE
+74714 INFO: Copying 0 resources to EXE
+74715 INFO: Embedding manifest in EXE
+74759 INFO: Appending PKG archive to EXE
+74863 INFO: Fixing EXE headers
+75202 INFO: Building EXE from EXE-00.toc completed successfully.
+75218 INFO: checking COLLECT
+75250 INFO: Building COLLECT COLLECT-00.toc
+77951 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+77989 INFO: Build complete! The results are available in: C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\output\portable-diagnostics

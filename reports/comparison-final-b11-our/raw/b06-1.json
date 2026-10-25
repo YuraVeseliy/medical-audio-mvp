@@ -1,0 +1,72 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Сильно хочется пить.",
+      "start": 22,
+      "end": 42
+    },
+    {
+      "section": "complaints",
+      "quote": "Когда появилась сухость?",
+      "start": 43,
+      "end": 67
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Сухость появилась после пробуждения.",
+      "start": 68,
+      "end": 104
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Глотать сейчас не больно.",
+      "start": 129,
+      "end": 154
+    },
+    {
+      "section": "anamnesis",
+      "quote": "С вечера ничего не пил.",
+      "start": 181,
+      "end": 204
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3],\"anamnesis\":[4,6,8]}"
+        }
+      }
+    ],
+    "created": 1792876275,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 21,
+      "prompt_tokens": 541,
+      "total_tokens": 562,
+      "prompt_tokens_details": {
+        "cached_tokens": 459
+      }
+    },
+    "id": "chatcmpl-ey8BIP88LSY9XibCaU6f5Vx4rJNBUUCj",
+    "timings": {
+      "cache_n": 459,
+      "prompt_n": 82,
+      "prompt_ms": 1069.539,
+      "prompt_per_token_ms": 13.043158536585366,
+      "prompt_per_second": 76.66854598102547,
+      "predicted_n": 21,
+      "predicted_ms": 1496.65,
+      "predicted_per_token_ms": 74.83250000000001,
+      "predicted_per_second": 13.363177763672201
+    }
+  },
+  "prompt_tokens": 541
+}

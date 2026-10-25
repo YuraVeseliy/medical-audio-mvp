@@ -1,0 +1,34 @@
+oms b01 #1: completed 4.299s
+oms b01 #2: completed 2.934s
+oms b01 #3: completed 2.989s
+oms b02 #1: completed 4.257s
+oms b02 #2: completed 3.176s
+oms b02 #3: completed 3.455s
+oms b03 #1: completed 4.400s
+oms b03 #2: completed 3.676s
+oms b03 #3: completed 3.396s
+oms b04 #1: completed 4.335s
+oms b04 #2: completed 3.577s
+oms b04 #3: completed 2.952s
+oms b05 #1: completed 3.926s
+oms b05 #2: completed 2.763s
+oms b05 #3: completed 2.780s
+oms b06 #1: completed 4.711s
+oms b06 #2: completed 3.506s
+oms b06 #3: completed 2.871s
+{
+  "attempted": 18,
+  "completed": 18,
+  "failed": 0,
+  "seconds": {
+    "median": 3.4803963499944075,
+    "min": 2.7628584999911254,
+    "max": 4.71118060000299
+  },
+  "true_positive": 45,
+  "predicted": 96,
+  "expected_in_completed_runs": 72,
+  "precision": 0.46875,
+  "recall": 0.625,
+  "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+}

@@ -1,0 +1,12 @@
+{
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+  "logical_cpus": 16,
+  "ram_gib": 15.4,
+  "device": "CPU",
+  "asr_threads": 8,
+  "llm_threads": 8,
+  "gpu_used": false,
+  "manual_microphone_recording": "not performed by agent"
+}

@@ -1,0 +1,62 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "На что жалытись, болит правая колена при ходьбе.",
+      "start": 0,
+      "end": 48
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Боль появилась вчера вечером, перед этим была травма.",
+      "start": 125,
+      "end": 178
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Два дня назад подвернул ногу на лестнице.",
+      "start": 179,
+      "end": 220
+    }
+  ],
+  "warnings": [
+    "Анамнез: цитата отклонена — точного совпадения в тексте нет."
+  ],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"На что жалытись, болит правая колена при ходьбе.\"}],\"anamnesis\":[{\"quote\":\"Колена кажется скованным по утрам, когда появилась боль.\"},{\"quote\":\"Боль появилась вчера вечером, перед этим была травма.\"},{\"quote\":\"Два дня назад подвернул ногу на лестнице.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869716,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 97,
+      "prompt_tokens": 706,
+      "total_tokens": 803,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-XEswlhTjLvjMFtJ1YdDNJxYNtzt2rbVt",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 82,
+      "prompt_ms": 458.702,
+      "prompt_per_token_ms": 5.593926829268293,
+      "prompt_per_second": 178.7652986034506,
+      "predicted_n": 97,
+      "predicted_ms": 3592.011,
+      "predicted_per_token_ms": 37.41678125,
+      "predicted_per_second": 26.72597606187732
+    }
+  },
+  "prompt_tokens": 706
+}

@@ -1,0 +1,37 @@
+vosk b01 #1: completed 1.523s
+vosk b01 #2: completed 1.481s
+vosk b01 #3: completed 1.514s
+vosk b02 #1: completed 1.438s
+vosk b02 #2: completed 1.426s
+vosk b02 #3: completed 1.417s
+vosk b03 #1: completed 1.481s
+vosk b03 #2: completed 1.488s
+vosk b03 #3: completed 1.501s
+vosk b04 #1: completed 1.580s
+vosk b04 #2: completed 1.555s
+vosk b04 #3: completed 1.530s
+vosk b05 #1: completed 1.497s
+vosk b05 #2: completed 1.523s
+vosk b05 #3: completed 1.470s
+vosk b06 #1: completed 1.477s
+vosk b06 #2: completed 1.481s
+vosk b06 #3: completed 1.403s
+{
+  "attempted": 18,
+  "completed": 18,
+  "failed": 0,
+  "seconds": {
+    "median": 1.4842560999968555,
+    "min": 1.4034971999935806,
+    "max": 1.580336900005932
+  },
+  "word_counts": {
+    "errors": 105,
+    "reference_words": 543,
+    "substitutions": 84,
+    "deletions": 6,
+    "insertions": 15
+  },
+  "corpus_wer": 0.19337016574585636,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

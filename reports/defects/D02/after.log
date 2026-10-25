@@ -1,0 +1,6 @@
+test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.081s
+
+OK

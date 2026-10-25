@@ -1,0 +1,37 @@
+vosk b01 #1: completed 1.602s
+vosk b01 #2: completed 1.541s
+vosk b01 #3: completed 1.523s
+vosk b02 #1: completed 1.470s
+vosk b02 #2: completed 1.473s
+vosk b02 #3: completed 1.460s
+vosk b03 #1: completed 1.506s
+vosk b03 #2: completed 1.511s
+vosk b03 #3: completed 1.540s
+vosk b04 #1: completed 1.558s
+vosk b04 #2: completed 1.570s
+vosk b04 #3: completed 1.581s
+vosk b05 #1: completed 1.499s
+vosk b05 #2: completed 1.515s
+vosk b05 #3: completed 1.551s
+vosk b06 #1: completed 1.494s
+vosk b06 #2: completed 1.566s
+vosk b06 #3: completed 1.518s
+{
+  "attempted": 18,
+  "completed": 18,
+  "failed": 0,
+  "seconds": {
+    "median": 1.5206019500037655,
+    "min": 1.4602066999941599,
+    "max": 1.602376800001366
+  },
+  "word_counts": {
+    "errors": 95,
+    "reference_words": 543,
+    "substitutions": 78,
+    "deletions": 0,
+    "insertions": 17
+  },
+  "corpus_wer": 0.17495395948434622,
+  "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+}

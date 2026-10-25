@@ -1,0 +1,30 @@
+{
+  "time_utc": "2026-10-24T21:34:53.492071+00:00",
+  "commit": "bea0521abd56da8e8fc2aabb1cb4f978601c25de",
+  "source_sha256": "470c201b5b4db94cfff2a6f1e5aa14d93aaf860fa2b944c817e1882bead97eed",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/model.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/providers_indexed.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_regressions.py",
+    "tests/test_session.py",
+    "run_app.pyw",
+    "scripts/check.py"
+  ],
+  "platform": "Windows-10-10.0.19045-SP0",
+  "executed_by": "automatic unittest runner",
+  "scope": "public Session operations with external ASR/LLM test doubles; not model accuracy",
+  "run": 11,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "successful": true
+}

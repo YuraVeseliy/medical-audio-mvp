@@ -1,0 +1,1560 @@
+{
+  "runs": [
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.3108345000073314,
+      "input_text": "На что жалуетесь? Болит правое колено при ходьбе. Что ещё беспокоит? Колено кажется скованным по утрам. Когда появилась боль? Боль появилась вчера вечером. Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит правое колено при ходьбе."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Колено кажется скованным по утрам."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боль появилась вчера вечером."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит правое колено при ходьбе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Боль появилась вчера вечером.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Колено кажется скованным по утрам.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Колено кажется скованным по утрам.",
+            "needles": [
+              "колено кажется скованным по утрам"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Два дня назад подвернул ногу на лестнице.",
+            "needles": [
+              "два дня назад подвернул ногу на лестнице"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 2.964667599997483,
+      "input_text": "На что жалуетесь? Болит правое колено при ходьбе. Что ещё беспокоит? Колено кажется скованным по утрам. Когда появилась боль? Боль появилась вчера вечером. Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит правое колено при ходьбе."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Колено кажется скованным по утрам."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боль появилась вчера вечером."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит правое колено при ходьбе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Боль появилась вчера вечером.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Колено кажется скованным по утрам.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Колено кажется скованным по утрам.",
+            "needles": [
+              "колено кажется скованным по утрам"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Два дня назад подвернул ногу на лестнице.",
+            "needles": [
+              "два дня назад подвернул ногу на лестнице"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval01",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.9812410000013188,
+      "input_text": "На что жалуетесь? Болит правое колено при ходьбе. Что ещё беспокоит? Колено кажется скованным по утрам. Когда появилась боль? Боль появилась вчера вечером. Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит правое колено при ходьбе."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Колено кажется скованным по утрам."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боль появилась вчера вечером."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 2,
+        "precision": 0.5,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит правое колено при ходьбе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Боль появилась вчера вечером.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Колено кажется скованным по утрам.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Перед этим была травма? Два дня назад подвернул ногу на лестнице.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Колено кажется скованным по утрам.",
+            "needles": [
+              "колено кажется скованным по утрам"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Два дня назад подвернул ногу на лестнице.",
+            "needles": [
+              "два дня назад подвернул ногу на лестнице"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.437567499990109,
+      "input_text": "Что вас беспокоит сейчас? Тянет живот около пупка. Есть тошнота? Тошноты нет. Когда начались неприятные ощущения? Живот начал болеть ночью. Такое уже случалось? Похожая боль была месяц назад.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "complaints",
+          "quote": "Похожая боль была месяц назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тошноты нет."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Похожая боль была месяц назад."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 7,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 1,
+        "precision": 0.42857142857142855,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 6,
+            "section": "anamnesis",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Тошноты нет.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Тошноты нет.",
+            "needles": [
+              "тошноты нет"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 4.105914600004326,
+      "input_text": "Что вас беспокоит сейчас? Тянет живот около пупка. Есть тошнота? Тошноты нет. Когда начались неприятные ощущения? Живот начал болеть ночью. Такое уже случалось? Похожая боль была месяц назад.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "complaints",
+          "quote": "Похожая боль была месяц назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тошноты нет."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Похожая боль была месяц назад."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 7,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 1,
+        "precision": 0.42857142857142855,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 6,
+            "section": "anamnesis",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Тошноты нет.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Тошноты нет.",
+            "needles": [
+              "тошноты нет"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval02",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 4.135690399998566,
+      "input_text": "Что вас беспокоит сейчас? Тянет живот около пупка. Есть тошнота? Тошноты нет. Когда начались неприятные ощущения? Живот начал болеть ночью. Такое уже случалось? Похожая боль была месяц назад.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "complaints",
+          "quote": "Похожая боль была месяц назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тошноты нет."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Тянет живот около пупка."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Живот начал болеть ночью."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Похожая боль была месяц назад."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 7,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 1,
+        "precision": 0.42857142857142855,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 6,
+            "section": "anamnesis",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот начал болеть ночью.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Похожая боль была месяц назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Тошноты нет.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Тянет живот около пупка.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Тошноты нет.",
+            "needles": [
+              "тошноты нет"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.472022699992522,
+      "input_text": "Какая у вас жалоба? Ноет поясница при наклоне. Куда отдаёт боль? Боль отдаёт в левую ягодицу. С чего всё началось? Поясница заболела после переноса тяжёлой сумки. Были ли раньше операции? Операций на позвоночнике не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Какая у вас жалоба? Ноет поясница при наклоне."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были ли раньше операции? Операций на позвоночнике не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 0,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 0,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Какая у вас жалоба? Ноет поясница при наклоне.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были ли раньше операции? Операций на позвоночнике не было.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Ноет поясница при наклоне.",
+            "needles": [
+              "ноет поясница при наклоне"
+            ]
+          },
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боль отдаёт в левую ягодицу.",
+            "needles": [
+              "боль отдаёт в левую ягодицу"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Поясница заболела после переноса тяжёлой сумки.",
+            "needles": [
+              "поясница заболела после переноса тяжёлой сумки"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Операций на позвоночнике не было.",
+            "needles": [
+              "операций на позвоночнике не было"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 4.042806899989955,
+      "input_text": "Какая у вас жалоба? Ноет поясница при наклоне. Куда отдаёт боль? Боль отдаёт в левую ягодицу. С чего всё началось? Поясница заболела после переноса тяжёлой сумки. Были ли раньше операции? Операций на позвоночнике не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Какая у вас жалоба? Ноет поясница при наклоне."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были ли раньше операции? Операций на позвоночнике не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 0,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 0,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Какая у вас жалоба? Ноет поясница при наклоне.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были ли раньше операции? Операций на позвоночнике не было.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Ноет поясница при наклоне.",
+            "needles": [
+              "ноет поясница при наклоне"
+            ]
+          },
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боль отдаёт в левую ягодицу.",
+            "needles": [
+              "боль отдаёт в левую ягодицу"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Поясница заболела после переноса тяжёлой сумки.",
+            "needles": [
+              "поясница заболела после переноса тяжёлой сумки"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Операций на позвоночнике не было.",
+            "needles": [
+              "операций на позвоночнике не было"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval03",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 4.063822699987213,
+      "input_text": "Какая у вас жалоба? Ноет поясница при наклоне. Куда отдаёт боль? Боль отдаёт в левую ягодицу. С чего всё началось? Поясница заболела после переноса тяжёлой сумки. Были ли раньше операции? Операций на позвоночнике не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Какая у вас жалоба? Ноет поясница при наклоне."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были ли раньше операции? Операций на позвоночнике не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 0,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ungrounded_predictions": 0,
+        "matched": [],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Какая у вас жалоба? Ноет поясница при наклоне.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Куда отдаёт боль? Боль отдаёт в левую ягодицу.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "С чего всё началось? Поясница заболела после переноса тяжёлой сумки.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были ли раньше операции? Операций на позвоночнике не было.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 0,
+            "section": "complaints",
+            "quote": "Ноет поясница при наклоне.",
+            "needles": [
+              "ноет поясница при наклоне"
+            ]
+          },
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боль отдаёт в левую ягодицу.",
+            "needles": [
+              "боль отдаёт в левую ягодицу"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Поясница заболела после переноса тяжёлой сумки.",
+            "needles": [
+              "поясница заболела после переноса тяжёлой сумки"
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Операций на позвоночнике не было.",
+            "needles": [
+              "операций на позвоночнике не было"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 8.615324699989287,
+      "input_text": "Расскажите, что беспокоит. Кружится голова при вставании. Что ещё ощущаете? Иногда темнеет в глазах. Когда это началось? Эти ощущения появились неделю назад. Что происходило перед началом жалоб? На прошлой неделе несколько дней мало спал.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "complaints",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "complaints",
+          "quote": "Что ещё ощущаете?"
+        },
+        {
+          "section": "complaints",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "complaints",
+          "quote": "Когда это началось?"
+        },
+        {
+          "section": "complaints",
+          "quote": "Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "Что происходило перед началом жалоб?"
+        },
+        {
+          "section": "complaints",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Что ещё ощущаете?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда это началось?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Что происходило перед началом жалоб?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        }
+      ],
+      "metrics": {
+        "true_positive": 4,
+        "predicted": 16,
+        "expected": 4,
+        "false_positive": 12,
+        "false_negative": 0,
+        "precision": 0.25,
+        "recall": 1.0,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 3,
+            "section": "complaints",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 13,
+            "section": "anamnesis",
+            "quote": "Эти ощущения появились неделю назад.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 15,
+            "section": "anamnesis",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Что ещё ощущаете?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "complaints",
+            "quote": "Когда это началось?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "complaints",
+            "quote": "Эти ощущения появились неделю назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 6,
+            "section": "complaints",
+            "quote": "Что происходило перед началом жалоб?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 7,
+            "section": "complaints",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 8,
+            "section": "anamnesis",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 9,
+            "section": "anamnesis",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 10,
+            "section": "anamnesis",
+            "quote": "Что ещё ощущаете?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 11,
+            "section": "anamnesis",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 12,
+            "section": "anamnesis",
+            "quote": "Когда это началось?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 14,
+            "section": "anamnesis",
+            "quote": "Что происходило перед началом жалоб?",
+            "grounded": true
+          }
+        ],
+        "missed": []
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 5.721578199998476,
+      "input_text": "Расскажите, что беспокоит. Кружится голова при вставании. Что ещё ощущаете? Иногда темнеет в глазах. Когда это началось? Эти ощущения появились неделю назад. Что происходило перед началом жалоб? На прошлой неделе несколько дней мало спал.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "complaints",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "complaints",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "complaints",
+          "quote": "Когда это началось? Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда это началось? Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 10,
+        "expected": 4,
+        "false_positive": 7,
+        "false_negative": 1,
+        "precision": 0.3,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 9,
+            "section": "anamnesis",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "complaints",
+            "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "complaints",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 6,
+            "section": "anamnesis",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 7,
+            "section": "anamnesis",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 8,
+            "section": "anamnesis",
+            "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Эти ощущения появились неделю назад.",
+            "needles": [
+              "эти ощущения появились неделю назад"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval04",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 5.835321799997473,
+      "input_text": "Расскажите, что беспокоит. Кружится голова при вставании. Что ещё ощущаете? Иногда темнеет в глазах. Когда это началось? Эти ощущения появились неделю назад. Что происходило перед началом жалоб? На прошлой неделе несколько дней мало спал.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "complaints",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "complaints",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "complaints",
+          "quote": "Когда это началось? Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Расскажите, что беспокоит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Кружится голова при вставании."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Иногда темнеет в глазах."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда это началось? Эти ощущения появились неделю назад."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "На прошлой неделе несколько дней мало спал."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 10,
+        "expected": 4,
+        "false_positive": 7,
+        "false_negative": 1,
+        "precision": 0.3,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "complaints",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 9,
+            "section": "anamnesis",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "complaints",
+            "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "complaints",
+            "quote": "На прошлой неделе несколько дней мало спал.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Расскажите, что беспокоит.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 6,
+            "section": "anamnesis",
+            "quote": "Кружится голова при вставании.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 7,
+            "section": "anamnesis",
+            "quote": "Иногда темнеет в глазах.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 8,
+            "section": "anamnesis",
+            "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Эти ощущения появились неделю назад.",
+            "needles": [
+              "эти ощущения появились неделю назад"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.0186362999957055,
+      "input_text": "Какие жалобы сегодня? Заложен нос с обеих сторон. Есть боль в горле? Горло не болит. Когда началась заложенность? Нос заложило позавчера утром. Бывали подобные состояния раньше? Каждую весну несколько дней беспокоит насморк.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Заложен нос с обеих сторон."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Каждую весну несколько дней беспокоит насморк."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 2,
+        "expected": 4,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Заложен нос с обеих сторон.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Каждую весну несколько дней беспокоит насморк.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Горло не болит.",
+            "needles": [
+              "горло не болит"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Нос заложило позавчера утром.",
+            "needles": [
+              "нос заложило позавчера утром"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 2.709484299994074,
+      "input_text": "Какие жалобы сегодня? Заложен нос с обеих сторон. Есть боль в горле? Горло не болит. Когда началась заложенность? Нос заложило позавчера утром. Бывали подобные состояния раньше? Каждую весну несколько дней беспокоит насморк.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Заложен нос с обеих сторон."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Каждую весну несколько дней беспокоит насморк."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 2,
+        "expected": 4,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Заложен нос с обеих сторон.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Каждую весну несколько дней беспокоит насморк.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Горло не болит.",
+            "needles": [
+              "горло не болит"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Нос заложило позавчера утром.",
+            "needles": [
+              "нос заложило позавчера утром"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval05",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.9026234000048134,
+      "input_text": "Какие жалобы сегодня? Заложен нос с обеих сторон. Есть боль в горле? Горло не болит. Когда началась заложенность? Нос заложило позавчера утром. Бывали подобные состояния раньше? Каждую весну несколько дней беспокоит насморк.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Заложен нос с обеих сторон."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Каждую весну несколько дней беспокоит насморк."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 2,
+        "expected": 4,
+        "false_positive": 0,
+        "false_negative": 2,
+        "precision": 1.0,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Заложен нос с обеих сторон.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Каждую весну несколько дней беспокоит насморк.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Горло не болит.",
+            "needles": [
+              "горло не болит"
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Нос заложило позавчера утром.",
+            "needles": [
+              "нос заложило позавчера утром"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "failed",
+      "seconds": 38.36749079999572,
+      "error": "AppError('Локальная модель не завершила ответ. Частичный результат не принят.')"
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "failed",
+      "seconds": 38.46193219999259,
+      "error": "AppError('Локальная модель не завершила ответ. Частичный результат не принят.')"
+    },
+    {
+      "id": "eval06",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "failed",
+      "seconds": 38.12816659999953,
+      "error": "AppError('Локальная модель не завершила ответ. Частичный результат не принят.')"
+    }
+  ],
+  "summary": {
+    "attempted": 18,
+    "completed": 15,
+    "failed": 3,
+    "seconds": {
+      "median": 4.063822699987213,
+      "min": 2.709484299994074,
+      "max": 8.615324699989287
+    },
+    "true_positive": 31,
+    "predicted": 87,
+    "expected_in_completed_runs": 60,
+    "precision": 0.3563218390804598,
+    "recall": 0.5166666666666667,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

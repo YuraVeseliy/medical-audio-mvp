@@ -1,0 +1,56 @@
+{
+  "started_at": "2026-10-24T19:07:52.080365+00:00",
+  "operation": "asr",
+  "arguments": {
+    "operation": "asr",
+    "manifest": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\manifest.json",
+    "split": "evaluation",
+    "engine": "faster-whisper",
+    "model": ".runtime/models/faster-whisper-small",
+    "endpoint": "http://127.0.0.1:8787",
+    "buzz_source": "",
+    "transcript_dir": "",
+    "prompt_file": null,
+    "repeat": 3,
+    "ids": "",
+    "threads": 8,
+    "warmup": "dev01",
+    "out": "reports\\comparison-asr-fw"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "logical_cpus": 16,
+    "packages": {
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.6.0",
+      "vosk": "0.3.45",
+      "soundfile": "0.13.1",
+      "numpy": "2.2.6",
+      "openai": null,
+      "buzz-captions": null
+    }
+  },
+  "manifest_sha256": "774dde4be54822f40f927c896759e68a1e294c9d8df483155a0a28dfd6018c4c",
+  "prompt_sha256": "4cf034b42ce4275e4391cf3179b4ae96eaca12594ec8d03e07bdb7497ac98540",
+  "dataset_validation": "Эталон равен входному тексту синтеза; независимая сверка человеком с аудио ещё не выполнена. Разделы и факты подготовлены разработчиком, медицинская приёмка отсутствует.",
+  "scope": "ASR component comparison",
+  "scoring": "literal one-to-one evidence matching with declared section and source grounding; not independent semantic or clinical assessment",
+  "recognition_settings": {
+    "device": "cpu",
+    "compute_type": "int8",
+    "language": "ru",
+    "beam_size": 5,
+    "vad_filter": true,
+    "condition_on_previous_text": false,
+    "cpu_threads": 8
+  },
+  "adapter_load_seconds": 1.3229303999978583,
+  "warmup": {
+    "id": "dev01",
+    "seconds": 3.650749200009159,
+    "status": "completed"
+  }
+}

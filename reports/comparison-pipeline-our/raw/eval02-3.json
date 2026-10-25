@@ -1,0 +1,93 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Тянет живот около пупка.",
+      "start": 26,
+      "end": 50
+    },
+    {
+      "section": "complaints",
+      "quote": "Живот начал болеть ночью.",
+      "start": 114,
+      "end": 139
+    },
+    {
+      "section": "complaints",
+      "quote": "Такое уже случалось.",
+      "start": 140,
+      "end": 160
+    },
+    {
+      "section": "complaints",
+      "quote": "Похожая боль была месяц назад.",
+      "start": 161,
+      "end": 191
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Тянет живот около пупка.",
+      "start": 26,
+      "end": 50
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Живот начал болеть ночью.",
+      "start": 114,
+      "end": 139
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое уже случалось.",
+      "start": 140,
+      "end": 160
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Похожая боль была месяц назад.",
+      "start": 161,
+      "end": 191
+    }
+  ],
+  "warnings": [
+    "Жалобы: цитата отклонена — точного совпадения в тексте нет.",
+    "Анамнез: цитата отклонена — точного совпадения в тексте нет."
+  ],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Тянет живот около пупка.\"},{\"quote\":\"Тошноты нет.\"},{\"quote\":\"Живот начал болеть ночью.\"},{\"quote\":\"Такое уже случалось.\"},{\"quote\":\"Похожая боль была месяц назад.\"}],\"anamnesis\":[{\"quote\":\"Тянет живот около пупка.\"},{\"quote\":\"Тошноты нет.\"},{\"quote\":\"Живот начал болеть ночью.\"},{\"quote\":\"Такое уже случалось.\"},{\"quote\":\"Похожая боль была месяц назад.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869737,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 127,
+      "prompt_tokens": 697,
+      "total_tokens": 824,
+      "prompt_tokens_details": {
+        "cached_tokens": 696
+      }
+    },
+    "id": "chatcmpl-yddXu8aLQrn6XqYY54PHEf8mcA58geU7",
+    "timings": {
+      "cache_n": 696,
+      "prompt_n": 1,
+      "prompt_ms": 39.842,
+      "prompt_per_token_ms": 39.842,
+      "prompt_per_second": 25.09914160935696,
+      "predicted_n": 127,
+      "predicted_ms": 4677.362,
+      "predicted_per_token_ms": 37.121920634920635,
+      "predicted_per_second": 26.938261353301286
+    }
+  },
+  "prompt_tokens": 697
+}

@@ -1,0 +1,66 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "У меня сухой кашель.",
+      "start": 19,
+      "end": 39
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Кашель начался три дня назад.",
+      "start": 59,
+      "end": 88
+    },
+    {
+      "section": "anamnesis",
+      "quote": "В прошлом году уже был похожий кашель.",
+      "start": 114,
+      "end": 152
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Сегодня утром выпил тёплый чай.",
+      "start": 171,
+      "end": 202
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2],\"anamnesis\":[4,6,8]}"
+        }
+      }
+    ],
+    "created": 1792876240,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 19,
+      "prompt_tokens": 549,
+      "total_tokens": 568,
+      "prompt_tokens_details": {
+        "cached_tokens": 459
+      }
+    },
+    "id": "chatcmpl-svDWQA1VzFWtP1dDA1brimRvRY9XFZCO",
+    "timings": {
+      "cache_n": 459,
+      "prompt_n": 90,
+      "prompt_ms": 817.108,
+      "prompt_per_token_ms": 9.078977777777776,
+      "prompt_per_second": 110.14455861403877,
+      "predicted_n": 19,
+      "predicted_ms": 1344.081,
+      "predicted_per_token_ms": 74.67116666666666,
+      "predicted_per_second": 13.392050032698924
+    }
+  },
+  "prompt_tokens": 549
+}

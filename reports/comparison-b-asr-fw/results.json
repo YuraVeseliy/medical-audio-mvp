@@ -1,0 +1,383 @@
+{
+  "runs": [
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.4913884999987204,
+      "duration_seconds": 15.7525625,
+      "rtf": 0.2216393999388176,
+      "audio_sha256": "08bea4145f2938557ce294ab88a5e60c205e7984f180c8ed4db7b3beb1d134fb",
+      "transcript": "Что ощущаете сейчас? Болит шов на животе. Кто еще беспокоит? Ворту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 31,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.09375
+      }
+    },
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.4257672999956412,
+      "duration_seconds": 15.7525625,
+      "rtf": 0.21747365230232485,
+      "audio_sha256": "08bea4145f2938557ce294ab88a5e60c205e7984f180c8ed4db7b3beb1d134fb",
+      "transcript": "Что ощущаете сейчас? Болит шов на животе. Кто еще беспокоит? Ворту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 31,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.09375
+      }
+    },
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.4975420999980997,
+      "duration_seconds": 15.7525625,
+      "rtf": 0.22203004114397895,
+      "audio_sha256": "08bea4145f2938557ce294ab88a5e60c205e7984f180c8ed4db7b3beb1d134fb",
+      "transcript": "Что ощущаете сейчас? Болит шов на животе. Кто еще беспокоит? Ворту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "metrics": {
+        "reference_words": 32,
+        "hypothesis_words": 31,
+        "substitutions": 2,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 3,
+        "wer": 0.09375
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.6447354999982053,
+      "duration_seconds": 14.7425,
+      "rtf": 0.24722642021354624,
+      "audio_sha256": "283673faba850aeeff3d6774e4b93d19e346477db476342d5ca03d9d37183e64",
+      "transcript": "Наштожалуйтесь сейчас. Сильно знабит. Есть боль в груди. Боли в груди нет. Когда появился озноб. Озноб появился час назад. Какие лекарства получали? Ночью получала безболивающее.",
+      "metrics": {
+        "reference_words": 27,
+        "hypothesis_words": 25,
+        "substitutions": 4,
+        "deletions": 2,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.2222222222222222
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.577306099992711,
+      "duration_seconds": 14.7425,
+      "rtf": 0.24265260980109962,
+      "audio_sha256": "283673faba850aeeff3d6774e4b93d19e346477db476342d5ca03d9d37183e64",
+      "transcript": "Наштожалуйтесь сейчас. Сильно знабит. Есть боль в груди. Боли в груди нет. Когда появился озноб. Озноб появился час назад. Какие лекарства получали? Ночью получала безболивающее.",
+      "metrics": {
+        "reference_words": 27,
+        "hypothesis_words": 25,
+        "substitutions": 4,
+        "deletions": 2,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.2222222222222222
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.6527902000088943,
+      "duration_seconds": 14.7425,
+      "rtf": 0.24777277937994874,
+      "audio_sha256": "283673faba850aeeff3d6774e4b93d19e346477db476342d5ca03d9d37183e64",
+      "transcript": "Наштожалуйтесь сейчас. Сильно знабит. Есть боль в груди. Боли в груди нет. Когда появился озноб. Озноб появился час назад. Какие лекарства получали? Ночью получала безболивающее.",
+      "metrics": {
+        "reference_words": 27,
+        "hypothesis_words": 25,
+        "substitutions": 4,
+        "deletions": 2,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.2222222222222222
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.7743799000018043,
+      "duration_seconds": 16.4375625,
+      "rtf": 0.22961919688529273,
+      "audio_sha256": "55176fa25738a45ba17aa3f4942b9ff52152dab34759d5219a31c7aafef90b5a",
+      "transcript": "Что чувствуете после питья? Тошнит после воды. Кто еще ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтака. Были операции наживать и раньше. Раньше операции наживать и не было.",
+      "metrics": {
+        "reference_words": 31,
+        "hypothesis_words": 31,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 7,
+        "wer": 0.22580645161290322
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.7133738999982597,
+      "duration_seconds": 16.4375625,
+      "rtf": 0.2259078193617977,
+      "audio_sha256": "55176fa25738a45ba17aa3f4942b9ff52152dab34759d5219a31c7aafef90b5a",
+      "transcript": "Что чувствуете после питья? Тошнит после воды. Кто еще ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтака. Были операции наживать и раньше. Раньше операции наживать и не было.",
+      "metrics": {
+        "reference_words": 31,
+        "hypothesis_words": 31,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 7,
+        "wer": 0.22580645161290322
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.8957026999996742,
+      "duration_seconds": 16.4375625,
+      "rtf": 0.23700002357403505,
+      "audio_sha256": "55176fa25738a45ba17aa3f4942b9ff52152dab34759d5219a31c7aafef90b5a",
+      "transcript": "Что чувствуете после питья? Тошнит после воды. Кто еще ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтака. Были операции наживать и раньше. Раньше операции наживать и не было.",
+      "metrics": {
+        "reference_words": 31,
+        "hypothesis_words": 31,
+        "substitutions": 7,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 7,
+        "wer": 0.22580645161290322
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.713751500006765,
+      "duration_seconds": 16.6698125,
+      "rtf": 0.22278303970166224,
+      "audio_sha256": "6aa22b9ded9828d32d10acdae397c7ef5f37a27a9407be7ee3cc6e558ccdffff",
+      "transcript": "что беспокоит при дыхании, трудно глубоко вдохнуть. Где возникает бол, прикашли болеть справа по трёбрами. После чего появилась бол. Эта бол появилась после падения, когда произошло падение. Вчера вечером упал с велосипеда.",
+      "metrics": {
+        "reference_words": 33,
+        "hypothesis_words": 32,
+        "substitutions": 7,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 8,
+        "wer": 0.24242424242424243
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.7024035999929765,
+      "duration_seconds": 16.6698125,
+      "rtf": 0.22210229419154995,
+      "audio_sha256": "6aa22b9ded9828d32d10acdae397c7ef5f37a27a9407be7ee3cc6e558ccdffff",
+      "transcript": "что беспокоит при дыхании, трудно глубоко вдохнуть. Где возникает бол, прикашли болеть справа по трёбрами. После чего появилась бол. Эта бол появилась после падения, когда произошло падение. Вчера вечером упал с велосипеда.",
+      "metrics": {
+        "reference_words": 33,
+        "hypothesis_words": 32,
+        "substitutions": 7,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 8,
+        "wer": 0.24242424242424243
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.6710856999998214,
+      "duration_seconds": 16.6698125,
+      "rtf": 0.22022357480024574,
+      "audio_sha256": "6aa22b9ded9828d32d10acdae397c7ef5f37a27a9407be7ee3cc6e558ccdffff",
+      "transcript": "что беспокоит при дыхании, трудно глубоко вдохнуть. Где возникает бол, прикашли болеть справа по трёбрами. После чего появилась бол. Эта бол появилась после падения, когда произошло падение. Вчера вечером упал с велосипеда.",
+      "metrics": {
+        "reference_words": 33,
+        "hypothesis_words": 32,
+        "substitutions": 7,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 8,
+        "wer": 0.24242424242424243
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.5701891999924555,
+      "duration_seconds": 15.833875,
+      "rtf": 0.2254779199654194,
+      "audio_sha256": "20ac14dcd1ca10e66d0d359908f1ca98763955921b8a1114e62240625012eea7",
+      "transcript": "Какая жалоба сейчас? Правая кисть анимела. Кто ощущаете в пальцах? Пальция на правой руке холодная. Когда заметили анимение, анимение заметил после сна. Такое бывало раньше. Такое случилось впервые.",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 28,
+        "substitutions": 6,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.21428571428571427
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.516426100002718,
+      "duration_seconds": 15.833875,
+      "rtf": 0.22208247191560612,
+      "audio_sha256": "20ac14dcd1ca10e66d0d359908f1ca98763955921b8a1114e62240625012eea7",
+      "transcript": "Какая жалоба сейчас? Правая кисть анимела. Кто ощущаете в пальцах? Пальция на правой руке холодная. Когда заметили анимение, анимение заметил после сна. Такое бывало раньше. Такое случилось впервые.",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 28,
+        "substitutions": 6,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.21428571428571427
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.4875065999949584,
+      "duration_seconds": 15.833875,
+      "rtf": 0.22025603966148263,
+      "audio_sha256": "20ac14dcd1ca10e66d0d359908f1ca98763955921b8a1114e62240625012eea7",
+      "transcript": "Какая жалоба сейчас? Правая кисть анимела. Кто ощущаете в пальцах? Пальция на правой руке холодная. Когда заметили анимение, анимение заметил после сна. Такое бывало раньше. Такое случилось впервые.",
+      "metrics": {
+        "reference_words": 28,
+        "hypothesis_words": 28,
+        "substitutions": 6,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 6,
+        "wer": 0.21428571428571427
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.0204311999987112,
+      "duration_seconds": 15.6945625,
+      "rtf": 0.19245080581244053,
+      "audio_sha256": "0d177c120377bfcd684456d7b051e384cbc6b55dad0b26cdc03d3f4ddd689d11",
+      "transcript": "беспокоить сейчас. Сина хочется петь. Есть боль при глотании. Глотать сейчас не больно. Когда появилась сухость. Сухость появилась после пробуждения. Когда последний раз пили. С вечера ничего не пил.",
+      "metrics": {
+        "reference_words": 30,
+        "hypothesis_words": 29,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.13333333333333333
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.0406289999955334,
+      "duration_seconds": 15.6945625,
+      "rtf": 0.19373773560081928,
+      "audio_sha256": "0d177c120377bfcd684456d7b051e384cbc6b55dad0b26cdc03d3f4ddd689d11",
+      "transcript": "беспокоить сейчас. Сина хочется петь. Есть боль при глотании. Глотать сейчас не больно. Когда появилась сухость. Сухость появилась после пробуждения. Когда последний раз пили. С вечера ничего не пил.",
+      "metrics": {
+        "reference_words": 30,
+        "hypothesis_words": 29,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.13333333333333333
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.035055200001807,
+      "duration_seconds": 15.6945625,
+      "rtf": 0.1933825934938809,
+      "audio_sha256": "0d177c120377bfcd684456d7b051e384cbc6b55dad0b26cdc03d3f4ddd689d11",
+      "transcript": "беспокоить сейчас. Сина хочется петь. Есть боль при глотании. Глотать сейчас не больно. Когда появилась сухость. Сухость появилась после пробуждения. Когда последний раз пили. С вечера ничего не пил.",
+      "metrics": {
+        "reference_words": 30,
+        "hypothesis_words": 29,
+        "substitutions": 3,
+        "deletions": 1,
+        "insertions": 0,
+        "errors": 4,
+        "wer": 0.13333333333333333
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 18,
+    "completed": 18,
+    "failed": 0,
+    "seconds": {
+      "median": 3.5737476499925833,
+      "min": 3.0204311999987112,
+      "max": 3.8957026999996742
+    },
+    "word_counts": {
+      "errors": 102,
+      "reference_words": 543,
+      "substitutions": 87,
+      "deletions": 15,
+      "insertions": 0
+    },
+    "corpus_wer": 0.1878453038674033,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

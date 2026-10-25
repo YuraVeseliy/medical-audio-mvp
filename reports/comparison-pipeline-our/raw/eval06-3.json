@@ -1,0 +1,60 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Не хватает воздуха при подъеме по лестнице.",
+      "start": 23,
+      "end": 66
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Покое это бывает, в покое дышу свободно.",
+      "start": 67,
+      "end": 107
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Какие заболевания были раньше? В детстве несколько раз переносил бронхит.",
+      "start": 175,
+      "end": 248
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Не хватает воздуха при подъеме по лестнице.\"}],\"anamnesis\":[{\"quote\":\"Покое это бывает, в покое дышу свободно.\"},{\"quote\":\"Какие заболевания были раньше? В детстве несколько раз переносил бронхит.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869787,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 74,
+      "prompt_tokens": 709,
+      "total_tokens": 783,
+      "prompt_tokens_details": {
+        "cached_tokens": 708
+      }
+    },
+    "id": "chatcmpl-nX9B5deFaS77B3aMlnCAGwS84zdrtjER",
+    "timings": {
+      "cache_n": 708,
+      "prompt_n": 1,
+      "prompt_ms": 34.444,
+      "prompt_per_token_ms": 34.444,
+      "prompt_per_second": 29.032632679131343,
+      "predicted_n": 74,
+      "predicted_ms": 2604.268,
+      "predicted_per_token_ms": 35.67490410958904,
+      "predicted_per_second": 28.030909261258827
+    }
+  },
+  "prompt_tokens": 709
+}

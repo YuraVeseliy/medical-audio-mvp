@@ -1,0 +1,4 @@
+{
+  "component": "AISummaryPlugin._summarize",
+  "raw_text": "{\"sections\":{\"complaints\":[{\"quote\":\"Болит правое колено при ходьбе.\"}],\"anamnesis\":[{\"quote\":\"Колено кажется скованным по утрам.\"},{\"quote\":\"Боль появилась вчера вечером.\"},{\"quote\":\"Перед этим была травма? Два дня назад подвернул ногу на лестнице.\"}]},\"codingHints\":[],\"followUpQuestions\":[],\"warnings\":[]}"
+}

@@ -1,0 +1,78 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Правая кисть онемела.",
+      "start": 21,
+      "end": 42
+    },
+    {
+      "section": "complaints",
+      "quote": "Что ощущаете в пальцах?",
+      "start": 43,
+      "end": 66
+    },
+    {
+      "section": "complaints",
+      "quote": "Пальцы на правой руке холодные.",
+      "start": 67,
+      "end": 98
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда заметили онемение?",
+      "start": 99,
+      "end": 123
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое бывало раньше?",
+      "start": 152,
+      "end": 172
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Такое случилось впервые.",
+      "start": 173,
+      "end": 197
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3,4],\"anamnesis\":[5,7,8]}"
+        }
+      }
+    ],
+    "created": 1792876271,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 552,
+      "total_tokens": 575,
+      "prompt_tokens_details": {
+        "cached_tokens": 551
+      }
+    },
+    "id": "chatcmpl-fECQkluSgSA73p8ecEJYZ0Tz4yp1rBFA",
+    "timings": {
+      "cache_n": 551,
+      "prompt_n": 1,
+      "prompt_ms": 73.33,
+      "prompt_per_token_ms": 73.33,
+      "prompt_per_second": 13.636983499249967,
+      "predicted_n": 23,
+      "predicted_ms": 1672.595,
+      "predicted_per_token_ms": 76.02704545454546,
+      "predicted_per_second": 13.153214017738902
+    }
+  },
+  "prompt_tokens": 552
+}

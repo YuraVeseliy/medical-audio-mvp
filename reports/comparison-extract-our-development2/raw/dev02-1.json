@@ -1,0 +1,68 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит голова в области висков.",
+      "start": 21,
+      "end": 51
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Голова заболела сегодня после обеда.",
+      "start": 73,
+      "end": 109
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Боль усиливается при ярком свете.",
+      "start": 127,
+      "end": 160
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше подобных приступов не было.",
+      "start": 191,
+      "end": 225
+    }
+  ],
+  "warnings": [
+    "Анамнез: цитата отклонена — точного совпадения в тексте нет."
+  ],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Болит голова в области висков.\"}],\"anamnesis\":[{\"quote\":\"Голова заболела сегодня после обеда.\"},{\"quote\":\"Боль стала постоянной.\"},{\"quote\":\"Боль усиливается при ярком свете.\"},{\"quote\":\"Раньше подобных приступов не было.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869211,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 82,
+      "prompt_tokens": 703,
+      "total_tokens": 785,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-zWk7pOLhnrt2vLxQEtUtIe82dF3YxWEp",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 79,
+      "prompt_ms": 394.994,
+      "prompt_per_token_ms": 4.999924050632912,
+      "prompt_per_second": 200.00303802083067,
+      "predicted_n": 82,
+      "predicted_ms": 2879.908,
+      "predicted_per_token_ms": 35.55441975308642,
+      "predicted_per_second": 28.125898466201008
+    }
+  },
+  "prompt_tokens": 703
+}

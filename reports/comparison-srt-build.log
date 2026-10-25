@@ -1,0 +1,99 @@
+C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv\Lib\site-packages\setuptools\dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+!!
+
+        ********************************************************************************
+        Please consider removing the following classifiers in favor of a SPDX license expression:
+
+        License :: OSI Approved :: MIT License
+
+        See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+        ********************************************************************************
+
+!!
+  self._finalize_license_expression()
+running bdist_wheel
+running build
+running build_py
+creating build\lib
+copying srt.py -> build\lib
+creating build\lib\srt_tools
+copying srt_tools\__init__.py -> build\lib\srt_tools
+copying srt_tools\utils.py -> build\lib\srt_tools
+running build_scripts
+creating build\scripts-3.12
+copying and adjusting srt_tools\srt -> build\scripts-3.12
+copying and adjusting srt_tools\srt-deduplicate -> build\scripts-3.12
+copying and adjusting srt_tools\srt-normalise -> build\scripts-3.12
+copying and adjusting srt_tools\srt-fixed-timeshift -> build\scripts-3.12
+copying and adjusting srt_tools\srt-linear-timeshift -> build\scripts-3.12
+copying and adjusting srt_tools\srt-lines-matching -> build\scripts-3.12
+copying and adjusting srt_tools\srt-mux -> build\scripts-3.12
+copying and adjusting srt_tools\srt-play -> build\scripts-3.12
+copying and adjusting srt_tools\srt-process -> build\scripts-3.12
+C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\.venv\Lib\site-packages\setuptools\_distutils\cmd.py:90: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` directly.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        This deprecation is overdue, please update your project and remove deprecated
+        calls to avoid build errors in the future.
+
+        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+        ********************************************************************************
+
+!!
+  self.initialize_options()
+installing to build\bdist.win-amd64\wheel
+running install
+running install_lib
+creating build\bdist.win-amd64\wheel
+copying build\lib\srt.py -> build\bdist.win-amd64\wheel\.
+creating build\bdist.win-amd64\wheel\srt_tools
+copying build\lib\srt_tools\utils.py -> build\bdist.win-amd64\wheel\.\srt_tools
+copying build\lib\srt_tools\__init__.py -> build\bdist.win-amd64\wheel\.\srt_tools
+running install_egg_info
+running egg_info
+writing srt.egg-info\PKG-INFO
+writing dependency_links to srt.egg-info\dependency_links.txt
+writing top-level names to srt.egg-info\top_level.txt
+reading manifest file 'srt.egg-info\SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '*.py[co]' found under directory '*'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+adding license file 'LICENSE'
+writing manifest file 'srt.egg-info\SOURCES.txt'
+Copying srt.egg-info to build\bdist.win-amd64\wheel\.\srt-3.5.3-py3.12.egg-info
+running install_scripts
+creating build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-deduplicate -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-fixed-timeshift -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-linear-timeshift -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-lines-matching -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-mux -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-normalise -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-play -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+copying build\scripts-3.12\srt-process -> build\bdist.win-amd64\wheel\srt-3.5.3.data\scripts
+creating build\bdist.win-amd64\wheel\srt-3.5.3.dist-info\WHEEL
+creating 'dist\srt-3.5.3-py3-none-any.whl' and adding 'build\bdist.win-amd64\wheel' to it
+adding 'srt.py'
+adding 'srt-3.5.3.data/scripts/srt'
+adding 'srt-3.5.3.data/scripts/srt-deduplicate'
+adding 'srt-3.5.3.data/scripts/srt-fixed-timeshift'
+adding 'srt-3.5.3.data/scripts/srt-linear-timeshift'
+adding 'srt-3.5.3.data/scripts/srt-lines-matching'
+adding 'srt-3.5.3.data/scripts/srt-mux'
+adding 'srt-3.5.3.data/scripts/srt-normalise'
+adding 'srt-3.5.3.data/scripts/srt-play'
+adding 'srt-3.5.3.data/scripts/srt-process'
+adding 'srt-3.5.3.dist-info/licenses/LICENSE'
+adding 'srt_tools/__init__.py'
+adding 'srt_tools/utils.py'
+adding 'srt-3.5.3.dist-info/METADATA'
+adding 'srt-3.5.3.dist-info/WHEEL'
+adding 'srt-3.5.3.dist-info/top_level.txt'
+adding 'srt-3.5.3.dist-info/RECORD'
+removing build\bdist.win-amd64\wheel

@@ -1,0 +1,152 @@
+{
+  "phase": "original frozenA initialcandidate; negative results preserved",
+  "items": [
+    {
+      "label": "ASR faster-whisper",
+      "source": "reports/comparison-asr-fw/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 18,
+        "failed": 0,
+        "seconds": {
+          "median": 3.975439150002785,
+          "min": 3.502925000007963,
+          "max": 4.387588400000823
+        },
+        "word_counts": {
+          "errors": 63,
+          "reference_words": 606,
+          "substitutions": 51,
+          "deletions": 6,
+          "insertions": 6
+        },
+        "corpus_wer": 0.10396039603960396,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "unique_scenarios": 6,
+      "repetitions": 3
+    },
+    {
+      "label": "ASR Vosk",
+      "source": "reports/comparison-asr-vosk/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 18,
+        "failed": 0,
+        "seconds": {
+          "median": 1.6540047499947832,
+          "min": 1.5670630000095116,
+          "max": 1.8430941000115126
+        },
+        "word_counts": {
+          "errors": 66,
+          "reference_words": 606,
+          "substitutions": 54,
+          "deletions": 12,
+          "insertions": 0
+        },
+        "corpus_wer": 0.10891089108910891,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "unique_scenarios": 6,
+      "repetitions": 3
+    },
+    {
+      "label": "Freequote our",
+      "source": "reports/comparison-extract-our/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 15,
+        "failed": 3,
+        "seconds": {
+          "median": 4.063822699987213,
+          "min": 2.709484299994074,
+          "max": 8.615324699989287
+        },
+        "true_positive": 31,
+        "predicted": 87,
+        "expected_in_completed_runs": 60,
+        "precision": 0.3563218390804598,
+        "recall": 0.5166666666666667,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "unique_scenarios": 6,
+      "repetitions": 3,
+      "expected_all_attempts": 72,
+      "effective_recall_all_attempts": 0.4305555555555556
+    },
+    {
+      "label": "OMS freequote",
+      "source": "reports/comparison-extract-oms/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 18,
+        "failed": 0,
+        "seconds": {
+          "median": 2.926761400005489,
+          "min": 1.3410202000086429,
+          "max": 7.970553700011806
+        },
+        "true_positive": 13,
+        "predicted": 54,
+        "expected_in_completed_runs": 72,
+        "precision": 0.24074074074074073,
+        "recall": 0.18055555555555555,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "unique_scenarios": 6,
+      "repetitions": 3,
+      "expected_all_attempts": 72,
+      "effective_recall_all_attempts": 0.18055555555555555
+    },
+    {
+      "label": "Buzz freequote",
+      "source": "reports/comparison-extract-buzz/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 17,
+        "failed": 1,
+        "seconds": {
+          "median": 3.612724899998284,
+          "min": 1.230501700003515,
+          "max": 6.168468200005009
+        },
+        "true_positive": 23,
+        "predicted": 72,
+        "expected_in_completed_runs": 68,
+        "precision": 0.3194444444444444,
+        "recall": 0.3382352941176471,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "unique_scenarios": 6,
+      "repetitions": 3,
+      "expected_all_attempts": 72,
+      "effective_recall_all_attempts": 0.3194444444444444
+    },
+    {
+      "label": "Freequote our afterfasterwhisper",
+      "source": "reports/comparison-pipeline-our/results.json",
+      "summary": {
+        "attempted": 18,
+        "completed": 18,
+        "failed": 0,
+        "seconds": {
+          "median": 3.7669859000016004,
+          "min": 2.6451124000013806,
+          "max": 6.855468199995812
+        },
+        "true_positive": 18,
+        "predicted": 72,
+        "expected_in_completed_runs": 72,
+        "precision": 0.25,
+        "recall": 0.25,
+        "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+      },
+      "expected_all_attempts": 72,
+      "effective_recall_all_attempts": 0.25,
+      "unique_scenarios": 6,
+      "repetitions": 3
+    }
+  ],
+  "limits": "Exactquote metric, syntheticsinglevoice,6cases; repeatedattemptsnotindependent; not clinicalaccuracy."
+}

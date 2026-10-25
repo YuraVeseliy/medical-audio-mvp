@@ -1,0 +1,31 @@
+{
+  "tag": "v1.4.5",
+  "scope": "unmodified upstream component modules, not installed full GUI",
+  "files": [
+    {
+      "path": "buzz/__init__.py",
+      "url": "https://raw.githubusercontent.com/chidiwilliams/buzz/v1.4.5/buzz/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "buzz/plugins/__init__.py",
+      "url": "https://raw.githubusercontent.com/chidiwilliams/buzz/v1.4.5/buzz/plugins/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "buzz/plugins/base.py",
+      "url": "https://raw.githubusercontent.com/chidiwilliams/buzz/v1.4.5/buzz/plugins/base.py",
+      "sha256": "6c00c48af511567e3521186fe84477075c720ea2c89958543d1585b44dfc5525"
+    },
+    {
+      "path": "buzz/plugins/ai_summary/__init__.py",
+      "url": "https://raw.githubusercontent.com/chidiwilliams/buzz/v1.4.5/buzz/plugins/ai_summary/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "buzz/plugins/ai_summary/plugin.py",
+      "url": "https://raw.githubusercontent.com/chidiwilliams/buzz/v1.4.5/buzz/plugins/ai_summary/plugin.py",
+      "sha256": "de43d801ec9482c22deea78231b57cdbeabb17895a3f1a8c717f06feac11aaca"
+    }
+  ]
+}

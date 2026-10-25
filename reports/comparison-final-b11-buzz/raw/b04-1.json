@@ -1,0 +1,89 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Вчера вечером упал с велосипеда.",
+      "start": 25,
+      "end": 57
+    },
+    {
+      "section": "complaints",
+      "quote": "Трудно глубоко вдохнуть.",
+      "start": 85,
+      "end": 109
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда произошло падение?",
+      "start": 0,
+      "end": 24
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Эта боль появилась после падения.",
+      "start": 137,
+      "end": 170
+    },
+    {
+      "section": "anamnesis",
+      "quote": "При кашле болит справа под рёбрами.",
+      "start": 191,
+      "end": 226
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"sections\":{\"complaints\":[2,4],\"anamnesis\":[1,6,8]}}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Когда произошло падение?",
+      "start": 0,
+      "end": 24
+    },
+    {
+      "number": 2,
+      "quote": "Вчера вечером упал с велосипеда.",
+      "start": 25,
+      "end": 57
+    },
+    {
+      "number": 3,
+      "quote": "Что беспокоит при дыхании?",
+      "start": 58,
+      "end": 84
+    },
+    {
+      "number": 4,
+      "quote": "Трудно глубоко вдохнуть.",
+      "start": 85,
+      "end": 109
+    },
+    {
+      "number": 5,
+      "quote": "После чего появилась боль?",
+      "start": 110,
+      "end": 136
+    },
+    {
+      "number": 6,
+      "quote": "Эта боль появилась после падения.",
+      "start": 137,
+      "end": 170
+    },
+    {
+      "number": 7,
+      "quote": "Где возникает боль?",
+      "start": 171,
+      "end": 190
+    },
+    {
+      "number": 8,
+      "quote": "При кашле болит справа под рёбрами.",
+      "start": 191,
+      "end": 226
+    }
+  ]
+}

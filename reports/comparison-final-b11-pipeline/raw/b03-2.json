@@ -1,0 +1,124 @@
+{
+  "document": {
+    "transcript": "Кто чувствуете после питья? Ташнит после воды. Кто еще ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтака. Были операции на животе раньше. Раньше операции на животе не было.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Ташнит после воды.",
+        "start": 28,
+        "end": 46
+      },
+      {
+        "section": "complaints",
+        "quote": "Кто еще ощущаете?",
+        "start": 47,
+        "end": 64
+      },
+      {
+        "section": "complaints",
+        "quote": "Живот кажется вздутым.",
+        "start": 65,
+        "end": 87
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Когда началась тошнота?",
+        "start": 88,
+        "end": 111
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Были операции на животе раньше.",
+        "start": 144,
+        "end": 175
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Раньше операции на животе не было.",
+        "start": 176,
+        "end": 210
+      }
+    ],
+    "sections": {
+      "complaints": "Ташнит после воды.\nКто еще ощущаете?\nЖивот кажется вздутым.",
+      "anamnesis": "Когда началась тошнота?\nБыли операции на животе раньше.\nРаньше операции на животе не было."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b03.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,3,4],\"anamnesis\":[5,7,8]}"
+        }
+      }
+    ],
+    "created": 1792876481,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 559,
+      "total_tokens": 582,
+      "prompt_tokens_details": {
+        "cached_tokens": 558
+      }
+    },
+    "id": "chatcmpl-BgfYGTc0An714VgjkSLvDV7ggbwc9nJQ",
+    "timings": {
+      "cache_n": 558,
+      "prompt_n": 1,
+      "prompt_ms": 123.17,
+      "prompt_per_token_ms": 123.17,
+      "prompt_per_second": 8.11886011204027,
+      "predicted_n": 23,
+      "predicted_ms": 3860.615,
+      "predicted_per_token_ms": 175.4825,
+      "predicted_per_second": 5.698573931873549
+    }
+  },
+  "prompt_tokens": 559,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Ташнит после воды.",
+      "start": 28,
+      "end": 46
+    },
+    {
+      "section": "complaints",
+      "quote": "Кто еще ощущаете?",
+      "start": 47,
+      "end": 64
+    },
+    {
+      "section": "complaints",
+      "quote": "Живот кажется вздутым.",
+      "start": 65,
+      "end": 87
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда началась тошнота?",
+      "start": 88,
+      "end": 111
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Были операции на животе раньше.",
+      "start": 144,
+      "end": 175
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше операции на животе не было.",
+      "start": 176,
+      "end": 210
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "manifest": "data\\evaluation-b11\\manifest.json",
+  "sha256": "398987ac014ba65eb2056dd6ef116cc956775b98dfa1c210f1376efc0394db3c",
+  "frozen_at_utc": "2026-10-24T20:34:45.309324+00:00",
+  "before_any_B_LLM_outputs": true,
+  "source_B1.0_sha256": "325521b941c3962f8a4eaa0f3b203d34d8ed43e7ab9746bc120098c90854ad9d",
+  "pair_permutations_one_based": {
+    "b02": [
+      3,
+      1,
+      4,
+      2
+    ],
+    "b04": [
+      4,
+      1,
+      3,
+      2
+    ],
+    "b06": [
+      1,
+      3,
+      2,
+      4
+    ]
+  },
+  "unchanged_expected_facts": true,
+  "unchanged_question_answer_pair_texts": true
+}

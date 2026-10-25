@@ -1,0 +1,18 @@
+test_d01_cancel_save_dialog_keeps_stopped_recording (test_regressions.RegressionTests.test_d01_cancel_save_dialog_keeps_stopped_recording) ... FAIL
+test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported) ... ok
+
+======================================================================
+FAIL: test_d01_cancel_save_dialog_keeps_stopped_recording (test_regressions.RegressionTests.test_d01_cancel_save_dialog_keeps_stopped_recording)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_regressions.py", line 52, in test_d01_cancel_save_dialog_keeps_stopped_recording
+    self.assertEqual(observed.get("state_at_dialog"), "captured")
+AssertionError: 'recording' != 'captured'
+- recording
++ captured
+
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.227s
+
+FAILED (failures=1)

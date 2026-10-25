@@ -1,0 +1,8 @@
+test_d01_cancel_save_dialog_keeps_stopped_recording (test_regressions.RegressionTests.test_d01_cancel_save_dialog_keeps_stopped_recording) ... ok
+test_d02_valid_float_wav_is_supported (test_regressions.RegressionTests.test_d02_valid_float_wav_is_supported) ... ok
+test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable (test_regressions.RegressionTests.test_d04_extraction_failure_keeps_new_transcript_visible_and_saveable) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.389s
+
+OK

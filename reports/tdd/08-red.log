@@ -1,0 +1,22 @@
+test_a01_supported_audio_produces_document (test_session.SessionTests.test_a01_supported_audio_produces_document) ... ok
+test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error) ... ok
+test_a03_no_recognized_speech_is_not_a_completed_form (test_session.SessionTests.test_a03_no_recognized_speech_is_not_a_completed_form) ... ok
+test_a04_model_failure_allows_next_attempt (test_session.SessionTests.test_a04_model_failure_allows_next_attempt) ... ok
+test_a05_edit_changes_only_selected_section (test_session.SessionTests.test_a05_edit_changes_only_selected_section) ... ok
+test_a06_saved_session_restores_current_edits (test_session.SessionTests.test_a06_saved_session_restores_current_edits) ... ok
+test_a07_new_session_requires_decision_about_edits (test_session.SessionTests.test_a07_new_session_requires_decision_about_edits) ... ok
+test_a08_second_job_is_rejected_while_processing (test_session.SessionTests.test_a08_second_job_is_rejected_while_processing) ... FAIL
+
+======================================================================
+FAIL: test_a08_second_job_is_rejected_while_processing (test_session.SessionTests.test_a08_second_job_is_rejected_while_processing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_session.py", line 116, in test_a08_second_job_is_rejected_while_processing
+    with self.assertRaisesRegex(AppError, "операции"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: AppError not raised
+
+----------------------------------------------------------------------
+Ran 8 tests in 5.051s
+
+FAILED (failures=1)

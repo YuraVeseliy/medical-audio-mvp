@@ -1,0 +1,20 @@
+vosk silence #1: completed 0.384s
+{
+  "attempted": 1,
+  "completed": 1,
+  "failed": 0,
+  "seconds": {
+    "median": 0.3838058999972418,
+    "min": 0.3838058999972418,
+    "max": 0.3838058999972418
+  },
+  "word_counts": {
+    "errors": 0,
+    "reference_words": 0,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0
+  },
+  "corpus_wer": null,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

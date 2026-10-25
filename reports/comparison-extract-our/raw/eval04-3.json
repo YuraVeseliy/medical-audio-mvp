@@ -1,0 +1,102 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Расскажите, что беспокоит.",
+      "start": 0,
+      "end": 26
+    },
+    {
+      "section": "complaints",
+      "quote": "Кружится голова при вставании.",
+      "start": 27,
+      "end": 57
+    },
+    {
+      "section": "complaints",
+      "quote": "Иногда темнеет в глазах.",
+      "start": 76,
+      "end": 100
+    },
+    {
+      "section": "complaints",
+      "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+      "start": 101,
+      "end": 157
+    },
+    {
+      "section": "complaints",
+      "quote": "На прошлой неделе несколько дней мало спал.",
+      "start": 195,
+      "end": 238
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Расскажите, что беспокоит.",
+      "start": 0,
+      "end": 26
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Кружится голова при вставании.",
+      "start": 27,
+      "end": 57
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Иногда темнеет в глазах.",
+      "start": 76,
+      "end": 100
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Когда это началось? Эти ощущения появились неделю назад.",
+      "start": 101,
+      "end": 157
+    },
+    {
+      "section": "anamnesis",
+      "quote": "На прошлой неделе несколько дней мало спал.",
+      "start": 195,
+      "end": 238
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Расскажите, что беспокоит.\"},{\"quote\":\"Кружится голова при вставании.\"},{\"quote\":\"Иногда темнеет в глазах.\"},{\"quote\":\"Когда это началось? Эти ощущения появились неделю назад.\"},{\"quote\":\"На прошлой неделе несколько дней мало спал.\"}],\"anamnesis\":[{\"quote\":\"Расскажите, что беспокоит.\"},{\"quote\":\"Кружится голова при вставании.\"},{\"quote\":\"Иногда темнеет в глазах.\"},{\"quote\":\"Когда это началось? Эти ощущения появились неделю назад.\"},{\"quote\":\"На прошлой неделе несколько дней мало спал.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869451,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 161,
+      "prompt_tokens": 705,
+      "total_tokens": 866,
+      "prompt_tokens_details": {
+        "cached_tokens": 704
+      }
+    },
+    "id": "chatcmpl-vJbpe6dJX2CYrtEVA5kJwSwr8nGyZfam",
+    "timings": {
+      "cache_n": 704,
+      "prompt_n": 1,
+      "prompt_ms": 39.606,
+      "prompt_per_token_ms": 39.606,
+      "prompt_per_second": 25.248699691965864,
+      "predicted_n": 161,
+      "predicted_ms": 5707.882,
+      "predicted_per_token_ms": 35.6742625,
+      "predicted_per_second": 28.031413403430555
+    }
+  },
+  "prompt_tokens": 705
+}

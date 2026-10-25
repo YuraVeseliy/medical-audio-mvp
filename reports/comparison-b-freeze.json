@@ -1,0 +1,9 @@
+{
+  "manifest": "data\\evaluation-b\\manifest.json",
+  "sha256": "325521b941c3962f8a4eaa0f3b203d34d8ed43e7ab9746bc120098c90854ad9d",
+  "frozen_at_utc": "2026-10-24T19:21:54.759037+00:00",
+  "before_any_indexed_model_outputs": true,
+  "audio_generation": "Completed after originalbenchmark, before indexed model evaluation",
+  "generation_file": "data/evaluation-b/generation.json",
+  "generation_sha256": "54ccb56b3918ac3786973564f237bf373d73ed70e5a0569e647eb294133b8134"
+}

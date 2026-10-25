@@ -1,0 +1,4 @@
+{
+  "component": "AISummaryPlugin._summarize",
+  "raw_text": "{\"sections\":{\"complaints\":[{\"quote\":\"У меня сухой кашель.\"}],\"anamnesis\":[{\"quote\":\"Кашель начался три дня назад.\"},{\"quote\":\"В прошлом году уже был похожий кашель.\"},{\"quote\":\"Сегодня утром выпил тёплый чай.\"}]},\"codingHints\":[],\"followUpQuestions\":[],\"warnings\":[]}"
+}

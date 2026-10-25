@@ -1,0 +1,31 @@
+{
+  "runs": [
+    {
+      "id": "dev01",
+      "split": "development",
+      "repetition": 1,
+      "status": "failed",
+      "seconds": 1.5760072999983095,
+      "error": "RuntimeError('Штатный AI Summary Buzz вернул пустой ответ/ошибку; см. журнал')"
+    },
+    {
+      "id": "dev02",
+      "split": "development",
+      "repetition": 1,
+      "status": "failed",
+      "seconds": 0.32172089999949094,
+      "error": "RuntimeError('Штатный AI Summary Buzz вернул пустой ответ/ошибку; см. журнал')"
+    }
+  ],
+  "summary": {
+    "attempted": 2,
+    "completed": 0,
+    "failed": 2,
+    "true_positive": 0,
+    "predicted": 0,
+    "expected_in_completed_runs": 0,
+    "precision": null,
+    "recall": null,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

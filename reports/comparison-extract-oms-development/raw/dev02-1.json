@@ -1,0 +1,407 @@
+{
+  "id": "enc_1792869047857",
+  "mode": "hybrid",
+  "providers": {
+    "transcription": "mock",
+    "note": "openai"
+  },
+  "transcript": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+  "transcriptDocument": {
+    "schemaVersion": 1,
+    "rawText": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+    "text": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+    "language": "ru",
+    "locale": "",
+    "country": "",
+    "durationSec": null,
+    "words": [
+      {
+        "index": 0,
+        "text": "Какие",
+        "normalized": "какие",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 0,
+        "charEnd": 5
+      },
+      {
+        "index": 1,
+        "text": "сейчас",
+        "normalized": "сеичас",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 6,
+        "charEnd": 12
+      },
+      {
+        "index": 2,
+        "text": "жалобы",
+        "normalized": "жалобы",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 13,
+        "charEnd": 19
+      },
+      {
+        "index": 3,
+        "text": "Болит",
+        "normalized": "болит",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 21,
+        "charEnd": 26
+      },
+      {
+        "index": 4,
+        "text": "голова",
+        "normalized": "голова",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 27,
+        "charEnd": 33
+      },
+      {
+        "index": 5,
+        "text": "в",
+        "normalized": "в",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 34,
+        "charEnd": 35
+      },
+      {
+        "index": 6,
+        "text": "области",
+        "normalized": "области",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 36,
+        "charEnd": 43
+      },
+      {
+        "index": 7,
+        "text": "висков",
+        "normalized": "висков",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 44,
+        "charEnd": 50
+      },
+      {
+        "index": 8,
+        "text": "Когда",
+        "normalized": "когда",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 52,
+        "charEnd": 57
+      },
+      {
+        "index": 9,
+        "text": "началась",
+        "normalized": "началась",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 58,
+        "charEnd": 66
+      },
+      {
+        "index": 10,
+        "text": "боль",
+        "normalized": "боль",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 67,
+        "charEnd": 71
+      },
+      {
+        "index": 11,
+        "text": "Голова",
+        "normalized": "голова",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 73,
+        "charEnd": 79
+      },
+      {
+        "index": 12,
+        "text": "заболела",
+        "normalized": "заболела",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 80,
+        "charEnd": 88
+      },
+      {
+        "index": 13,
+        "text": "сегодня",
+        "normalized": "сегодня",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 89,
+        "charEnd": 96
+      },
+      {
+        "index": 14,
+        "text": "после",
+        "normalized": "после",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 97,
+        "charEnd": 102
+      },
+      {
+        "index": 15,
+        "text": "обеда",
+        "normalized": "обеда",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 103,
+        "charEnd": 108
+      },
+      {
+        "index": 16,
+        "text": "Боль",
+        "normalized": "боль",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 110,
+        "charEnd": 114
+      },
+      {
+        "index": 17,
+        "text": "постоянная",
+        "normalized": "постоянная",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 115,
+        "charEnd": 125
+      },
+      {
+        "index": 18,
+        "text": "Боль",
+        "normalized": "боль",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 127,
+        "charEnd": 131
+      },
+      {
+        "index": 19,
+        "text": "усиливается",
+        "normalized": "усиливается",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 132,
+        "charEnd": 143
+      },
+      {
+        "index": 20,
+        "text": "при",
+        "normalized": "при",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 144,
+        "charEnd": 147
+      },
+      {
+        "index": 21,
+        "text": "ярком",
+        "normalized": "ярком",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 148,
+        "charEnd": 153
+      },
+      {
+        "index": 22,
+        "text": "свете",
+        "normalized": "свете",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 154,
+        "charEnd": 159
+      },
+      {
+        "index": 23,
+        "text": "Бывали",
+        "normalized": "бывали",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 161,
+        "charEnd": 167
+      },
+      {
+        "index": 24,
+        "text": "такие",
+        "normalized": "такие",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 168,
+        "charEnd": 173
+      },
+      {
+        "index": 25,
+        "text": "приступы",
+        "normalized": "приступы",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 174,
+        "charEnd": 182
+      },
+      {
+        "index": 26,
+        "text": "раньше",
+        "normalized": "раньше",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 183,
+        "charEnd": 189
+      },
+      {
+        "index": 27,
+        "text": "Раньше",
+        "normalized": "раньше",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 191,
+        "charEnd": 197
+      },
+      {
+        "index": 28,
+        "text": "подобных",
+        "normalized": "подобных",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 198,
+        "charEnd": 206
+      },
+      {
+        "index": 29,
+        "text": "приступов",
+        "normalized": "приступов",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 207,
+        "charEnd": 216
+      },
+      {
+        "index": 30,
+        "text": "не",
+        "normalized": "не",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 217,
+        "charEnd": 219
+      },
+      {
+        "index": 31,
+        "text": "было",
+        "normalized": "было",
+        "startSec": null,
+        "endSec": null,
+        "confidence": null,
+        "speaker": null,
+        "charStart": 220,
+        "charEnd": 224
+      }
+    ],
+    "segments": [
+      {
+        "index": 0,
+        "text": "Какие сейчас жалобы Болит голова в области висков Когда началась боль Голова заболела сегодня после обеда Боль постоянная Боль усиливается при ярком свете Бывали такие приступы раньше Раньше подобных приступов не было",
+        "normalizedText": "Какие сейчас жалобы Болит голова в области висков Когда началась боль Голова заболела сегодня после обеда Боль постоянная Боль усиливается при ярком свете Бывали такие приступы раньше Раньше подобных приступов не было",
+        "startSec": null,
+        "endSec": null,
+        "speaker": null,
+        "wordStartIndex": 0,
+        "wordEndIndex": 31
+      }
+    ],
+    "meta": {
+      "wordCount": 32,
+      "segmentCount": 1,
+      "hasWordTimestamps": false,
+      "hasSegmentTimestamps": false,
+      "normalization": "whitespace-collapse"
+    }
+  },
+  "noteDraft": "Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.",
+  "sections": {},
+  "codingHints": [],
+  "followUpQuestions": [],
+  "warnings": [],
+  "prompt": {
+    "system": "Ты извлекаешь дословные цитаты из вымышленного диалога врача и пациента.\nВерни только JSON с ключами noteText, sections, codingHints, followUpQuestions, warnings.\nsections содержит два массива: complaints (нынешние жалобы, симптомы и их отрицания)\nи anamnesis (начало и развитие состояния, предшествующие события, перенесённые состояния,\nвмешательства и предпринятые действия). Каждый элемент массива — объект {\"quote\": \"дословная цитата\"}.\nОдна цитата должна выражать один факт. Сохраняй отрицания, время и сторону тела.\nИзвлекай только ответы пациента. Не переписывай вопросы врача как факты.\nКопируй цитаты из исходного текста буквально. Не ставь диагноз и ничего не додумывай.\nОтсутствующие сведения не добавляй. Не придумывай обязательные поля или рекомендации.\nnoteText — пустая строка; codingHints, followUpQuestions, warnings — пустые массивы.",
+    "user": "{\n  \"patientContext\": {},\n  \"clinicianContext\": {},\n  \"transcript\": \"Какие сейчас жалобы? Болит голова в области висков. Когда началась боль? Голова заболела сегодня после обеда. Боль постоянная? Боль усиливается при ярком свете. Бывали такие приступы раньше? Раньше подобных приступов не было.\"\n}"
+  },
+  "meta": {
+    "noteStyle": "custom",
+    "specialty": "primary-care",
+    "redactionApplied": false,
+    "redactionSummary": [],
+    "generatedAt": "2026-10-24T19:10:47.857Z"
+  }
+}

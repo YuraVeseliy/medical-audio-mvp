@@ -1,0 +1,8 @@
+ERROR: Could not find a version that satisfies the requirement vosk (from versions: none)
+ERROR: No matching distribution found for vosk
+WARNING: Failed to remove contents in a temporary directory 'C:\Users\chern\AppData\Local\Temp\pip-build-tracker-lvww9hl4'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'C:\Users\chern\AppData\Local\Temp\pip-ephem-wheel-cache-rsw2b55_'.
+You can safely remove it manually.
+WARNING: Failed to remove contents in a temporary directory 'C:\Users\chern\AppData\Local\Temp\pip-install-wh4ccndu'.
+You can safely remove it manually.

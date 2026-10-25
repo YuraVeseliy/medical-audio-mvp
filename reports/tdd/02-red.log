@@ -1,0 +1,16 @@
+test_a01_supported_audio_produces_document (test_session.SessionTests.test_a01_supported_audio_produces_document) ... ok
+test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error) ... FAIL
+
+======================================================================
+FAIL: test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_session.py", line 44, in test_a02_damaged_audio_has_readable_error
+    with self.assertRaisesRegex(AppError, "���������"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: AppError not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.005s
+
+FAILED (failures=1)

@@ -1,0 +1,124 @@
+{
+  "document": {
+    "transcript": "что беспокоить сейчас. Сильно хочется пить, когда появилась сухость. Сухость появилась после пробуждения. Есть боль при глотании. Глотать сейчас не больно, когда последний раз пили. С вечера ничего не пил.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "что беспокоить сейчас.",
+        "start": 0,
+        "end": 22
+      },
+      {
+        "section": "complaints",
+        "quote": "Сильно хочется пить, когда появилась сухость.",
+        "start": 23,
+        "end": 68
+      },
+      {
+        "section": "complaints",
+        "quote": "Сухость появилась после пробуждения.",
+        "start": 69,
+        "end": 105
+      },
+      {
+        "section": "complaints",
+        "quote": "Глотать сейчас не больно, когда последний раз пили.",
+        "start": 130,
+        "end": 181
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Есть боль при глотании.",
+        "start": 106,
+        "end": 129
+      },
+      {
+        "section": "anamnesis",
+        "quote": "С вечера ничего не пил.",
+        "start": 182,
+        "end": 205
+      }
+    ],
+    "sections": {
+      "complaints": "что беспокоить сейчас.\nСильно хочется пить, когда появилась сухость.\nСухость появилась после пробуждения.\nГлотать сейчас не больно, когда последний раз пили.",
+      "anamnesis": "Есть боль при глотании.\nС вечера ничего не пил."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b06.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[1,2,3,5],\"anamnesis\":[4,6]}"
+        }
+      }
+    ],
+    "created": 1792876572,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 23,
+      "prompt_tokens": 537,
+      "total_tokens": 560,
+      "prompt_tokens_details": {
+        "cached_tokens": 536
+      }
+    },
+    "id": "chatcmpl-z0j7bKFuZbD4KlZIV7iaC0ygFrKAe9q0",
+    "timings": {
+      "cache_n": 536,
+      "prompt_n": 1,
+      "prompt_ms": 101.495,
+      "prompt_per_token_ms": 101.495,
+      "prompt_per_second": 9.852702103551898,
+      "predicted_n": 23,
+      "predicted_ms": 3285.282,
+      "predicted_per_token_ms": 149.33100000000002,
+      "predicted_per_second": 6.696533204759896
+    }
+  },
+  "prompt_tokens": 537,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "что беспокоить сейчас.",
+      "start": 0,
+      "end": 22
+    },
+    {
+      "section": "complaints",
+      "quote": "Сильно хочется пить, когда появилась сухость.",
+      "start": 23,
+      "end": 68
+    },
+    {
+      "section": "complaints",
+      "quote": "Сухость появилась после пробуждения.",
+      "start": 69,
+      "end": 105
+    },
+    {
+      "section": "complaints",
+      "quote": "Глотать сейчас не больно, когда последний раз пили.",
+      "start": 130,
+      "end": 181
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Есть боль при глотании.",
+      "start": 106,
+      "end": 129
+    },
+    {
+      "section": "anamnesis",
+      "quote": "С вечера ничего не пил.",
+      "start": 182,
+      "end": 205
+    }
+  ]
+}

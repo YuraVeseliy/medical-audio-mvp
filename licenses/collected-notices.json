@@ -1,0 +1,494 @@
+[
+  {
+    "distribution": "altgraph",
+    "version": "0.17.4",
+    "source": "altgraph-0.17.4.dist-info/LICENSE",
+    "copied": "altgraph\\altgraph-0.17.4.dist-info_LICENSE"
+  },
+  {
+    "distribution": "annotated-types",
+    "version": "0.8.0",
+    "source": "annotated_types-0.8.0.dist-info/licenses/LICENSE",
+    "copied": "annotated-types\\annotated_types-0.8.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "anyio",
+    "version": "4.15.1",
+    "source": "anyio-4.15.1.dist-info/licenses/LICENSE",
+    "copied": "anyio\\anyio-4.15.1.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "av",
+    "version": "16.0.1",
+    "source": "av-16.0.1.dist-info/licenses/LICENSE.txt",
+    "copied": "av\\av-16.0.1.dist-info_licenses_LICENSE.txt"
+  },
+  {
+    "distribution": "certifi",
+    "version": "2026.10.23",
+    "source": "certifi-2026.10.23.dist-info/licenses/LICENSE",
+    "copied": "certifi\\certifi-2026.10.23.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "cffi",
+    "version": "2.1.1",
+    "source": "cffi-2.1.1.dist-info/licenses/LICENSE",
+    "copied": "cffi\\cffi-2.1.1.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "charset-normalizer",
+    "version": "3.5.2",
+    "source": "charset_normalizer-3.5.2.dist-info/licenses/LICENSE",
+    "copied": "charset-normalizer\\charset_normalizer-3.5.2.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "colorama",
+    "version": "0.4.6",
+    "source": "colorama-0.4.6.dist-info/licenses/LICENSE.txt",
+    "copied": "colorama\\colorama-0.4.6.dist-info_licenses_LICENSE.txt"
+  },
+  {
+    "distribution": "coloredlogs",
+    "version": "15.0.1",
+    "source": "coloredlogs-15.0.1.dist-info/LICENSE.txt",
+    "copied": "coloredlogs\\coloredlogs-15.0.1.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "distro",
+    "version": "1.9.0",
+    "source": "distro-1.9.0.dist-info/LICENSE",
+    "copied": "distro\\distro-1.9.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "faster-whisper",
+    "version": "1.2.1",
+    "source": "faster_whisper-1.2.1.dist-info/LICENSE",
+    "copied": "faster-whisper\\faster_whisper-1.2.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "filelock",
+    "version": "4.2.4",
+    "source": "filelock-4.2.4.dist-info/licenses/LICENSE",
+    "copied": "filelock\\filelock-4.2.4.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "fsspec",
+    "version": "2026.9.0",
+    "source": "fsspec-2026.9.0.dist-info/licenses/LICENSE",
+    "copied": "fsspec\\fsspec-2026.9.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "h11",
+    "version": "0.16.0",
+    "source": "h11-0.16.0.dist-info/licenses/LICENSE.txt",
+    "copied": "h11\\h11-0.16.0.dist-info_licenses_LICENSE.txt"
+  },
+  {
+    "distribution": "httpcore",
+    "version": "1.0.9",
+    "source": "httpcore-1.0.9.dist-info/licenses/LICENSE.md",
+    "copied": "httpcore\\httpcore-1.0.9.dist-info_licenses_LICENSE.md"
+  },
+  {
+    "distribution": "httpx",
+    "version": "0.28.1",
+    "source": "httpx-0.28.1.dist-info/licenses/LICENSE.md",
+    "copied": "httpx\\httpx-0.28.1.dist-info_licenses_LICENSE.md"
+  },
+  {
+    "distribution": "huggingface-hub",
+    "version": "0.36.0",
+    "source": "huggingface_hub-0.36.0.dist-info/LICENSE",
+    "copied": "huggingface-hub\\huggingface_hub-0.36.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "humanfriendly",
+    "version": "10.0",
+    "source": "humanfriendly-10.0.dist-info/LICENSE.txt",
+    "copied": "humanfriendly\\humanfriendly-10.0.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "idna",
+    "version": "3.20",
+    "source": "idna-3.20.dist-info/licenses/LICENSE.md",
+    "copied": "idna\\idna-3.20.dist-info_licenses_LICENSE.md"
+  },
+  {
+    "distribution": "jiter",
+    "version": "0.18.0",
+    "source": "jiter-0.18.0.dist-info/licenses/LICENSE",
+    "copied": "jiter\\jiter-0.18.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "mpmath",
+    "version": "1.3.0",
+    "source": "mpmath-1.3.0.dist-info/LICENSE",
+    "copied": "mpmath\\mpmath-1.3.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.2.6",
+    "source": "numpy-2.2.6.dist-info/LICENSE.txt",
+    "copied": "numpy\\numpy-2.2.6.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.2.6",
+    "source": "numpy/_core/include/numpy/random/LICENSE.txt",
+    "copied": "numpy\\numpy__core_include_numpy_random_LICENSE.txt"
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.2.6",
+    "source": "numpy/ma/LICENSE",
+    "copied": "numpy\\numpy_ma_LICENSE"
+  },
+  {
+    "distribution": "numpy",
+    "version": "2.2.6",
+    "source": "numpy/random/LICENSE.md",
+    "copied": "numpy\\numpy_random_LICENSE.md"
+  },
+  {
+    "distribution": "onnxruntime",
+    "version": "1.23.2",
+    "source": "onnxruntime/LICENSE",
+    "copied": "onnxruntime\\onnxruntime_LICENSE"
+  },
+  {
+    "distribution": "onnxruntime",
+    "version": "1.23.2",
+    "source": "onnxruntime/ThirdPartyNotices.txt",
+    "copied": "onnxruntime\\onnxruntime_ThirdPartyNotices.txt"
+  },
+  {
+    "distribution": "openai",
+    "version": "1.109.1",
+    "source": "openai-1.109.1.dist-info/licenses/LICENSE",
+    "copied": "openai\\openai-1.109.1.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "packaging",
+    "version": "26.3",
+    "source": "packaging-26.3.dist-info/licenses/LICENSE",
+    "copied": "packaging\\packaging-26.3.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "packaging",
+    "version": "26.3",
+    "source": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+    "copied": "packaging\\packaging-26.3.dist-info_licenses_LICENSE.APACHE"
+  },
+  {
+    "distribution": "packaging",
+    "version": "26.3",
+    "source": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+    "copied": "packaging\\packaging-26.3.dist-info_licenses_LICENSE.BSD"
+  },
+  {
+    "distribution": "pefile",
+    "version": "2023.2.7",
+    "source": "pefile-2023.2.7.dist-info/LICENSE",
+    "copied": "pefile\\pefile-2023.2.7.dist-info_LICENSE"
+  },
+  {
+    "distribution": "pip",
+    "version": "25.0.1",
+    "source": "pip-25.0.1.dist-info/LICENSE.txt",
+    "copied": "pip\\pip-25.0.1.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "protobuf",
+    "version": "7.36.2",
+    "source": "protobuf-7.36.2.dist-info/LICENSE",
+    "copied": "protobuf\\protobuf-7.36.2.dist-info_LICENSE"
+  },
+  {
+    "distribution": "psutil",
+    "version": "7.1.1",
+    "source": "psutil-7.1.1.dist-info/LICENSE",
+    "copied": "psutil\\psutil-7.1.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "pycparser",
+    "version": "3.12",
+    "source": "pycparser-3.12.dist-info/licenses/LICENSE",
+    "copied": "pycparser\\pycparser-3.12.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "pydantic",
+    "version": "2.14.1",
+    "source": "pydantic-2.14.1.dist-info/licenses/LICENSE",
+    "copied": "pydantic\\pydantic-2.14.1.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "pydantic_core",
+    "version": "2.50.1",
+    "source": "pydantic_core-2.50.1.dist-info/licenses/LICENSE",
+    "copied": "pydantic_core\\pydantic_core-2.50.1.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "pyinstaller",
+    "version": "6.16.0",
+    "source": "pyinstaller-6.16.0.dist-info/licenses/COPYING.txt",
+    "copied": "pyinstaller\\pyinstaller-6.16.0.dist-info_licenses_COPYING.txt"
+  },
+  {
+    "distribution": "pyinstaller-hooks-contrib",
+    "version": "2025.9",
+    "source": "pyinstaller_hooks_contrib-2025.9.dist-info/licenses/LICENSE",
+    "copied": "pyinstaller-hooks-contrib\\pyinstaller_hooks_contrib-2025.9.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "pyreadline3",
+    "version": "3.5.6",
+    "source": "pyreadline3-3.5.6.dist-info/licenses/LICENSE.md",
+    "copied": "pyreadline3\\pyreadline3-3.5.6.dist-info_licenses_LICENSE.md"
+  },
+  {
+    "distribution": "pywin32-ctypes",
+    "version": "0.2.3",
+    "source": "pywin32_ctypes-0.2.3.dist-info/LICENSE.txt",
+    "copied": "pywin32-ctypes\\pywin32_ctypes-0.2.3.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "PyYAML",
+    "version": "6.0.3",
+    "source": "pyyaml-6.0.3.dist-info/licenses/LICENSE",
+    "copied": "PyYAML\\pyyaml-6.0.3.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "requests",
+    "version": "2.34.2",
+    "source": "requests-2.34.2.dist-info/licenses/LICENSE",
+    "copied": "requests\\requests-2.34.2.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "requests",
+    "version": "2.34.2",
+    "source": "requests-2.34.2.dist-info/licenses/NOTICE",
+    "copied": "requests\\requests-2.34.2.dist-info_licenses_NOTICE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools-80.9.0.dist-info/licenses/LICENSE",
+    "copied": "setuptools\\setuptools-80.9.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_autocommand-2.2.2.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_backports.tarfile-1.2.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/importlib_metadata-8.0.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_importlib_metadata-8.0.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/inflect-7.3.1.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_inflect-7.3.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/jaraco.collections-5.1.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_jaraco.collections-5.1.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/jaraco.context-5.3.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_jaraco.context-5.3.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/jaraco.functools-4.0.1.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_jaraco.functools-4.0.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/jaraco.text-3.12.1.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_jaraco.text-3.12.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/more_itertools-10.3.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_more_itertools-10.3.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_packaging-24.2.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE.APACHE",
+    "copied": "setuptools\\setuptools__vendor_packaging-24.2.dist-info_LICENSE.APACHE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/packaging-24.2.dist-info/LICENSE.BSD",
+    "copied": "setuptools\\setuptools__vendor_packaging-24.2.dist-info_LICENSE.BSD"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/platformdirs-4.2.2.dist-info/licenses/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_platformdirs-4.2.2.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/tomli-2.0.1.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_tomli-2.0.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/typeguard-4.3.0.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_typeguard-4.3.0.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/typing_extensions-4.12.2.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_typing_extensions-4.12.2.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/wheel-0.45.1.dist-info/LICENSE.txt",
+    "copied": "setuptools\\setuptools__vendor_wheel-0.45.1.dist-info_LICENSE.txt"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/wheel/vendored/packaging/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_wheel_vendored_packaging_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/wheel/vendored/packaging/LICENSE.APACHE",
+    "copied": "setuptools\\setuptools__vendor_wheel_vendored_packaging_LICENSE.APACHE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/wheel/vendored/packaging/LICENSE.BSD",
+    "copied": "setuptools\\setuptools__vendor_wheel_vendored_packaging_LICENSE.BSD"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/_vendor/zipp-3.19.2.dist-info/LICENSE",
+    "copied": "setuptools\\setuptools__vendor_zipp-3.19.2.dist-info_LICENSE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/config/NOTICE",
+    "copied": "setuptools\\setuptools_config_NOTICE"
+  },
+  {
+    "distribution": "setuptools",
+    "version": "80.9.0",
+    "source": "setuptools/config/_validate_pyproject/NOTICE",
+    "copied": "setuptools\\setuptools_config__validate_pyproject_NOTICE"
+  },
+  {
+    "distribution": "sniffio",
+    "version": "1.3.1",
+    "source": "sniffio-1.3.1.dist-info/LICENSE",
+    "copied": "sniffio\\sniffio-1.3.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "sniffio",
+    "version": "1.3.1",
+    "source": "sniffio-1.3.1.dist-info/LICENSE.APACHE2",
+    "copied": "sniffio\\sniffio-1.3.1.dist-info_LICENSE.APACHE2"
+  },
+  {
+    "distribution": "sniffio",
+    "version": "1.3.1",
+    "source": "sniffio-1.3.1.dist-info/LICENSE.MIT",
+    "copied": "sniffio\\sniffio-1.3.1.dist-info_LICENSE.MIT"
+  },
+  {
+    "distribution": "sounddevice",
+    "version": "0.5.3",
+    "source": "sounddevice-0.5.3.dist-info/licenses/LICENSE",
+    "copied": "sounddevice\\sounddevice-0.5.3.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "soundfile",
+    "version": "0.13.1",
+    "source": "_soundfile_data/COPYING",
+    "copied": "soundfile\\_soundfile_data_COPYING"
+  },
+  {
+    "distribution": "soundfile",
+    "version": "0.13.1",
+    "source": "soundfile-0.13.1.dist-info/LICENSE",
+    "copied": "soundfile\\soundfile-0.13.1.dist-info_LICENSE"
+  },
+  {
+    "distribution": "srt",
+    "version": "3.5.3",
+    "source": "srt-3.5.3.dist-info/licenses/LICENSE",
+    "copied": "srt\\srt-3.5.3.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "sympy",
+    "version": "1.14.0",
+    "source": "sympy-1.14.0.dist-info/licenses/LICENSE",
+    "copied": "sympy\\sympy-1.14.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "sympy",
+    "version": "1.14.0",
+    "source": "sympy/parsing/latex/LICENSE.txt",
+    "copied": "sympy\\sympy_parsing_latex_LICENSE.txt"
+  },
+  {
+    "distribution": "typing_extensions",
+    "version": "4.16.0",
+    "source": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+    "copied": "typing_extensions\\typing_extensions-4.16.0.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "typing-inspection",
+    "version": "0.4.4",
+    "source": "typing_inspection-0.4.4.dist-info/licenses/LICENSE",
+    "copied": "typing-inspection\\typing_inspection-0.4.4.dist-info_licenses_LICENSE"
+  },
+  {
+    "distribution": "urllib3",
+    "version": "2.8.0",
+    "source": "urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+    "copied": "urllib3\\urllib3-2.8.0.dist-info_licenses_LICENSE.txt"
+  },
+  {
+    "distribution": "websockets",
+    "version": "15.0.1",
+    "source": "websockets-15.0.1.dist-info/LICENSE",
+    "copied": "websockets\\websockets-15.0.1.dist-info_LICENSE"
+  }
+]

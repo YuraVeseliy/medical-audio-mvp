@@ -1,0 +1,12 @@
+{
+  "exit_code": 1,
+  "wall_seconds": 0.41806260000157636,
+  "arguments": [
+    "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\output\\MedicalAudio_Windows\\MedicalAudio.exe",
+    "--cli",
+    "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\audio\\dev01.wav",
+    "--out",
+    "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\reports\\portable-smoke"
+  ],
+  "hf_offline": true
+}

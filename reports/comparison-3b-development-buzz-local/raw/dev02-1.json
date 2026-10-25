@@ -1,0 +1,83 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Болит голова в области висков.",
+      "start": 21,
+      "end": 51
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Голова заболела сегодня после обеда.",
+      "start": 73,
+      "end": 109
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Боль усиливается при ярком свете.",
+      "start": 127,
+      "end": 160
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Раньше подобных приступов не было.",
+      "start": 191,
+      "end": 225
+    }
+  ],
+  "warnings": [],
+  "raw_provider": {
+    "component": "AISummaryPlugin._summarize",
+    "raw_text": "{\"sections\":{\"complaints\":[2],\"anamnesis\":[4,6,8]}}"
+  },
+  "candidates": [
+    {
+      "number": 1,
+      "quote": "Какие сейчас жалобы?",
+      "start": 0,
+      "end": 20
+    },
+    {
+      "number": 2,
+      "quote": "Болит голова в области висков.",
+      "start": 21,
+      "end": 51
+    },
+    {
+      "number": 3,
+      "quote": "Когда началась боль?",
+      "start": 52,
+      "end": 72
+    },
+    {
+      "number": 4,
+      "quote": "Голова заболела сегодня после обеда.",
+      "start": 73,
+      "end": 109
+    },
+    {
+      "number": 5,
+      "quote": "Боль постоянная?",
+      "start": 110,
+      "end": 126
+    },
+    {
+      "number": 6,
+      "quote": "Боль усиливается при ярком свете.",
+      "start": 127,
+      "end": 160
+    },
+    {
+      "number": 7,
+      "quote": "Бывали такие приступы раньше?",
+      "start": 161,
+      "end": 190
+    },
+    {
+      "number": 8,
+      "quote": "Раньше подобных приступов не было.",
+      "start": 191,
+      "end": 225
+    }
+  ]
+}

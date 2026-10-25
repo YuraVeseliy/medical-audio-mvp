@@ -1,0 +1,34 @@
+{
+  "recorded_at_utc": "2026-10-24T19:17:26.866905+00:00",
+  "oms": {
+    "source_commit": "559b1e50f2d46be5398eaeb8bbd48c02076ea0d4",
+    "package_version": "0.1.0",
+    "install_command": "npm ci --omit=dev --ignore-scripts",
+    "install_status": "succeeded;55packages;no audit vulnerabilities at installtime",
+    "note_provider": "openai adapter with local endpoint",
+    "base_url": "http://127.0.0.1:8081",
+    "model": "medical-local",
+    "transcription_provider": "mock, not called: transcript submitted directly",
+    "redact_before_api_calls": false,
+    "application_gui_executed": false,
+    "configuration_response": {
+      "scribeMode": "hybrid",
+      "transcriptionProvider": "mock",
+      "noteProvider": "openai",
+      "defaultNoteStyle": "journal"
+    }
+  },
+  "buzz": {
+    "tag": "v1.4.5",
+    "component": "unmodified AISummaryPlugin._summarize",
+    "source_manifest": ".runtime/analogs/buzz/source-manifest.json",
+    "installed_full_app": false,
+    "openai_sdk": "1.109.1",
+    "endpoint": "http://127.0.0.1:8081/v1"
+  },
+  "freescribe": {
+    "executed": false,
+    "reason": "Full installer and application were not run; no numerical quality claims."
+  },
+  "network": "All inference endpoints127.0.0.1. Internet used only for prior dependency/model/source setup."
+}

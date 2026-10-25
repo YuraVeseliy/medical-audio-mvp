@@ -1,0 +1,72 @@
+{
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Заложен нос с обеих сторон.",
+      "start": 22,
+      "end": 49
+    },
+    {
+      "section": "complaints",
+      "quote": "Бывали подобные состояния раньше.",
+      "start": 142,
+      "end": 175
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Заложен нос с обеих сторон.",
+      "start": 22,
+      "end": 49
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Бывали подобные состояния раньше.",
+      "start": 142,
+      "end": 175
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Каждую весну несколько дней беспокоит нас, Марк.",
+      "start": 176,
+      "end": 224
+    }
+  ],
+  "warnings": [],
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[{\"quote\":\"Заложен нос с обеих сторон.\"},{\"quote\":\"Бывали подобные состояния раньше.\"}],\"anamnesis\":[{\"quote\":\"Заложен нос с обеих сторон.\"},{\"quote\":\"Бывали подобные состояния раньше.\"},{\"quote\":\"Каждую весну несколько дней беспокоит нас, Марк.\"}]}"
+        }
+      }
+    ],
+    "created": 1792869772,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 88,
+      "prompt_tokens": 710,
+      "total_tokens": 798,
+      "prompt_tokens_details": {
+        "cached_tokens": 624
+      }
+    },
+    "id": "chatcmpl-GPDFHr3gzZPY5LNn95uvYz42XJ986GQb",
+    "timings": {
+      "cache_n": 624,
+      "prompt_n": 86,
+      "prompt_ms": 466.095,
+      "prompt_per_token_ms": 5.419709302325582,
+      "prompt_per_second": 184.51174116864587,
+      "predicted_n": 88,
+      "predicted_ms": 3085.867,
+      "predicted_per_token_ms": 35.46973563218391,
+      "predicted_per_second": 28.19304914955829
+    }
+  },
+  "prompt_tokens": 710
+}

@@ -1,0 +1,1709 @@
+{
+  "runs": [
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.298955299993395,
+      "input_text": "Что ощущаете сейчас? Болит шов на животе. Что ещё беспокоит? Во рту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит шов на животе."
+        },
+        {
+          "section": "complaints",
+          "quote": "Во рту сильно пересохло."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда была операция?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Как чувствовали себя до операции?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "До операции два дня болел живот."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит шов на животе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Во рту сильно пересохло.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "До операции два дня болел живот.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда была операция?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Как чувствовали себя до операции?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Операцию сделали вчера утром.",
+            "needles": [
+              "Операцию сделали вчера утром."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 2.9336853999993764,
+      "input_text": "Что ощущаете сейчас? Болит шов на животе. Что ещё беспокоит? Во рту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит шов на животе."
+        },
+        {
+          "section": "complaints",
+          "quote": "Во рту сильно пересохло."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда была операция?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Как чувствовали себя до операции?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "До операции два дня болел живот."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит шов на животе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Во рту сильно пересохло.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "До операции два дня болел живот.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда была операция?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Как чувствовали себя до операции?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Операцию сделали вчера утром.",
+            "needles": [
+              "Операцию сделали вчера утром."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b01",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.9893077000015182,
+      "input_text": "Что ощущаете сейчас? Болит шов на животе. Что ещё беспокоит? Во рту сильно пересохло. Когда была операция? Операцию сделали вчера утром. Как чувствовали себя до операции? До операции два дня болел живот.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Болит шов на животе."
+        },
+        {
+          "section": "complaints",
+          "quote": "Во рту сильно пересохло."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда была операция?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Как чувствовали себя до операции?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "До операции два дня болел живот."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Болит шов на животе.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Во рту сильно пересохло.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "До операции два дня болел живот.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда была операция?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Как чувствовали себя до операции?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Операцию сделали вчера утром.",
+            "needles": [
+              "Операцию сделали вчера утром."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.256695899995975,
+      "input_text": "Когда появился озноб? Озноб появился час назад. На что жалуетесь сейчас? Сильно знобит. Какие лекарства получали? Ночью получал обезболивающее. Есть боль в груди? Боли в груди нет.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Озноб появился час назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно знобит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появился озноб?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Какие лекарства получали?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Ночью получал обезболивающее."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боли в груди нет."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно знобит.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Ночью получал обезболивающее.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Озноб появился час назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появился озноб?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Какие лекарства получали?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Боли в груди нет.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боли в груди нет.",
+            "needles": [
+              "Боли в груди нет."
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Озноб появился час назад.",
+            "needles": [
+              "Озноб появился час назад."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.176374399990891,
+      "input_text": "Когда появился озноб? Озноб появился час назад. На что жалуетесь сейчас? Сильно знобит. Какие лекарства получали? Ночью получал обезболивающее. Есть боль в груди? Боли в груди нет.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Озноб появился час назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно знобит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появился озноб?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Какие лекарства получали?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Ночью получал обезболивающее."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боли в груди нет."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно знобит.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Ночью получал обезболивающее.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Озноб появился час назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появился озноб?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Какие лекарства получали?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Боли в груди нет.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боли в груди нет.",
+            "needles": [
+              "Боли в груди нет."
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Озноб появился час назад.",
+            "needles": [
+              "Озноб появился час назад."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b02",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.4551524999988033,
+      "input_text": "Когда появился озноб? Озноб появился час назад. На что жалуетесь сейчас? Сильно знобит. Какие лекарства получали? Ночью получал обезболивающее. Есть боль в груди? Боли в груди нет.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Озноб появился час назад."
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно знобит."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появился озноб?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Какие лекарства получали?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Ночью получал обезболивающее."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Боли в груди нет."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно знобит.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Ночью получал обезболивающее.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Озноб появился час назад.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появился озноб?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Какие лекарства получали?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "Боли в груди нет.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Боли в груди нет.",
+            "needles": [
+              "Боли в груди нет."
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Озноб появился час назад.",
+            "needles": [
+              "Озноб появился час назад."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.400342799999635,
+      "input_text": "Что чувствуете после питья? Тошнит после воды. Что ещё ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтрака. Были операции на животе раньше? Раньше операций на животе не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тошнит после воды."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот кажется вздутым."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда началась тошнота?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были операции на животе раньше?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Раньше операций на животе не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тошнит после воды.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот кажется вздутым.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Раньше операций на животе не было.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда началась тошнота?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были операции на животе раньше?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Тошнота началась после завтрака.",
+            "needles": [
+              "Тошнота началась после завтрака."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.6757399999914924,
+      "input_text": "Что чувствуете после питья? Тошнит после воды. Что ещё ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтрака. Были операции на животе раньше? Раньше операций на животе не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тошнит после воды."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот кажется вздутым."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда началась тошнота?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были операции на животе раньше?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Раньше операций на животе не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тошнит после воды.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот кажется вздутым.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Раньше операций на животе не было.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда началась тошнота?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были операции на животе раньше?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Тошнота началась после завтрака.",
+            "needles": [
+              "Тошнота началась после завтрака."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b03",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 3.395682599992142,
+      "input_text": "Что чувствуете после питья? Тошнит после воды. Что ещё ощущаете? Живот кажется вздутым. Когда началась тошнота? Тошнота началась после завтрака. Были операции на животе раньше? Раньше операций на животе не было.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Тошнит после воды."
+        },
+        {
+          "section": "complaints",
+          "quote": "Живот кажется вздутым."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда началась тошнота?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Были операции на животе раньше?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Раньше операций на животе не было."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 2,
+        "false_negative": 1,
+        "precision": 0.6,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Тошнит после воды.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Живот кажется вздутым.",
+            "grounded": true,
+            "expected_index": 1
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Раньше операций на животе не было.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда началась тошнота?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Были операции на животе раньше?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Тошнота началась после завтрака.",
+            "needles": [
+              "Тошнота началась после завтрака."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.334765599996899,
+      "input_text": "Когда произошло падение? Вчера вечером упал с велосипеда. Что беспокоит при дыхании? Трудно глубоко вдохнуть. После чего появилась боль? Эта боль появилась после падения. Где возникает боль? При кашле болит справа под рёбрами.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Вчера вечером упал с велосипеда."
+        },
+        {
+          "section": "complaints",
+          "quote": "Трудно глубоко вдохнуть."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда произошло падение?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "После чего появилась боль?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Где возникает боль?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "При кашле болит справа под рёбрами."
+        }
+      ],
+      "metrics": {
+        "true_positive": 1,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 5,
+        "false_negative": 3,
+        "precision": 0.16666666666666666,
+        "recall": 0.25,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Трудно глубоко вдохнуть.",
+            "grounded": true,
+            "expected_index": 0
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда произошло падение?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "После чего появилась боль?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Где возникает боль?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "При кашле болит справа под рёбрами.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "При кашле болит справа под рёбрами.",
+            "needles": [
+              "При кашле болит справа под рёбрами."
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Эта боль появилась после падения.",
+            "needles": [
+              "Эта боль появилась после падения."
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "needles": [
+              "Вчера вечером упал с велосипеда."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.5773168000014266,
+      "input_text": "Когда произошло падение? Вчера вечером упал с велосипеда. Что беспокоит при дыхании? Трудно глубоко вдохнуть. После чего появилась боль? Эта боль появилась после падения. Где возникает боль? При кашле болит справа под рёбрами.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Вчера вечером упал с велосипеда."
+        },
+        {
+          "section": "complaints",
+          "quote": "Трудно глубоко вдохнуть."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда произошло падение?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "После чего появилась боль?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Эта боль появилась после падения."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "При кашле болит справа под рёбрами."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Трудно глубоко вдохнуть.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Эта боль появилась после падения.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда произошло падение?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "После чего появилась боль?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "При кашле болит справа под рёбрами.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "При кашле болит справа под рёбрами.",
+            "needles": [
+              "При кашле болит справа под рёбрами."
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "needles": [
+              "Вчера вечером упал с велосипеда."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b04",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.9518252999987453,
+      "input_text": "Когда произошло падение? Вчера вечером упал с велосипеда. Что беспокоит при дыхании? Трудно глубоко вдохнуть. После чего появилась боль? Эта боль появилась после падения. Где возникает боль? При кашле болит справа под рёбрами.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Вчера вечером упал с велосипеда."
+        },
+        {
+          "section": "complaints",
+          "quote": "Трудно глубоко вдохнуть."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда произошло падение?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "После чего появилась боль?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Эта боль появилась после падения."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "При кашле болит справа под рёбрами."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 4,
+        "false_negative": 2,
+        "precision": 0.3333333333333333,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Трудно глубоко вдохнуть.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Эта боль появилась после падения.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда произошло падение?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "После чего появилась боль?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "При кашле болит справа под рёбрами.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "При кашле болит справа под рёбрами.",
+            "needles": [
+              "При кашле болит справа под рёбрами."
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "Вчера вечером упал с велосипеда.",
+            "needles": [
+              "Вчера вечером упал с велосипеда."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 3.925679299994954,
+      "input_text": "Какая жалоба сейчас? Правая кисть онемела. Что ощущаете в пальцах? Пальцы на правой руке холодные. Когда заметили онемение? Онемение заметил после сна. Такое бывало раньше? Такое случилось впервые.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Правая кисть онемела."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Пальцы на правой руке холодные."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда заметили онемение?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Такое бывало раньше?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Такое случилось впервые."
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 3,
+        "false_negative": 2,
+        "precision": 0.4,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Правая кисть онемела.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Такое случилось впервые.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Пальцы на правой руке холодные.",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда заметили онемение?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Такое бывало раньше?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Пальцы на правой руке холодные.",
+            "needles": [
+              "Пальцы на правой руке холодные."
+            ]
+          },
+          {
+            "expected_index": 2,
+            "section": "anamnesis",
+            "quote": "Онемение заметил после сна.",
+            "needles": [
+              "Онемение заметил после сна."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 2.7628584999911254,
+      "input_text": "Какая жалоба сейчас? Правая кисть онемела. Что ощущаете в пальцах? Пальцы на правой руке холодные. Когда заметили онемение? Онемение заметил после сна. Такое бывало раньше? Такое случилось впервые.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Правая кисть онемела."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Пальцы на правой руке холодные."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Онемение заметил после сна."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Такое случилось впервые."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Правая кисть онемела.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Онемение заметил после сна.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Такое случилось впервые.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Пальцы на правой руке холодные.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Пальцы на правой руке холодные.",
+            "needles": [
+              "Пальцы на правой руке холодные."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b05",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.7796568000048865,
+      "input_text": "Какая жалоба сейчас? Правая кисть онемела. Что ощущаете в пальцах? Пальцы на правой руке холодные. Когда заметили онемение? Онемение заметил после сна. Такое бывало раньше? Такое случилось впервые.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Правая кисть онемела."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Пальцы на правой руке холодные."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Онемение заметил после сна."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Такое случилось впервые."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 4,
+        "expected": 4,
+        "false_positive": 1,
+        "false_negative": 1,
+        "precision": 0.75,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Правая кисть онемела.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Онемение заметил после сна.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Такое случилось впервые.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 1,
+            "section": "anamnesis",
+            "quote": "Пальцы на правой руке холодные.",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Пальцы на правой руке холодные.",
+            "needles": [
+              "Пальцы на правой руке холодные."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 4.71118060000299,
+      "input_text": "Что беспокоит сейчас? Сильно хочется пить. Когда появилась сухость? Сухость появилась после пробуждения. Есть боль при глотании? Глотать сейчас не больно. Когда последний раз пили? С вечера ничего не пил.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Что беспокоит сейчас?"
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно хочется пить."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появилась сухость?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Сухость появилась после пробуждения."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда последний раз пили?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "С вечера ничего не пил."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 3,
+        "false_negative": 1,
+        "precision": 0.5,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно хочется пить.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Сухость появилась после пробуждения.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "С вечера ничего не пил.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Что беспокоит сейчас?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появилась сухость?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Когда последний раз пили?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Глотать сейчас не больно.",
+            "needles": [
+              "Глотать сейчас не больно."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 2,
+      "status": "completed",
+      "seconds": 3.5056401999900118,
+      "input_text": "Что беспокоит сейчас? Сильно хочется пить. Когда появилась сухость? Сухость появилась после пробуждения. Есть боль при глотании? Глотать сейчас не больно. Когда последний раз пили? С вечера ничего не пил.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Что беспокоит сейчас?"
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно хочется пить."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появилась сухость?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Сухость появилась после пробуждения."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда последний раз пили?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "С вечера ничего не пил."
+        }
+      ],
+      "metrics": {
+        "true_positive": 3,
+        "predicted": 6,
+        "expected": 4,
+        "false_positive": 3,
+        "false_negative": 1,
+        "precision": 0.5,
+        "recall": 0.75,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно хочется пить.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Сухость появилась после пробуждения.",
+            "grounded": true,
+            "expected_index": 2
+          },
+          {
+            "prediction_index": 5,
+            "section": "anamnesis",
+            "quote": "С вечера ничего не пил.",
+            "grounded": true,
+            "expected_index": 3
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Что беспокоит сейчас?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появилась сухость?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Когда последний раз пили?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Глотать сейчас не больно.",
+            "needles": [
+              "Глотать сейчас не больно."
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "b06",
+      "split": "evaluation",
+      "repetition": 3,
+      "status": "completed",
+      "seconds": 2.8705537999921944,
+      "input_text": "Что беспокоит сейчас? Сильно хочется пить. Когда появилась сухость? Сухость появилась после пробуждения. Есть боль при глотании? Глотать сейчас не больно. Когда последний раз пили? С вечера ничего не пил.",
+      "predictions": [
+        {
+          "section": "complaints",
+          "quote": "Что беспокоит сейчас?"
+        },
+        {
+          "section": "complaints",
+          "quote": "Сильно хочется пить."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда появилась сухость?"
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Сухость появилась после пробуждения."
+        },
+        {
+          "section": "anamnesis",
+          "quote": "Когда последний раз пили?"
+        }
+      ],
+      "metrics": {
+        "true_positive": 2,
+        "predicted": 5,
+        "expected": 4,
+        "false_positive": 3,
+        "false_negative": 2,
+        "precision": 0.4,
+        "recall": 0.5,
+        "ungrounded_predictions": 0,
+        "matched": [
+          {
+            "prediction_index": 1,
+            "section": "complaints",
+            "quote": "Сильно хочется пить.",
+            "grounded": true,
+            "expected_index": 0
+          },
+          {
+            "prediction_index": 3,
+            "section": "anamnesis",
+            "quote": "Сухость появилась после пробуждения.",
+            "grounded": true,
+            "expected_index": 2
+          }
+        ],
+        "unmatched": [
+          {
+            "prediction_index": 0,
+            "section": "complaints",
+            "quote": "Что беспокоит сейчас?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 2,
+            "section": "anamnesis",
+            "quote": "Когда появилась сухость?",
+            "grounded": true
+          },
+          {
+            "prediction_index": 4,
+            "section": "anamnesis",
+            "quote": "Когда последний раз пили?",
+            "grounded": true
+          }
+        ],
+        "missed": [
+          {
+            "expected_index": 1,
+            "section": "complaints",
+            "quote": "Глотать сейчас не больно.",
+            "needles": [
+              "Глотать сейчас не больно."
+            ]
+          },
+          {
+            "expected_index": 3,
+            "section": "anamnesis",
+            "quote": "С вечера ничего не пил.",
+            "needles": [
+              "С вечера ничего не пил."
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 18,
+    "completed": 18,
+    "failed": 0,
+    "seconds": {
+      "median": 3.4803963499944075,
+      "min": 2.7628584999911254,
+      "max": 4.71118060000299
+    },
+    "true_positive": 45,
+    "predicted": 96,
+    "expected_in_completed_runs": 72,
+    "precision": 0.46875,
+    "recall": 0.625,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}

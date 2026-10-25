@@ -1,0 +1,27 @@
+{
+  "format": "medical-audio-mvp",
+  "version": 1,
+  "document": {
+    "transcript": "Болит колено. Началось вчера.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Болит колено.",
+        "start": 0,
+        "end": 13
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Началось вчера.",
+        "start": 14,
+        "end": 29
+      }
+    ],
+    "sections": {
+      "complaints": "Исправлено человеком: левое колено.",
+      "anamnesis": "Началось вчера."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\audio\\dev01.wav"
+  }
+}

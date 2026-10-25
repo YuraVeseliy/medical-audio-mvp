@@ -1,0 +1,3 @@
+Qwen is licensed under the Qwen RESEARCH LICENSE AGREEMENT, Copyright (c) Alibaba Cloud. All Rights Reserved.
+
+This package uses the unmodified Qwen2.5-3B-Instruct Q4_K_M model for non-commercial research and evaluation. A copy of the agreement is included in licenses/Qwen3B-LICENSE.txt and .runtime/licenses/Qwen3B-LICENSE.txt.

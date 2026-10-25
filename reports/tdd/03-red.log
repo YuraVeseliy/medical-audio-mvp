@@ -1,0 +1,17 @@
+test_a01_supported_audio_produces_document (test_session.SessionTests.test_a01_supported_audio_produces_document) ... ok
+test_a02_damaged_audio_has_readable_error (test_session.SessionTests.test_a02_damaged_audio_has_readable_error) ... ok
+test_a03_no_recognized_speech_is_not_a_completed_form (test_session.SessionTests.test_a03_no_recognized_speech_is_not_a_completed_form) ... FAIL
+
+======================================================================
+FAIL: test_a03_no_recognized_speech_is_not_a_completed_form (test_session.SessionTests.test_a03_no_recognized_speech_is_not_a_completed_form)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp\tests\test_session.py", line 51, in test_a03_no_recognized_speech_is_not_a_completed_form
+    with self.assertRaisesRegex(AppError, "Речь"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: AppError not raised
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.008s
+
+FAILED (failures=1)

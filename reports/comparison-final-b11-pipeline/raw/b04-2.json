@@ -1,0 +1,100 @@
+{
+  "document": {
+    "transcript": "когда произошло падение. Вчера вечером упал с велосипеда, кто беспокоит при дыхании, трудно глубоко вдохнуть. После чего появилась бол. Эта бол появилась после падения. Где возникает бол, прикашли болит с право-потребрами.",
+    "evidence": [
+      {
+        "section": "complaints",
+        "quote": "Вчера вечером упал с велосипеда, кто беспокоит при дыхании, трудно глубоко вдохнуть.",
+        "start": 25,
+        "end": 109
+      },
+      {
+        "section": "complaints",
+        "quote": "Где возникает бол, прикашли болит с право-потребрами.",
+        "start": 169,
+        "end": 222
+      },
+      {
+        "section": "anamnesis",
+        "quote": "когда произошло падение.",
+        "start": 0,
+        "end": 24
+      },
+      {
+        "section": "anamnesis",
+        "quote": "Эта бол появилась после падения.",
+        "start": 136,
+        "end": 168
+      }
+    ],
+    "sections": {
+      "complaints": "Вчера вечером упал с велосипеда, кто беспокоит при дыхании, трудно глубоко вдохнуть.\nГде возникает бол, прикашли болит с право-потребрами.",
+      "anamnesis": "когда произошло падение.\nЭта бол появилась после падения."
+    },
+    "warnings": [],
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\evaluation-b11\\audio\\b04.wav"
+  },
+  "model_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"complaints\":[2,5],\"anamnesis\":[1,4]}"
+        }
+      }
+    ],
+    "created": 1792876508,
+    "model": "medical-local",
+    "system_fingerprint": "b11669-620d2225c",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 19,
+      "prompt_tokens": 551,
+      "total_tokens": 570,
+      "prompt_tokens_details": {
+        "cached_tokens": 550
+      }
+    },
+    "id": "chatcmpl-QuvjpI9CPZj5vrgujC5YEP9Yyp70ivtu",
+    "timings": {
+      "cache_n": 550,
+      "prompt_n": 1,
+      "prompt_ms": 107.247,
+      "prompt_per_token_ms": 107.247,
+      "prompt_per_second": 9.324270142754576,
+      "predicted_n": 19,
+      "predicted_ms": 1999.315,
+      "predicted_per_token_ms": 111.07305555555556,
+      "predicted_per_second": 9.00308355611797
+    }
+  },
+  "prompt_tokens": 551,
+  "evidence": [
+    {
+      "section": "complaints",
+      "quote": "Вчера вечером упал с велосипеда, кто беспокоит при дыхании, трудно глубоко вдохнуть.",
+      "start": 25,
+      "end": 109
+    },
+    {
+      "section": "complaints",
+      "quote": "Где возникает бол, прикашли болит с право-потребрами.",
+      "start": 169,
+      "end": 222
+    },
+    {
+      "section": "anamnesis",
+      "quote": "когда произошло падение.",
+      "start": 0,
+      "end": 24
+    },
+    {
+      "section": "anamnesis",
+      "quote": "Эта бол появилась после падения.",
+      "start": 136,
+      "end": 168
+    }
+  ]
+}

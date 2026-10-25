@@ -1,0 +1,59 @@
+{
+  "started_at": "2026-10-24T19:21:48.755375+00:00",
+  "operation": "extract",
+  "arguments": {
+    "operation": "extract",
+    "manifest": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\data\\manifest.json",
+    "split": "evaluation",
+    "engine": "our",
+    "model": "medical-local",
+    "endpoint": "http://127.0.0.1:8081",
+    "buzz_source": "",
+    "transcript_dir": "reports/comparison-asr-fw/transcripts",
+    "prompt_file": null,
+    "repeat": 3,
+    "ids": "",
+    "threads": 8,
+    "warmup": "dev01",
+    "out": "reports\\comparison-pipeline-our"
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "executable": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp\\.venv\\Scripts\\python.exe",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "logical_cpus": 16,
+    "packages": {
+      "faster-whisper": "1.2.1",
+      "ctranslate2": "4.6.0",
+      "vosk": "0.3.45",
+      "soundfile": "0.13.1",
+      "numpy": "2.2.6",
+      "openai": "1.109.1",
+      "buzz-captions": null
+    }
+  },
+  "manifest_sha256": "774dde4be54822f40f927c896759e68a1e294c9d8df483155a0a28dfd6018c4c",
+  "prompt_sha256": "e030b0bff9616675fbed41c13cca76c49def92b6db002b34af917af2164965cc",
+  "dataset_validation": "Эталон равен входному тексту синтеза; независимая сверка человеком с аудио ещё не выполнена. Разделы и факты подготовлены разработчиком, медицинская приёмка отсутствует.",
+  "scope": "our local extraction adapter",
+  "scoring": "v2: exact normalized quote equality, correct section, one-to-one, source grounding; not independent semantic or clinical assessment",
+  "script_sha256": "90c2fe14a165944cfd2290689e0e947fc52423954fe1b45958aae02c0e5d2d57",
+  "application_provider_sha256": "76981a58b8f0d9c155313714b17b9a67ae632ff590eb7e258f31746994bbde7b",
+  "runtime_manifest_sha256": "b9ed87eb39cbff0453f9104d9b31b0ef8c4b2fdde0b241049dc967f5f9f326da",
+  "generation_settings": {
+    "temperature": 0,
+    "seed": 42,
+    "max_tokens": 1024,
+    "response_format": "application JSON schema",
+    "source_quote_filter": true
+  },
+  "comparison_limit": "Штатные адаптеры используют разные схемы, подсказки и настройки. Это сравнение конфигураций компонентов на одной задаче, не изолированное сравнение архитектур и не оценка всего GUI.",
+  "adapter_load_seconds": 4.440000338945538e-05,
+  "warmup": {
+    "id": "dev01",
+    "input": "development reference text",
+    "seconds": 3.1598279000027105,
+    "status": "completed"
+  }
+}

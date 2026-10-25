@@ -1,0 +1,7 @@
+Processing c:\users\chern\documents\codex\2026-09-30\cnbkm\project\medical_audio_mvp\.runtime\downloads\srt-3.5.3.tar.gz
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: srt
+Failed to build srt
+  WARNING: Building wheel for srt failed: [WinError 5] �������� � �������: 'c:\\users\\chern\\appdata\\local\\pip\\cache\\wheels\\42'
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (srt)

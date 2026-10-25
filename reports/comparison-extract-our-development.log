@@ -1,0 +1,18 @@
+our dev01 #1: completed 6.095s
+our dev02 #1: completed 5.942s
+{
+  "attempted": 2,
+  "completed": 2,
+  "failed": 0,
+  "seconds": {
+    "median": 6.0180835999999545,
+    "min": 5.941511900004116,
+    "max": 6.094655299995793
+  },
+  "true_positive": 4,
+  "predicted": 4,
+  "expected_in_completed_runs": 8,
+  "precision": 1.0,
+  "recall": 0.5,
+  "denominator_note": "�������� ����������� �� ����������� ��������; ������ ������� �������� ��������. ������� �� �������� ������������ ����������."
+}

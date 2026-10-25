@@ -1,0 +1,18 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 31.45549770000798,
+  "hf_offline": true,
+  "scope": "actual packaged EXE with packaged models, development WAV, no microphone"
+}
+{
+  "status": "passed",
+  "files": [
+    "session.json",
+    "result.txt",
+    "run.json"
+  ],
+  "transcript_characters": 199,
+  "evidence_count": 7,
+  "source_offsets_valid": true,
+  "scope": "actual portable EXE output structure, source references and UTF-8; not semantic correctness"
+}

@@ -1,0 +1,43 @@
+{
+  "runs": [
+    {
+      "id": "silence",
+      "split": "control",
+      "repetition": 1,
+      "status": "completed",
+      "seconds": 0.3838058999972418,
+      "duration_seconds": 3.0,
+      "rtf": 0.1279352999990806,
+      "audio_sha256": "d303811b8c84619667cd0501342f84ec6cbe69f7aa3856dcf52fabda374c92b8",
+      "transcript": "",
+      "metrics": {
+        "reference_words": 0,
+        "hypothesis_words": 0,
+        "substitutions": 0,
+        "deletions": 0,
+        "insertions": 0,
+        "errors": 0,
+        "wer": null
+      }
+    }
+  ],
+  "summary": {
+    "attempted": 1,
+    "completed": 1,
+    "failed": 0,
+    "seconds": {
+      "median": 0.3838058999972418,
+      "min": 0.3838058999972418,
+      "max": 0.3838058999972418
+    },
+    "word_counts": {
+      "errors": 0,
+      "reference_words": 0,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 0
+    },
+    "corpus_wer": null,
+    "denominator_note": "Качество суммируется по завершённым попыткам; ошибки запуска показаны отдельно. Повторы не являются независимыми сценариями."
+  }
+}
