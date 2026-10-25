@@ -1,0 +1,1261 @@
+{
+  "time_utc": "2026-10-25T11:41:33.158108+00:00",
+  "commit": "fd7345575d68ee3c4e46c0df49089ad99cf2a114",
+  "source_sha256": "f5245b72534f0acaaca28d0876aa19a463e0bbd85e6d8f0aef893264f67e8bdf",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/audio.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/metrics.py",
+    "audio_mvp/model.py",
+    "audio_mvp/provenance.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_experiment_integrity.py",
+    "tests/test_metrics.py",
+    "tests/test_recording_stop.py",
+    "tests/test_transcription.py",
+    "run_app.pyw",
+    "scripts/check.py",
+    "scripts/compare_asr.py",
+    "scripts/check_gui_scenario.py",
+    "configs/asr-models.json",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "dataset_manifest_sha256": "e4dd5dbd07764fc19af8e4410553ad06fcae15c5725a8076a2dcc06057eff9d2",
+  "dataset_contents_sha256": "aea54933dadc13fdc461924e8562037ed080ddb9a6d6b45bbb15eb601ce2221d",
+  "split": "selection",
+  "ids": [
+    "dialog01",
+    "dialog02",
+    "dialog03",
+    "dialog04",
+    "dialog05",
+    "dialog06"
+  ],
+  "independent_recordings": 6,
+  "repeats": 3,
+  "models": [
+    {
+      "model_id": "whisper-base",
+      "installation_manifest_sha256": "a504ee0e4948c619a12fb52193874e26d227bdcd1f2388e8f9b1a5886993f901",
+      "installation_fingerprint": "535864ece7ba906138d969a931a5f5796b46d939cf934bd01828d2a25e055b18",
+      "installation": {
+        "model_id": "whisper-base",
+        "definition": {
+          "repo": "Systran/faster-whisper-base",
+          "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+          "artifacts": [
+            "faster-whisper-base/README.md",
+            "faster-whisper-base/config.json",
+            "faster-whisper-base/model.bin",
+            "faster-whisper-base/tokenizer.json",
+            "faster-whisper-base/vocabulary.txt"
+          ],
+          "label": "Whisper base · CPU int8",
+          "engine": "whisper",
+          "folder": "faster-whisper-base",
+          "variant": ""
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/README.md",
+            "destination": "models/faster-whisper-base/README.md",
+            "size": 1991,
+            "repo": "Systran/faster-whisper-base",
+            "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+            "git_blob_sha1": "cddfec65ffb3e3df45d2234f09f3d261bf9a9c0a",
+            "actual_size": 1991,
+            "actual_sha256": "b922acef3616e27b1d416260b63ba7114c732f0315012006781af2da69cd1ebf"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json",
+            "destination": "models/faster-whisper-base/config.json",
+            "size": 2309,
+            "repo": "Systran/faster-whisper-base",
+            "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+            "git_blob_sha1": "867cf1a0fece1394e01d55e287ba2f09a577c046",
+            "actual_size": 2309,
+            "actual_sha256": "56a6d8110d311f19c8f0471e562832c7527f146b567275bfca59fcf7c184da9a"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/model.bin",
+            "destination": "models/faster-whisper-base/model.bin",
+            "size": 145217532,
+            "repo": "Systran/faster-whisper-base",
+            "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+            "sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9",
+            "actual_size": 145217532,
+            "actual_sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json",
+            "destination": "models/faster-whisper-base/tokenizer.json",
+            "size": 2203239,
+            "repo": "Systran/faster-whisper-base",
+            "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+            "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344",
+            "actual_size": 2203239,
+            "actual_sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt",
+            "destination": "models/faster-whisper-base/vocabulary.txt",
+            "size": 459861,
+            "repo": "Systran/faster-whisper-base",
+            "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+            "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75",
+            "actual_size": 459861,
+            "actual_sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/faster-whisper-base/config.json",
+            "bytes": 2309,
+            "sha256": "56a6d8110d311f19c8f0471e562832c7527f146b567275bfca59fcf7c184da9a"
+          },
+          {
+            "path": "models/faster-whisper-base/model.bin",
+            "bytes": 145217532,
+            "sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9"
+          },
+          {
+            "path": "models/faster-whisper-base/README.md",
+            "bytes": 1991,
+            "sha256": "b922acef3616e27b1d416260b63ba7114c732f0315012006781af2da69cd1ebf"
+          },
+          {
+            "path": "models/faster-whisper-base/tokenizer.json",
+            "bytes": 2203239,
+            "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "path": "models/faster-whisper-base/vocabulary.txt",
+            "bytes": 459861,
+            "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "whisper-small",
+      "installation_manifest_sha256": "39988b0feb303247b2c2a72c048cb920337ba43d6c8be4e4dbfec7655fa8e404",
+      "installation_fingerprint": "8f8fd1a63482646a95f1d5882f62cfd606ed51e6987785b5eb083972857ac311",
+      "installation": {
+        "model_id": "whisper-small",
+        "definition": {
+          "repo": "Systran/faster-whisper-small",
+          "revision": "536b0662742c02347bc0e980a01041f333bce120",
+          "artifacts": [
+            "faster-whisper-small/README.md",
+            "faster-whisper-small/config.json",
+            "faster-whisper-small/model.bin",
+            "faster-whisper-small/tokenizer.json",
+            "faster-whisper-small/vocabulary.txt"
+          ],
+          "label": "Whisper small · CPU int8",
+          "engine": "whisper",
+          "folder": "faster-whisper-small",
+          "variant": ""
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/README.md",
+            "destination": "models/faster-whisper-small/README.md",
+            "size": 1998,
+            "repo": "Systran/faster-whisper-small",
+            "revision": "536b0662742c02347bc0e980a01041f333bce120",
+            "git_blob_sha1": "16511f6106ead2fbc3a1480957a217c2661a5a98",
+            "actual_size": 1998,
+            "actual_sha256": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/config.json",
+            "destination": "models/faster-whisper-small/config.json",
+            "size": 2370,
+            "repo": "Systran/faster-whisper-small",
+            "revision": "536b0662742c02347bc0e980a01041f333bce120",
+            "git_blob_sha1": "e5047537059bd8f182d9ca64c470201585015187",
+            "actual_size": 2370,
+            "actual_sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/model.bin",
+            "destination": "models/faster-whisper-small/model.bin",
+            "size": 483546902,
+            "repo": "Systran/faster-whisper-small",
+            "revision": "536b0662742c02347bc0e980a01041f333bce120",
+            "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671",
+            "actual_size": 483546902,
+            "actual_sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json",
+            "destination": "models/faster-whisper-small/tokenizer.json",
+            "size": 2203239,
+            "repo": "Systran/faster-whisper-small",
+            "revision": "536b0662742c02347bc0e980a01041f333bce120",
+            "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344",
+            "actual_size": 2203239,
+            "actual_sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt",
+            "destination": "models/faster-whisper-small/vocabulary.txt",
+            "size": 459861,
+            "repo": "Systran/faster-whisper-small",
+            "revision": "536b0662742c02347bc0e980a01041f333bce120",
+            "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75",
+            "actual_size": 459861,
+            "actual_sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/faster-whisper-small/config.json",
+            "bytes": 2370,
+            "sha256": "b55496ac7940a7ae47d2c01eab40edfd8701feec1229d9cce3b40014383fb828"
+          },
+          {
+            "path": "models/faster-whisper-small/model.bin",
+            "bytes": 483546902,
+            "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+          },
+          {
+            "path": "models/faster-whisper-small/README.md",
+            "bytes": 1998,
+            "sha256": "329373481008c7c38654aff8ecdcf0163c211557cc7ba8e2ef6f2f84b4f75ec8"
+          },
+          {
+            "path": "models/faster-whisper-small/tokenizer.json",
+            "bytes": 2203239,
+            "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "path": "models/faster-whisper-small/vocabulary.txt",
+            "bytes": 459861,
+            "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "whisper-medium",
+      "installation_manifest_sha256": "b52952c4379d266c8b31e4f1d969edd796b8d4f22b18f900308f3cb2665ef97d",
+      "installation_fingerprint": "0576616249dafa1d24d5fa0ed18a79e356bdc6c08dcf02996d4f973ccfb79cf9",
+      "installation": {
+        "model_id": "whisper-medium",
+        "definition": {
+          "repo": "Systran/faster-whisper-medium",
+          "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+          "artifacts": [
+            "faster-whisper-medium/README.md",
+            "faster-whisper-medium/config.json",
+            "faster-whisper-medium/model.bin",
+            "faster-whisper-medium/tokenizer.json",
+            "faster-whisper-medium/vocabulary.txt"
+          ],
+          "label": "Whisper medium · CPU int8",
+          "engine": "whisper",
+          "folder": "faster-whisper-medium",
+          "variant": ""
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/README.md",
+            "destination": "models/faster-whisper-medium/README.md",
+            "size": 2005,
+            "repo": "Systran/faster-whisper-medium",
+            "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+            "git_blob_sha1": "68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb",
+            "actual_size": 2005,
+            "actual_sha256": "a30144a6232423e5e4e9e17952b5a543a506dc0cb9de02fd9d875d7ec40fef83"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json",
+            "destination": "models/faster-whisper-medium/config.json",
+            "size": 2257,
+            "repo": "Systran/faster-whisper-medium",
+            "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+            "git_blob_sha1": "242aa06a480a7b5509375c645097e87af5136774",
+            "actual_size": 2257,
+            "actual_sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin",
+            "destination": "models/faster-whisper-medium/model.bin",
+            "size": 1527906378,
+            "repo": "Systran/faster-whisper-medium",
+            "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+            "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae",
+            "actual_size": 1527906378,
+            "actual_sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json",
+            "destination": "models/faster-whisper-medium/tokenizer.json",
+            "size": 2203239,
+            "repo": "Systran/faster-whisper-medium",
+            "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+            "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344",
+            "actual_size": 2203239,
+            "actual_sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt",
+            "destination": "models/faster-whisper-medium/vocabulary.txt",
+            "size": 459861,
+            "repo": "Systran/faster-whisper-medium",
+            "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+            "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75",
+            "actual_size": 459861,
+            "actual_sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/faster-whisper-medium/config.json",
+            "bytes": 2257,
+            "sha256": "3622a2ddc41ec0e0fd4e68c13c6830f03b90c38d89aaad184de02c8c642cf807"
+          },
+          {
+            "path": "models/faster-whisper-medium/model.bin",
+            "bytes": 1527906378,
+            "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae"
+          },
+          {
+            "path": "models/faster-whisper-medium/README.md",
+            "bytes": 2005,
+            "sha256": "a30144a6232423e5e4e9e17952b5a543a506dc0cb9de02fd9d875d7ec40fef83"
+          },
+          {
+            "path": "models/faster-whisper-medium/tokenizer.json",
+            "bytes": 2203239,
+            "sha256": "fb7b63191e9bb045082c79fd742a3106a12c99513ab30df4a0d47fa6cb6fd0ab"
+          },
+          {
+            "path": "models/faster-whisper-medium/vocabulary.txt",
+            "bytes": 459861,
+            "sha256": "34ce3fe1c5041027b3f8d42912270993f986dbc4bb34cf27f951e34a1e453913"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "vosk-small",
+      "installation_manifest_sha256": "919cf48375adceaef51359df1598f8292779f20bb4cc5baad83a97dcf0c05b68",
+      "installation_fingerprint": "fd829cef69e4d677ca2c6f6c3b2ca7985881fd6e060c5a391045f71d7a91b866",
+      "installation": {
+        "model_id": "vosk-small",
+        "definition": {
+          "artifacts": [
+            "vosk-model-small-ru-0.22.zip"
+          ],
+          "source": "official alphacephei.com versioned archive",
+          "label": "Vosk small-ru-0.22",
+          "engine": "vosk",
+          "folder": "vosk-model-small-ru-0.22",
+          "variant": ""
+        },
+        "artifacts": [
+          {
+            "url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
+            "destination": "downloads/vosk-model-small-ru-0.22.zip",
+            "archive_root": "vosk-model-small-ru-0.22",
+            "size": 46236750,
+            "sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4",
+            "actual_size": 46236750,
+            "actual_sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/vosk-model-small-ru-0.22/am/final.mdl",
+            "bytes": 15862383,
+            "sha256": "36d67b53dc90d96ea48097f9e17e7c5937689ad76cb8bed25091317bbaf25919"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/conf/mfcc.conf",
+            "bytes": 131,
+            "sha256": "1e2228006d01d805ad1c267fee9f79709ca87ac51bd82b0e3f5c69ba543f0fc4"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/conf/model.conf",
+            "bytes": 289,
+            "sha256": "dd7178da0e99fdbe489816c1e9702c3daa28e02accacc2993e0becb7af33b80c"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/graph/disambig_tid.int",
+            "bytes": 25,
+            "sha256": "c3af3dbc5eb301c4b282480d785c04b1642a8db83210a12332e9790e50146fd2"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/graph/Gr.fst",
+            "bytes": 32288259,
+            "sha256": "189b4f67c69eb34b9d8b47b12f184665e5445667ca5264579b61c6b9eb2cef1e"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/graph/HCLr.fst",
+            "bytes": 32993810,
+            "sha256": "0b096f4676f306aa3e60d2244ef1e24c5c699b8794acf3c3946b59bcc9dca831"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/graph/phones/word_boundary.int",
+            "bytes": 2166,
+            "sha256": "23081404fe1cc7338c013a4beec133637147d60472c06ab64ff88ee3d028a7b5"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/final.dubm",
+            "bytes": 168048,
+            "sha256": "7dffe22bd992d7274fba925632bded4756d82dfd9b962d3c703110251fdf35b8"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/final.ie",
+            "bytes": 9927287,
+            "sha256": "94f2558d00fe199ac01409281352eb16707ec075baaf9cc0d7b53011583cfa0e"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/final.mat",
+            "bytes": 44975,
+            "sha256": "956577d396b636fe359b4321f10df5ed6a76bdfdec366b4a2b7d3242e524f04f"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/global_cmvn.stats",
+            "bytes": 1077,
+            "sha256": "c600cbf4acfbfac99d587040d48dc31129cd635b112ff15bfa2e9d3b0cece1f8"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/online_cmvn.conf",
+            "bytes": 95,
+            "sha256": "a2f3571754b64297cb7efb2e7ca3df61995c5a45fcbb97188f90613552bb2dfe"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/ivector/splice.conf",
+            "bytes": 35,
+            "sha256": "9f0c5f7c82d18eaf25d8bce470efa9f7741f88411fe428774bc0a9bb69a24756"
+          },
+          {
+            "path": "models/vosk-model-small-ru-0.22/README",
+            "bytes": 660,
+            "sha256": "b662517cacda14945e159538d6dd8faff23bd706e024c4fb338b6013c9939b9e"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "vosk-large",
+      "installation_manifest_sha256": "ebbd8224bdddfe288038163c4b0e3cba0423b85ec71d2f713e47b5cbb7667626",
+      "installation_fingerprint": "ede852d661d4b0c5d209e3072b871b31adfea4540dd03b182db55d86d0275202",
+      "installation": {
+        "model_id": "vosk-large",
+        "definition": {
+          "artifacts": [
+            "vosk-model-ru-0.42.zip"
+          ],
+          "source": "official alphacephei.com versioned archive",
+          "label": "Vosk ru-0.42",
+          "engine": "vosk",
+          "folder": "vosk-model-ru-0.42",
+          "variant": ""
+        },
+        "artifacts": [
+          {
+            "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.42.zip",
+            "destination": "downloads/vosk-model-ru-0.42.zip",
+            "archive_root": "vosk-model-ru-0.42",
+            "size": 1937602113,
+            "sha256": "00eb9e5ed8230492da1acf702cd3548e1282256a5fdde8f188253e77217e9429",
+            "actual_size": 1937602113,
+            "actual_sha256": "00eb9e5ed8230492da1acf702cd3548e1282256a5fdde8f188253e77217e9429"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/vosk-model-ru-0.42/am/final.mdl",
+            "bytes": 118675405,
+            "sha256": "7453936e3cf00709d5304e994a4bebf02dddbb311abf935ae62f10c946fe15c6"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/am/frame_subsampling_factor",
+            "bytes": 1,
+            "sha256": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/am/tree",
+            "bytes": 359200,
+            "sha256": "c98f7f9411ce81ff31575dbfba65beea43c550485a57c80a2937bb9fbe48abd3"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/conf/ivector_extractor.conf",
+            "bytes": 219,
+            "sha256": "7a2a867d936992b10368fd7e079f5cb0bff4a2beb1b7fdce5b85e0e5e55eb203"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/conf/mfcc.conf",
+            "bytes": 128,
+            "sha256": "cdb0d516e5b8886092f1d840c628107703a65b571dc3b16b888a9a3978958b96"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/conf/model.conf",
+            "bytes": 289,
+            "sha256": "5be64db91cc7895d29a61dafc88e61d7de9c2ffba9d2f7bffc0f16df02ece6aa"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/conf/online.conf",
+            "bytes": 152,
+            "sha256": "00f841a7097f5b97a85dec922ed0ccb5cf80e56638913f4bbd39be993ca8de9a"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/decode.py",
+            "bytes": 690,
+            "sha256": "e1288e84c1e9dd01a0f11b4c1585ed3768efdeebb1a2ce777127ab75b1585416"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/decoder-test.wav",
+            "bytes": 113324,
+            "sha256": "407e10a1a771e355c8323db3ad9634d18d358846fd48debecff6ad9ade91af13"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/golos_crowd.ref",
+            "bytes": 1018966,
+            "sha256": "aaf8649119f7b61d50cfc36bd64c61bf111fd5b55cd93d3ef2a5468675c1ea37"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/README",
+            "bytes": 66,
+            "sha256": "d881f7afbfec5d2dede966fdb1f24f90e0da0a0dedca20980befc4087dae7c18"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/silero_books.ref",
+            "bytes": 762647,
+            "sha256": "f2a70f28fe4379796b530804ea7443b61440e483281cf0fc0a41f9c85fe20a52"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/silero_calls.ref",
+            "bytes": 1225281,
+            "sha256": "385e8efccf70ca80dd249d03f7a141d499f5f8e08fb6bec49fc8dcd2b1847d73"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/silero_youtube.ref",
+            "bytes": 742795,
+            "sha256": "5f7107585a5893b46d9d1cae3845ac8790c37c23eb4cf18afbca098ccd5a4530"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/extra/sova_devices.ref",
+            "bytes": 289557,
+            "sha256": "e0400001f944677de3dd135c1f1bdb14b6e1c60b6e1d1acee141218a53336031"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/disambig_tid.int",
+            "bytes": 35,
+            "sha256": "3aa1f7e4bd0c9f38965488654310a8e0c99a1e972abc25736980caff86387c78"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/HCLG.fst",
+            "bytes": 847501561,
+            "sha256": "7f3dbf0adfe8de87044c69deb179dea86da01eea3f988da056b55d91159b2146"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/num_pdfs",
+            "bytes": 5,
+            "sha256": "7323520392ed07482f4a69546eb13a11b8c1e8e8f88d20230981aec95818acfe"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/align_lexicon.int",
+            "bytes": 102428000,
+            "sha256": "615f2e25c8e969c8ac0c0aabc9b07f34092dbb71d438d5b5f84f2e35ac62394e"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/align_lexicon.txt",
+            "bytes": 178428428,
+            "sha256": "6f26e79ef3bab96338f6a61edb6971e95d3e690e328022f5388fb6d7be816a3f"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/disambig.int",
+            "bytes": 32,
+            "sha256": "d08ff41ca84fe94518d568a335e8eec118bd3e912f1f20096ea1ab710b57c746"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/disambig.txt",
+            "bytes": 24,
+            "sha256": "65e9717d74b5f906d96e56508df0b7810cdf09eb406417bff0d510dd0836e38b"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/optional_silence.csl",
+            "bytes": 2,
+            "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/optional_silence.int",
+            "bytes": 2,
+            "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/optional_silence.txt",
+            "bytes": 4,
+            "sha256": "ebe5d1c9a1dc955e8b0e9d16062b2d6fede3ba741afdb9a6aec65810009bee11"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/silence.csl",
+            "bytes": 21,
+            "sha256": "8d99bf63ef15987b60950cfd42d9484d3a4b16e679cd355ac98b439bb8f16147"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/word_boundary.int",
+            "bytes": 2166,
+            "sha256": "23081404fe1cc7338c013a4beec133637147d60472c06ab64ff88ee3d028a7b5"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones/word_boundary.txt",
+            "bytes": 2418,
+            "sha256": "19694be4c8bd1c6301e377e7b5424e3d1bf60b555a12386c6e4efebab268612f"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/phones.txt",
+            "bytes": 1716,
+            "sha256": "ac16734061a9e0ee7ed413d0bee17f2a95cbb40bfe205a4dc23e8e783eab0ff9"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/graph/words.txt",
+            "bytes": 57267033,
+            "sha256": "7ae70db4258f026df57fb19b4ba9d77be5a93ff7fc94970922ed5e89f51a99a6"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/final.dubm",
+            "bytes": 168048,
+            "sha256": "7dffe22bd992d7274fba925632bded4756d82dfd9b962d3c703110251fdf35b8"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/final.ie",
+            "bytes": 9927287,
+            "sha256": "94f2558d00fe199ac01409281352eb16707ec075baaf9cc0d7b53011583cfa0e"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/final.mat",
+            "bytes": 44975,
+            "sha256": "956577d396b636fe359b4321f10df5ed6a76bdfdec366b4a2b7d3242e524f04f"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/global_cmvn.stats",
+            "bytes": 1077,
+            "sha256": "c600cbf4acfbfac99d587040d48dc31129cd635b112ff15bfa2e9d3b0cece1f8"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/online_cmvn.conf",
+            "bytes": 0,
+            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/ivector/splice.conf",
+            "bytes": 35,
+            "sha256": "9f0c5f7c82d18eaf25d8bce470efa9f7741f88411fe428774bc0a9bb69a24756"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/README",
+            "bytes": 1285,
+            "sha256": "670b1b544370080ef501f62818d7d70ae84e881c2509f71da14bce981845062b"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rescore/G.carpa",
+            "bytes": 1576629248,
+            "sha256": "8014a71ba71af04085e06bae5d1db9c1cb8353736e22ccffca4976d4fb961095"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rescore/G.fst",
+            "bytes": 153493714,
+            "sha256": "33eb66517cc52b260a71585eaece2dada533d9f8bb499fd4f3bd8ece53dc41f2"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/feat_embedding.final.mat",
+            "bytes": 13838095,
+            "sha256": "bb6860903cece23f1fa8ff50cee4ad415c3fb8671111ce33034641124184546b"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/features.txt",
+            "bytes": 249266,
+            "sha256": "49d52f5c9225baeb3afc68728eb00df6997816d46c473d5c4606acfcdc6ff1a1"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/final.raw",
+            "bytes": 83806525,
+            "sha256": "361b0c7b1a632db99608d2c502217fd06bfb3fbcdf269d246df3c9f3922345d8"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/oov.txt",
+            "bytes": 6,
+            "sha256": "f577fde80148652a470eb4a0e87c9c2ae907ae3039051017832419ae463bd9be"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/special_symbol_opts.conf",
+            "bytes": 64,
+            "sha256": "429e59a7a2dc13b4931d76f75567a441adff46229b7c06bbdec23ac37ec56808"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/special_symbol_opts.txt",
+            "bytes": 64,
+            "sha256": "34b5b605d765ae619288c934d57611e827f7d42957bd93e7c942666e3fb5a3db"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/unigram_probs.txt",
+            "bytes": 59948505,
+            "sha256": "66587ec79742e6e95d8fdcd6ec1a8dd24fb1adc2405b949846ae0b92a2c882f1"
+          },
+          {
+            "path": "models/vosk-model-ru-0.42/rnnlm/word_feats.txt",
+            "bytes": 488866585,
+            "sha256": "67c3e08c49e4fb8f603cff0ad17fbec4d6c4481420395a889ee0406c50f537b4"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "gigaam-ctc",
+      "installation_manifest_sha256": "d1ee09804a0ac46e74636df6441922cea0862ad7d06d7ad82479afef073047f6",
+      "installation_fingerprint": "faad7d11a9bfc4b4eab91b6d815411298b502c0fb9e15e15b6fbeaf7091f466c",
+      "installation": {
+        "model_id": "gigaam-ctc",
+        "definition": {
+          "repo": "istupakov/gigaam-v3-onnx",
+          "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+          "artifacts": [
+            "gigaam-v3-onnx/LICENSE.txt",
+            "gigaam-v3-onnx/README.md",
+            "gigaam-v3-onnx/config.json",
+            "gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "gigaam-v3-onnx/v3_vocab.txt"
+          ],
+          "label": "GigaAM v3 CTC · ONNX int8",
+          "engine": "gigaam",
+          "folder": "gigaam-v3-onnx",
+          "variant": "gigaam-v3-ctc"
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/LICENSE.txt",
+            "destination": "models/gigaam-v3-onnx/LICENSE.txt",
+            "size": 1070,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "8d9a2e761e0feada9c9347a3f2265aee4653dba7",
+            "actual_size": 1070,
+            "actual_sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/README.md",
+            "destination": "models/gigaam-v3-onnx/README.md",
+            "size": 1501,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "7ae91ca1c26bb055a24214bbd2e5fd20abcb70b0",
+            "actual_size": 1501,
+            "actual_sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/config.json",
+            "destination": "models/gigaam-v3-onnx/config.json",
+            "size": 135,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "cdd16848240c6b03c0a0bc918f28ba9d4d6e4dc3",
+            "actual_size": 135,
+            "actual_sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_ctc.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "size": 224721181,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd",
+            "actual_size": 224721181,
+            "actual_sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_vocab.txt",
+            "destination": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "size": 198,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "218555fc2385ce241a873c001653e53f5e4b3432",
+            "actual_size": 198,
+            "actual_sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/gigaam-v3-onnx/config.json",
+            "bytes": 135,
+            "sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/LICENSE.txt",
+            "bytes": 1070,
+            "sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/README.md",
+            "bytes": 1501,
+            "sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "bytes": 224721181,
+            "sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "bytes": 198,
+            "sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "gigaam-rnnt",
+      "installation_manifest_sha256": "3bb16c6c796cd2034cadc90ac0208d93e9b440de15fd35abb44e783f1f58ecde",
+      "installation_fingerprint": "cf6a4deeb7d37a340911438aa03e9b1669dbd13e23db1580b8d0488c2d87f8f2",
+      "installation": {
+        "model_id": "gigaam-rnnt",
+        "definition": {
+          "repo": "istupakov/gigaam-v3-onnx",
+          "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+          "artifacts": [
+            "gigaam-v3-onnx/LICENSE.txt",
+            "gigaam-v3-onnx/README.md",
+            "gigaam-v3-onnx/config.json",
+            "gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx",
+            "gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
+            "gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
+            "gigaam-v3-onnx/v3_vocab.txt"
+          ],
+          "label": "GigaAM v3 RNN-T · ONNX int8",
+          "engine": "gigaam",
+          "folder": "gigaam-v3-onnx",
+          "variant": "gigaam-v3-rnnt"
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/LICENSE.txt",
+            "destination": "models/gigaam-v3-onnx/LICENSE.txt",
+            "size": 1070,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "8d9a2e761e0feada9c9347a3f2265aee4653dba7",
+            "actual_size": 1070,
+            "actual_sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/README.md",
+            "destination": "models/gigaam-v3-onnx/README.md",
+            "size": 1501,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "7ae91ca1c26bb055a24214bbd2e5fd20abcb70b0",
+            "actual_size": 1501,
+            "actual_sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/config.json",
+            "destination": "models/gigaam-v3-onnx/config.json",
+            "size": 135,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "cdd16848240c6b03c0a0bc918f28ba9d4d6e4dc3",
+            "actual_size": 135,
+            "actual_sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_decoder.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx",
+            "size": 842048,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "b9ad90cf00a5619d7fe23b054d307406d8ab37b4b1556857690a65c2aba36c30",
+            "actual_size": 842048,
+            "actual_sha256": "b9ad90cf00a5619d7fe23b054d307406d8ab37b4b1556857690a65c2aba36c30"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_encoder.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
+            "size": 224570473,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "fee39808a937beb46e870bb45c306e89e587f5b57db85c6c7627adcd30b767b8",
+            "actual_size": 224570473,
+            "actual_sha256": "fee39808a937beb46e870bb45c306e89e587f5b57db85c6c7627adcd30b767b8"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_joint.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
+            "size": 366698,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "343e49187edf9afce666b8e37e43b976a67861723d113bdc59e79ec5be796491",
+            "actual_size": 366698,
+            "actual_sha256": "343e49187edf9afce666b8e37e43b976a67861723d113bdc59e79ec5be796491"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_vocab.txt",
+            "destination": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "size": 198,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "218555fc2385ce241a873c001653e53f5e4b3432",
+            "actual_size": 198,
+            "actual_sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/gigaam-v3-onnx/config.json",
+            "bytes": 135,
+            "sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/LICENSE.txt",
+            "bytes": 1070,
+            "sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/README.md",
+            "bytes": 1501,
+            "sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx",
+            "bytes": 842048,
+            "sha256": "b9ad90cf00a5619d7fe23b054d307406d8ab37b4b1556857690a65c2aba36c30"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
+            "bytes": 224570473,
+            "sha256": "fee39808a937beb46e870bb45c306e89e587f5b57db85c6c7627adcd30b767b8"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
+            "bytes": 366698,
+            "sha256": "343e49187edf9afce666b8e37e43b976a67861723d113bdc59e79ec5be796491"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "bytes": 198,
+            "sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    },
+    {
+      "model_id": "gigaam-e2e-rnnt",
+      "installation_manifest_sha256": "1466905b480ca9bb5538d0b81b020939e1bc1ee4b75dfc23c35e98b59aadc1fb",
+      "installation_fingerprint": "232d5d7dad1b0bfd61f98dd77cce3dd63800e7c64ff7011e2de43dec17c22133",
+      "installation": {
+        "model_id": "gigaam-e2e-rnnt",
+        "definition": {
+          "repo": "istupakov/gigaam-v3-onnx",
+          "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+          "artifacts": [
+            "gigaam-v3-onnx/LICENSE.txt",
+            "gigaam-v3-onnx/README.md",
+            "gigaam-v3-onnx/config.json",
+            "gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx",
+            "gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
+            "gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
+            "gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt"
+          ],
+          "label": "GigaAM v3 E2E RNN-T · ONNX int8",
+          "engine": "gigaam",
+          "folder": "gigaam-v3-onnx",
+          "variant": "gigaam-v3-e2e-rnnt"
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/LICENSE.txt",
+            "destination": "models/gigaam-v3-onnx/LICENSE.txt",
+            "size": 1070,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "8d9a2e761e0feada9c9347a3f2265aee4653dba7",
+            "actual_size": 1070,
+            "actual_sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/README.md",
+            "destination": "models/gigaam-v3-onnx/README.md",
+            "size": 1501,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "7ae91ca1c26bb055a24214bbd2e5fd20abcb70b0",
+            "actual_size": 1501,
+            "actual_sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/config.json",
+            "destination": "models/gigaam-v3-onnx/config.json",
+            "size": 135,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "cdd16848240c6b03c0a0bc918f28ba9d4d6e4dc3",
+            "actual_size": 135,
+            "actual_sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_decoder.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx",
+            "size": 1159170,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "89014e134865615b91e037157e46e389b1271e6072460efc010ea08e61e23146",
+            "actual_size": 1159170,
+            "actual_sha256": "89014e134865615b91e037157e46e389b1271e6072460efc010ea08e61e23146"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_encoder.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
+            "size": 224570477,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "4e0e076a6076cd110277e529b8ac8f32cd5297f7fbebad5341ae8ddb7d00817b",
+            "actual_size": 224570477,
+            "actual_sha256": "4e0e076a6076cd110277e529b8ac8f32cd5297f7fbebad5341ae8ddb7d00817b"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_joint.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
+            "size": 687791,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "ade116563dbf66e503b0994efab6b5861412743e52bf31c39fc3fffa3783d5d1",
+            "actual_size": 687791,
+            "actual_sha256": "ade116563dbf66e503b0994efab6b5861412743e52bf31c39fc3fffa3783d5d1"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_vocab.txt",
+            "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt",
+            "size": 13354,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "bd0cf91adfec3b5c83b7cf5769cf7b14059e4d51",
+            "actual_size": 13354,
+            "actual_sha256": "39abae20e692998290c574e606f11a9edef2902a1995463fcff63d1490cf22b7"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/gigaam-v3-onnx/config.json",
+            "bytes": 135,
+            "sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/LICENSE.txt",
+            "bytes": 1070,
+            "sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/README.md",
+            "bytes": 1501,
+            "sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx",
+            "bytes": 1159170,
+            "sha256": "89014e134865615b91e037157e46e389b1271e6072460efc010ea08e61e23146"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
+            "bytes": 224570477,
+            "sha256": "4e0e076a6076cd110277e529b8ac8f32cd5297f7fbebad5341ae8ddb7d00817b"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
+            "bytes": 687791,
+            "sha256": "ade116563dbf66e503b0994efab6b5861412743e52bf31c39fc3fffa3783d5d1"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt",
+            "bytes": 13354,
+            "sha256": "39abae20e692998290c574e606f11a9edef2902a1995463fcff63d1490cf22b7"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    }
+  ],
+  "threads_requested": 8,
+  "executor": "agent",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "ram_bytes": 16539357184
+  },
+  "packages": {
+    "av": "16.0.1",
+    "numpy": "2.2.6",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.6.0",
+    "vosk": "0.3.45",
+    "onnx-asr": "0.12.0",
+    "onnxruntime": "1.23.2",
+    "psutil": "7.2.2"
+  },
+  "selection_rule": "eligible only: lowest aggregate WER, then median RTF, then peak worker RSS",
+  "normalization": "lowercase, yo/e, punctuation and whitespace; no semantic number or medical-word correction",
+  "recording_device_reported": "диктофон; точная модель и микрофон не уточнены",
+  "results": [
+    {
+      "model_id": "whisper-base",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 162,
+      "reference_words": 564,
+      "wer": 0.2872340425531915,
+      "median_seconds": 1.9172289999996792,
+      "median_rtf": 0.08731954619749825,
+      "peak_worker_rss_bytes": 348016640,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 0.807855600000039,
+      "error": null
+    },
+    {
+      "model_id": "whisper-small",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 108,
+      "reference_words": 564,
+      "wer": 0.19148936170212766,
+      "median_seconds": 5.50263890000042,
+      "median_rtf": 0.22961484298122967,
+      "peak_worker_rss_bytes": 670707712,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 1.6414163000008557,
+      "error": null
+    },
+    {
+      "model_id": "whisper-medium",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 69,
+      "reference_words": 564,
+      "wer": 0.12234042553191489,
+      "median_seconds": 16.126172150000457,
+      "median_rtf": 0.755357374045407,
+      "peak_worker_rss_bytes": 1852338176,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 4.357362999999168,
+      "error": null
+    },
+    {
+      "model_id": "vosk-small",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 102,
+      "reference_words": 564,
+      "wer": 0.18085106382978725,
+      "median_seconds": 2.589627199999086,
+      "median_rtf": 0.11420043985449344,
+      "peak_worker_rss_bytes": 277647360,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 0.8679038999998738,
+      "error": null
+    },
+    {
+      "model_id": "vosk-large",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 42,
+      "reference_words": 564,
+      "wer": 0.07446808510638298,
+      "median_seconds": 3.922162300000309,
+      "median_rtf": 0.17402273760651182,
+      "peak_worker_rss_bytes": 8427601920,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 138.67482120000022,
+      "error": null
+    },
+    {
+      "model_id": "gigaam-ctc",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 27,
+      "reference_words": 564,
+      "wer": 0.047872340425531915,
+      "median_seconds": 0.536864699999569,
+      "median_rtf": 0.02545529897801227,
+      "peak_worker_rss_bytes": 399835136,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 1.4766267000013613,
+      "error": null
+    },
+    {
+      "model_id": "gigaam-rnnt",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 27,
+      "reference_words": 564,
+      "wer": 0.047872340425531915,
+      "median_seconds": 0.6152502499999173,
+      "median_rtf": 0.029553225647037912,
+      "peak_worker_rss_bytes": 402464768,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 1.2818348000000697,
+      "error": null
+    },
+    {
+      "model_id": "gigaam-e2e-rnnt",
+      "status": "completed",
+      "attempts_recorded": 18,
+      "expected_attempts": 18,
+      "successful": 18,
+      "eligible": true,
+      "errors": 33,
+      "reference_words": 564,
+      "wer": 0.05851063829787234,
+      "median_seconds": 0.6439039000006233,
+      "median_rtf": 0.029738581933736255,
+      "peak_worker_rss_bytes": 403214336,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 1.2469884000001912,
+      "error": null
+    }
+  ],
+  "chosen_model": "gigaam-ctc",
+  "control_model": null,
+  "clinical_acceptance": "not evaluated; small single-reader fictional dataset",
+  "status": "completed"
+}

@@ -1,0 +1,8 @@
+audio_mvp\audio.py:13: error: Need type annotation for "chunks" (hint: "chunks: list[<type>] = ...")  [var-annotated]
+audio_mvp\providers.py:98: error: No overload variant of "recognize" of "AsrAdapter" matches argument types "Any", "int"  [call-overload]
+audio_mvp\providers.py:98: note: Possible overload variants:
+audio_mvp\providers.py:98: note:     def recognize(waveform: str | Path | ndarray[tuple[int, ...], dtype[floating[_32Bit]]], *, sample_rate: Literal[8000, 11025, 16000, 22050, 24000, 32000, 44100, 48000] = ..., channel: int | Literal['mean'] | None = ..., language: str | None = ..., target_language: str | None = ..., pnc: Literal['pnc', 'nopnc'] | bool = ...) -> str
+audio_mvp\providers.py:98: note:     def recognize(waveform: list[str | Path | ndarray[tuple[int, ...], dtype[floating[_32Bit]]]], *, sample_rate: Literal[8000, 11025, 16000, 22050, 24000, 32000, 44100, 48000] = ..., channel: int | Literal['mean'] | None = ..., language: str | None = ..., target_language: str | None = ..., pnc: Literal['pnc', 'nopnc'] | bool = ...) -> list[str]
+audio_mvp\gui.py:290: error: "Misc" has no attribute "edit_modified"  [attr-defined]
+audio_mvp\gui.py:291: error: "Misc" has no attribute "edit_modified"  [attr-defined]
+Found 4 errors in 3 files (checked 14 source files)

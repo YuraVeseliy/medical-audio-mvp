@@ -1,0 +1,9 @@
+{
+  "model_id": "gigaam-ctc",
+  "reason": "lowest selection WER; equal WER with RNNT, lower median RTF",
+  "scope": "six short single-reader fictional recordings; not universal or clinical ranking",
+  "source_sha256": "f5245b72534f0acaaca28d0876aa19a463e0bbd85e6d8f0aef893264f67e8bdf",
+  "dataset_manifest_sha256": "e4dd5dbd07764fc19af8e4410553ad06fcae15c5725a8076a2dcc06057eff9d2",
+  "selection_result": "reports/asr-comparison/selection/summary.json",
+  "control_result": "reports/asr-comparison/control/summary.json"
+}

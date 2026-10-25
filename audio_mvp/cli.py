@@ -7,8 +7,7 @@ import time
 import sys
 
 from .model import AppError
-from .providers import FasterWhisperRecognizer, LocalRuntime
-from .providers_indexed import IndexedExtractor
+from .providers import ASRRecognizer, MODEL_BY_ID, default_model_id
 from .session import Session
 from .storage import export_text
 
@@ -19,13 +18,12 @@ def main(argv=None):
     project_root = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
     parser.add_argument("--runtime", type=Path, default=project_root / ".runtime")
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--port", type=int, default=8081)
+    parser.add_argument("--model", choices=list(MODEL_BY_ID), default=default_model_id())
+    parser.add_argument("--threads", type=int, default=8)
     args = parser.parse_args(argv)
-    runtime = LocalRuntime(args.runtime, port=args.port)
+    recognizer = ASRRecognizer(args.model, args.runtime, args.threads)
     try:
-        runtime.ensure_server()
-        session = Session(FasterWhisperRecognizer(args.runtime / "models/faster-whisper-small"),
-                          IndexedExtractor(runtime.base_url))
+        session = Session(recognizer)
         started = time.perf_counter()
         document = session.process_file(args.audio)
         elapsed = time.perf_counter() - started
@@ -33,7 +31,7 @@ def main(argv=None):
         session.save(args.out / "session.json")
         export_text(document, args.out / "result.txt")
         (args.out / "run.json").write_text(json.dumps(
-            {"seconds_including_first_asr_load": elapsed, "document": asdict(document)},
+            {"wall_seconds_including_first_model_load": elapsed, "document": asdict(document)},
             ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"Готово: {args.out}; обработка {elapsed:.2f} с")
         return 0
@@ -41,7 +39,7 @@ def main(argv=None):
         print(str(exc))
         return 1
     finally:
-        runtime.shutdown()
+        recognizer.close()
 
 
 if __name__ == "__main__":

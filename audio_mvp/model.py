@@ -1,8 +1,5 @@
-"""Общие данные: исходный текст и проверяемые цитаты."""
+"""Данные полного распознавания и отдельного пользовательского текста."""
 from dataclasses import dataclass, field
-
-SECTIONS = {"complaints": "Жалобы", "anamnesis": "Анамнез"}
-
 
 @dataclass(frozen=True)
 class Segment:
@@ -11,21 +8,14 @@ class Segment:
     text: str
 
 
-@dataclass(frozen=True)
-class Evidence:
-    section: str
-    quote: str
-    start: int
-    end: int
-
-
 @dataclass
 class Document:
     transcript: str
-    evidence: list[Evidence] = field(default_factory=list)
-    sections: dict[str, str] = field(default_factory=dict)
-    warnings: list[str] = field(default_factory=list)
+    text: str = ""
     source: str = ""
+    model_id: str = ""
+    segments: list[Segment] = field(default_factory=list)
+    metrics: dict = field(default_factory=dict)
 
 
 class AppError(Exception):

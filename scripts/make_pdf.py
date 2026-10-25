@@ -22,7 +22,7 @@ for name, filename in [("Arial", "arial.ttf"), ("Arial-Bold", "arialbd.ttf"),
 pdfmetrics.registerFontFamily("Arial", normal="Arial", bold="Arial-Bold", italic="Arial-Italic", boldItalic="Arial-BoldItalic")
 TEAL, INK, GREY = colors.HexColor("#087e8b"), colors.HexColor("#17343c"), colors.HexColor("#62767d")
 BODY = ParagraphStyle("Body", fontName="Arial", fontSize=9.2, leading=13.6,
-                      spaceAfter=7, textColor=INK, wordWrap="CJK")
+                      spaceAfter=7, textColor=INK, wordWrap="CJK", allowWidows=0, allowOrphans=0)
 HEAD = {n: ParagraphStyle(f"h{n}", parent=BODY, fontName="Arial-Bold",
                          fontSize={1:18,2:13,3:10.5}.get(n,10),
                          leading={1:23,2:17,3:14}.get(n,14),

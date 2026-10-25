@@ -1,0 +1,61 @@
+{
+  "time_utc": "2026-10-25T15:11:13.083455+00:00",
+  "commit": "fd7345575d68ee3c4e46c0df49089ad99cf2a114",
+  "source_sha256": "f5245b72534f0acaaca28d0876aa19a463e0bbd85e6d8f0aef893264f67e8bdf",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/audio.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/metrics.py",
+    "audio_mvp/model.py",
+    "audio_mvp/provenance.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_experiment_integrity.py",
+    "tests/test_metrics.py",
+    "tests/test_recording_stop.py",
+    "tests/test_transcription.py",
+    "run_app.pyw",
+    "scripts/check.py",
+    "scripts/compare_asr.py",
+    "scripts/check_gui_scenario.py",
+    "configs/asr-models.json",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "scenario": "GUI import -> full ASR -> edit -> JSON/TXT -> new -> open",
+  "real_model": true,
+  "model_id": "gigaam-ctc",
+  "audio": "..\\..\\work\\asr_human_v1_verified\\raw\\dev02.m4a",
+  "heartbeats_during_processing": 94,
+  "successful": true,
+  "executor": "agent instrumented Tkinter scenario",
+  "not_student_manual_acceptance": true,
+  "boundaries_replaced": [
+    "OS file chooser",
+    "error message UI"
+  ],
+  "document_metrics": {
+    "model_id": "gigaam-ctc",
+    "label": "GigaAM v3 CTC · ONNX int8",
+    "engine": "gigaam",
+    "cpu_threads_requested": 8,
+    "duration_seconds": 19.5613125,
+    "processing_seconds": 0.7062530999999979,
+    "model_load_seconds_this_call": 1.2533785999999907,
+    "sample_rate": 16000,
+    "sample_count": 312981,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 312981
+      }
+    ],
+    "timing_scope": "full decoding, common chunking and ASR; model loading measured separately",
+    "timestamp_scope": "common audio chunks, not word-level alignment"
+  }
+}

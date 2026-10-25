@@ -17,9 +17,8 @@ import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from typing import Any, Callable
 
-from .model import AppError, Document, SECTIONS
-from .providers import FasterWhisperRecognizer, LocalRuntime
-from .providers_indexed import IndexedExtractor
+from .model import AppError, Document
+from .providers import ASRRecognizer, MODELS, MODEL_BY_ID, default_model_id
 from .recording import AudioRecorder
 from .session import Session
 from .storage import export_text
@@ -29,21 +28,20 @@ class AudioApp:
     """GUI над публичными операциями Session; зависимости можно передать явно."""
 
     def __init__(self, root: tk.Tk, project_root: str | Path | None = None,
-                 session: Session | None = None, runtime: LocalRuntime | None = None,
+                 session: Session | None = None,
                  recorder: AudioRecorder | None = None,
-                 runtime_root: str | Path | None = None, port: int = 8081,
-                 asr_model: str | Path | None = None, device: str = "cpu",
-                 compute_type: str = "int8") -> None:
+                 runtime_root: str | Path | None = None, model_id: str | None = None,
+                 threads: int = 8) -> None:
         self.root = root
         default_root = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
         self.project_root = Path(project_root or default_root)
-        runtime_path = Path(runtime_root or os.environ.get("MEDICAL_AUDIO_RUNTIME") or self.project_root / ".runtime")
-        self.runtime = runtime or LocalRuntime(runtime_path, port=port)
-        self.session = session or Session(
-            FasterWhisperRecognizer(asr_model or runtime_path / "models" / "faster-whisper-small",
-                                    device=device, compute_type=compute_type),
-            IndexedExtractor(self.runtime.base_url),
-        )
+        self.runtime_path = Path(runtime_root or os.environ.get("MEDICAL_AUDIO_RUNTIME") or self.project_root / ".runtime")
+        self.threads = threads
+        self._managed_recognizer = session is None
+        model_id = model_id or default_model_id()
+        self.session = session or Session(ASRRecognizer(model_id, self.runtime_path, threads))
+        self.model_name = tk.StringVar(value=MODEL_BY_ID[model_id].label)
+        self._model_map = {item.label: item.id for item in MODELS}
         self.recorder = recorder or AudioRecorder()
         self.audio_path: Path | None = None
         self.session_path: Path | None = None
@@ -55,11 +53,10 @@ class AudioApp:
         self._events: queue.Queue[tuple[Any, ...]] = queue.Queue()
         self._device_map: dict[str, int | None] = {"Системный микрофон": None}
         self._record_started = 0.0
-        self._evidence_rows: dict[str, Any] = {}
         self.status = tk.StringVar(value="Выберите аудиофайл или начните запись.")
         self.source = tk.StringVar(value="Аудиофайл не выбран")
         self.device_name = tk.StringVar(value="Системный микрофон")
-        self.notice = tk.StringVar(value="Выделенные сведения — черновик. Проверьте их по исходной записи.")
+        self.notice = tk.StringVar(value="Расшифровка — черновик. Проверьте слова по исходной записи.")
         self._build()
         self.root.protocol("WM_DELETE_WINDOW", self.close)
         self.root.bind("<Control-s>", lambda event: self.save_session())
@@ -94,9 +91,9 @@ class AudioApp:
         self.root.columnconfigure(0, weight=1)
         outer.columnconfigure(0, weight=1)
         outer.rowconfigure(5, weight=1)
-        ttk.Label(outer, text="Диалог → текст → разделы формы", style="Title.TLabel").grid(
+        ttk.Label(outer, text="Запись → расшифровка → проверенный текст", style="Title.TLabel").grid(
             row=0, column=0, sticky="w")
-        ttk.Label(outer, text="Локальная обработка • Жалобы и анамнез • Проверка человеком",
+        ttk.Label(outer, text="Выберите распознаватель, получите полный текст, исправьте и сохраните результат",
                   style="Muted.TLabel").grid(row=1, column=0, sticky="w", pady=(2, 12))
 
         files = ttk.Frame(outer)
@@ -130,6 +127,10 @@ class AudioApp:
         self.process_button = ttk.Button(audio, text="Обработать аудио", style="Accent.TButton",
                                           command=self.process_audio)
         self.process_button.grid(row=1, column=2, columnspan=2, sticky="e", padx=(0, 6), pady=(6, 0))
+        ttk.Label(audio, text="Распознаватель:").grid(row=2, column=0, sticky="w", pady=(8, 0))
+        self.model_combo = ttk.Combobox(audio, textvariable=self.model_name, state="readonly",
+                                        values=list(self._model_map), width=36)
+        self.model_combo.grid(row=2, column=1, columnspan=4, sticky="ew", pady=(8, 0))
         self.source_label = ttk.Label(outer, textvariable=self.source, style="Muted.TLabel", wraplength=1080)
         self.source_label.grid(row=4, column=0, sticky="ew", pady=(0, 10))
 
@@ -142,39 +143,19 @@ class AudioApp:
         left.columnconfigure(0, weight=1)
         left.rowconfigure(1, weight=1)
         right.columnconfigure(0, weight=1)
-        right.rowconfigure(1, weight=2)
-        right.rowconfigure(3, weight=2)
-        right.rowconfigure(5, weight=1)
+        right.rowconfigure(1, weight=1)
         ttk.Label(left, text="Исходная транскрипция", style="Section.TLabel").grid(
             row=0, column=0, sticky="w", pady=(0, 6))
         self.transcript = self._text(left, row=1, height=16)
-        self.transcript.tag_configure("evidence", background="#b8edf0", foreground="#12373f")
         self.transcript.configure(state="disabled")
-        ttk.Label(left, text="Нажмите на цитату справа, чтобы увидеть её в исходном тексте.",
+        ttk.Label(left, text="Исходный результат модели сохраняется в сеансе вместе с вашими правками.",
                   style="Muted.TLabel", wraplength=450).grid(row=2, column=0, sticky="ew", pady=(6, 0))
-        self.editors: dict[str, tk.Text] = {}
-        for row, (section, title) in zip((0, 2), SECTIONS.items()):
-            ttk.Label(right, text=title + " — редактируемый текст", style="Section.TLabel").grid(
-                row=row, column=0, sticky="w", pady=(0 if row == 0 else 10, 6))
-            widget = self._text(right, row=row + 1, height=5)
-            widget.bind("<<Modified>>", self._editor_changed)
-            self.editors[section] = widget
-        ttk.Label(right, text="Цитаты из исходного текста", style="Section.TLabel").grid(
-            row=4, column=0, sticky="w", pady=(10, 6))
-        evidence_frame = ttk.Frame(right)
-        evidence_frame.grid(row=5, column=0, sticky="nsew")
-        evidence_frame.columnconfigure(0, weight=1)
-        evidence_frame.rowconfigure(0, weight=1)
-        self.evidence = ttk.Treeview(evidence_frame, columns=("section", "quote"), show="headings", height=4)
-        self.evidence.heading("section", text="Раздел")
-        self.evidence.heading("quote", text="Цитата — нажмите для перехода")
-        self.evidence.column("section", width=88, minwidth=65, stretch=False)
-        self.evidence.column("quote", width=330, minwidth=120)
-        self.evidence.grid(row=0, column=0, sticky="nsew")
-        scrollbar = ttk.Scrollbar(evidence_frame, orient="vertical", command=self.evidence.yview)
-        scrollbar.grid(row=0, column=1, sticky="ns")
-        self.evidence.configure(yscrollcommand=scrollbar.set)
-        self.evidence.bind("<<TreeviewSelect>>", self.show_evidence)
+        ttk.Label(right, text="Текст после проверки — можно редактировать", style="Section.TLabel").grid(
+            row=0, column=0, sticky="w", pady=(0, 6))
+        self.editor = self._text(right, row=1, height=16)
+        self.editor.bind("<<Modified>>", self._editor_changed)
+        ttk.Label(right, text="TXT содержит текущий текст. JSON позволяет восстановить весь сеанс.",
+                  style="Muted.TLabel", wraplength=450).grid(row=2, column=0, sticky="ew", pady=(6, 0))
         self.notice_label = ttk.Label(outer, textvariable=self.notice, style="Muted.TLabel", wraplength=1080)
         self.notice_label.grid(row=6, column=0, sticky="ew", pady=(10, 6))
         bottom = ttk.Frame(outer)
@@ -225,6 +206,7 @@ class AudioApp:
                        self.record_button, self.refresh_button):
             button.configure(state="normal" if ready else "disabled")
         self.device_combo.configure(state="readonly" if ready else "disabled")
+        self.model_combo.configure(state="readonly" if ready else "disabled")
         self.stop_button.configure(state="normal" if recording and not self._busy else "disabled",
                                    text="Сохранить записанный звук…" if self.recorder.status == "captured"
                                    else "Остановить и сохранить…")
@@ -233,8 +215,7 @@ class AudioApp:
         has_result = self.session.document is not None
         for button in (self.save_button, self.export_button):
             button.configure(state="normal" if ready and has_result else "disabled")
-        for editor in self.editors.values():
-            editor.configure(state="normal" if ready and has_result else "disabled")
+        self.editor.configure(state="normal" if ready and has_result else "disabled")
         if self._busy:
             self.progress.start(12)
         else:
@@ -293,7 +274,7 @@ class AudioApp:
         self.root.after(80, self._drain_events)
 
     def _error(self, exc: Exception) -> None:
-        if self.session.document is not None and self.session.document is not self._rendered_document:
+        if self.session.document is not self._rendered_document:
             self.session_path = None
             self._render_document(self.session.document)
         text = str(exc) if isinstance(exc, AppError) else (
@@ -303,11 +284,10 @@ class AudioApp:
 
     def _sync_edits(self) -> None:
         if self.session.document is not None:
-            for key, editor in self.editors.items():
-                self.session.edit(key, editor.get("1.0", "end-1c"))
+            self.session.edit(self.editor.get("1.0", "end-1c"))
 
     def _editor_changed(self, event: tk.Event) -> None:
-        widget = event.widget
+        widget = self.editor
         changed = widget.edit_modified()
         widget.edit_modified(False)
         if not changed or self._loading or self._busy or self.session.document is None:
@@ -340,41 +320,23 @@ class AudioApp:
             self.transcript.configure(state="normal")
             self.transcript.delete("1.0", "end")
             self.transcript.insert("1.0", document.transcript if document else "")
-            self.transcript.tag_remove("evidence", "1.0", "end")
             self.transcript.configure(state="disabled")
-            for key, editor in self.editors.items():
-                editor.configure(state="normal")
-                editor.delete("1.0", "end")
-                editor.insert("1.0", document.sections[key] if document else "")
-                editor.edit_reset()
-                editor.edit_modified(False)
-            self.evidence.delete(*self.evidence.get_children())
-            self._evidence_rows = {}
+            self.editor.configure(state="normal")
+            self.editor.delete("1.0", "end")
+            self.editor.insert("1.0", document.text if document else "")
+            self.editor.edit_reset()
+            self.editor.edit_modified(False)
             if document:
-                for item in document.evidence:
-                    row = self.evidence.insert("", "end", values=(SECTIONS[item.section], item.quote.replace("\n", " ")))
-                    self._evidence_rows[row] = item
-                messages = list(document.warnings)
-                if not document.evidence:
-                    messages.insert(0, "Сведения не выделены. Проверьте транскрипцию и заполните разделы вручную.")
-                self.notice.set(" ".join(messages) if messages else
-                                "Выделенные сведения — черновик. Цитаты сохраняют источник; правки разделов не меняют транскрипцию.")
+                if document.model_id in MODEL_BY_ID:
+                    self.model_name.set(MODEL_BY_ID[document.model_id].label)
+                seconds = document.metrics.get("processing_seconds")
+                timing = f" Обработка: {seconds:.2f} с." if isinstance(seconds, (int, float)) else ""
+                self.notice.set("Проверьте слова по записи. Правки справа не меняют исходное распознавание слева." + timing)
             else:
-                self.notice.set("Выделенные сведения — черновик. Проверьте их по исходной записи.")
+                self.notice.set("Расшифровка — черновик. Проверьте слова по исходной записи.")
         finally:
             self._loading = False
         self._apply_state()
-
-    def show_evidence(self, event: tk.Event | None = None) -> None:
-        selected = self.evidence.selection()
-        if not selected or selected[0] not in self._evidence_rows:
-            return
-        item = self._evidence_rows[selected[0]]
-        self.transcript.tag_remove("evidence", "1.0", "end")
-        # Ссылки в Document проверены по исходному тексту, который здесь не редактируется.
-        start, end = f"1.0+{item.start}c", f"1.0+{item.end}c"
-        self.transcript.tag_add("evidence", start, end)
-        self.transcript.see(start)
 
     def new_session(self) -> None:
         if not self._idle() or not self._confirm_unsaved():
@@ -390,7 +352,7 @@ class AudioApp:
         if not self._idle():
             return
         selected = filedialog.askopenfilename(title="Выберите аудиозапись диалога", parent=self.root,
-            filetypes=[("Аудиозаписи", "*.wav *.mp3 *.m4a *.flac *.ogg *.mp4"), ("Все файлы", "*.*")])
+            filetypes=[("Аудиозаписи", "*.wav *.mp3 *.m4a *.flac *.ogg *.mp4 *.mkv"), ("Все файлы", "*.*")])
         if not selected or not self._confirm_unsaved():
             return
         self.session.new(force=True)
@@ -407,15 +369,20 @@ class AudioApp:
         self._sync_edits()
 
         def operation() -> Document:
-            self.runtime.ensure_server()
-            self._events.put(("status", "Распознавание речи и выделение сведений. Дождитесь завершения…"))
+            model_id = self._selected_model_id
+            if self._managed_recognizer and model_id != getattr(self.session.recognizer, "model_id", model_id):
+                if hasattr(self.session.recognizer, "close"):
+                    self.session.recognizer.close()
+                self.session.recognizer = ASRRecognizer(model_id, self.runtime_path, self.threads)
+            self._events.put(("status", "Распознавание всего аудиофайла. Дождитесь завершения…"))
             return self.session.process_file(path)
 
         def done(document: Document) -> None:
             self.session_path = None
             self._render_document(document)
-            self.status.set("Готово. Проверьте текст, при необходимости исправьте разделы и сохраните сеанс.")
+            self.status.set("Готово. Проверьте и исправьте полный текст справа, затем сохраните результат.")
 
+        self._selected_model_id = self._model_map[self.model_name.get()]
         self._submit("Подготовка локальной модели. При первом запуске потребуется время…", operation, done)
 
     def refresh_devices(self) -> None:
@@ -561,7 +528,7 @@ class AudioApp:
         except Exception as exc:
             self._error(exc)
             return
-        self.status.set("Текст экспортирован. Для восстановления правок и цитат сохраните также сеанс JSON.")
+        self.status.set("Текущий текст экспортирован в TXT. Для восстановления сеанса сохраните также JSON.")
         self._update_title()
 
     def close(self) -> None:
@@ -593,8 +560,8 @@ class AudioApp:
         self._closing = True
         self._apply_state()
         self.root.destroy()
-        # Только собственный llama-server; чужой процесс LocalRuntime не завершает.
-        self.runtime.shutdown()
+        if hasattr(self.session.recognizer, "close"):
+            self.session.recognizer.close()
 
 
 MedicalAudioApp = AudioApp
@@ -604,15 +571,12 @@ def main() -> None:
     """python -m audio_mvp: создание окна не загружает модели и не пишет звук."""
     import argparse
     parser = argparse.ArgumentParser(description="Локальный учебный аудиомодуль ВКР")
-    parser.add_argument("--runtime-path", type=Path, default=None, help="Папка подготовленных моделей и llama.cpp")
-    parser.add_argument("--asr-model", type=Path, default=None, help="Папка локальной модели faster-whisper")
-    parser.add_argument("--port", type=int, default=8081, help="Локальный порт llama-server")
-    parser.add_argument("--device", choices=("cpu", "cuda", "auto"), default="cpu")
-    parser.add_argument("--compute-type", default="int8")
+    parser.add_argument("--runtime-path", type=Path, default=None, help="Папка подготовленных ASR-моделей")
+    parser.add_argument("--model", choices=list(MODEL_BY_ID), default=default_model_id())
+    parser.add_argument("--threads", type=int, default=8)
     args = parser.parse_args()
-    if not 1 <= args.port <= 65535:
-        parser.error("порт должен находиться в диапазоне 1–65535")
+    if args.threads < 1:
+        parser.error("число потоков должно быть положительным")
     root = tk.Tk()
-    AudioApp(root, runtime_root=args.runtime_path, asr_model=args.asr_model,
-             port=args.port, device=args.device, compute_type=args.compute_type)
+    AudioApp(root, runtime_root=args.runtime_path, model_id=args.model, threads=args.threads)
     root.mainloop()

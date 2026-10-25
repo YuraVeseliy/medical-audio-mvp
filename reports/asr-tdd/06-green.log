@@ -1,0 +1,6 @@
+test_t15_interrupted_worker_keeps_completed_measurement (test_experiment_integrity.ExperimentIntegrityTests.test_t15_interrupted_worker_keeps_completed_measurement) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.232s
+
+OK

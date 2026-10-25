@@ -1,0 +1,20 @@
+test_t13_duplicate_audio_cannot_cross_evaluation_groups (test_experiment_integrity.ExperimentIntegrityTests.test_t13_duplicate_audio_cannot_cross_evaluation_groups) ... ok
+test_t14_control_requires_same_settings_and_weights (test_experiment_integrity.ExperimentIntegrityTests.test_t14_control_requires_same_settings_and_weights) ... ok
+test_t15_interrupted_worker_keeps_completed_measurement (test_experiment_integrity.ExperimentIntegrityTests.test_t15_interrupted_worker_keeps_completed_measurement) ... ok
+test_t12_known_substitution_insertion_and_denominator (test_metrics.MetricsTests.test_t12_known_substitution_insertion_and_denominator) ... ok
+test_t10_cancel_save_dialog_keeps_recording_stopped (test_recording_stop.RecordingTests.test_t10_cancel_save_dialog_keeps_recording_stopped) ... ok
+test_t01_complete_dialogue_without_extractor (test_transcription.TranscriptionTests.test_t01_complete_dialogue_without_extractor) ... ok
+test_t02_edit_save_open_preserves_original_and_current_text (test_transcription.TranscriptionTests.test_t02_edit_save_open_preserves_original_and_current_text) ... ok
+test_t03_damaged_audio_is_rejected (test_transcription.TranscriptionTests.test_t03_damaged_audio_is_rejected) ... ok
+test_t04_empty_recognition_is_reported (test_transcription.TranscriptionTests.test_t04_empty_recognition_is_reported) ... ok
+test_t05_failure_allows_retry (test_transcription.TranscriptionTests.test_t05_failure_allows_retry) ... ok
+test_t06_new_session_protects_unsaved_text (test_transcription.TranscriptionTests.test_t06_new_session_protects_unsaved_text) ... ok
+test_t07_second_job_is_rejected_while_processing (test_transcription.TranscriptionTests.test_t07_second_job_is_rejected_while_processing) ... ok
+test_t08_corrupt_session_does_not_replace_open_result (test_transcription.TranscriptionTests.test_t08_corrupt_session_does_not_replace_open_result) ... ok
+test_t09_float_wav_can_be_transcribed (test_transcription.TranscriptionTests.test_t09_float_wav_can_be_transcribed) ... ok
+test_t11_long_audio_reaches_final_sample_without_gaps (test_transcription.TranscriptionTests.test_t11_long_audio_reaches_final_sample_without_gaps) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 1.559s
+
+OK

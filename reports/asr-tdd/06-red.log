@@ -1,0 +1,14 @@
+test_t15_interrupted_worker_keeps_completed_measurement (test_experiment_integrity.ExperimentIntegrityTests.test_t15_interrupted_worker_keeps_completed_measurement) ... ERROR
+
+======================================================================
+ERROR: test_t15_interrupted_worker_keeps_completed_measurement (test_experiment_integrity.ExperimentIntegrityTests.test_t15_interrupted_worker_keeps_completed_measurement)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp_public\tests\test_experiment_integrity.py", line 56, in test_t15_interrupted_worker_keeps_completed_measurement
+    from scripts.compare_asr import recover_worker_result, aggregate
+ImportError: cannot import name 'recover_worker_result' from 'scripts.compare_asr' (C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp_public\scripts\compare_asr.py)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.215s
+
+FAILED (errors=1)

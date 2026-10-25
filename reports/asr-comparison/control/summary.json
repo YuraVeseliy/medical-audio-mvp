@@ -1,0 +1,190 @@
+{
+  "time_utc": "2026-10-25T15:10:32.926892+00:00",
+  "commit": "fd7345575d68ee3c4e46c0df49089ad99cf2a114",
+  "source_sha256": "f5245b72534f0acaaca28d0876aa19a463e0bbd85e6d8f0aef893264f67e8bdf",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/audio.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/metrics.py",
+    "audio_mvp/model.py",
+    "audio_mvp/provenance.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_experiment_integrity.py",
+    "tests/test_metrics.py",
+    "tests/test_recording_stop.py",
+    "tests/test_transcription.py",
+    "run_app.pyw",
+    "scripts/check.py",
+    "scripts/compare_asr.py",
+    "scripts/check_gui_scenario.py",
+    "configs/asr-models.json",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "dataset_manifest_sha256": "e4dd5dbd07764fc19af8e4410553ad06fcae15c5725a8076a2dcc06057eff9d2",
+  "dataset_contents_sha256": "aea54933dadc13fdc461924e8562037ed080ddb9a6d6b45bbb15eb601ce2221d",
+  "split": "final_control",
+  "ids": [
+    "control01",
+    "control02"
+  ],
+  "independent_recordings": 2,
+  "repeats": 3,
+  "models": [
+    {
+      "model_id": "gigaam-ctc",
+      "installation_manifest_sha256": "d1ee09804a0ac46e74636df6441922cea0862ad7d06d7ad82479afef073047f6",
+      "installation_fingerprint": "faad7d11a9bfc4b4eab91b6d815411298b502c0fb9e15e15b6fbeaf7091f466c",
+      "installation": {
+        "model_id": "gigaam-ctc",
+        "definition": {
+          "repo": "istupakov/gigaam-v3-onnx",
+          "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+          "artifacts": [
+            "gigaam-v3-onnx/LICENSE.txt",
+            "gigaam-v3-onnx/README.md",
+            "gigaam-v3-onnx/config.json",
+            "gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "gigaam-v3-onnx/v3_vocab.txt"
+          ],
+          "label": "GigaAM v3 CTC · ONNX int8",
+          "engine": "gigaam",
+          "folder": "gigaam-v3-onnx",
+          "variant": "gigaam-v3-ctc"
+        },
+        "artifacts": [
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/LICENSE.txt",
+            "destination": "models/gigaam-v3-onnx/LICENSE.txt",
+            "size": 1070,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "8d9a2e761e0feada9c9347a3f2265aee4653dba7",
+            "actual_size": 1070,
+            "actual_sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/README.md",
+            "destination": "models/gigaam-v3-onnx/README.md",
+            "size": 1501,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "7ae91ca1c26bb055a24214bbd2e5fd20abcb70b0",
+            "actual_size": 1501,
+            "actual_sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/config.json",
+            "destination": "models/gigaam-v3-onnx/config.json",
+            "size": 135,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "cdd16848240c6b03c0a0bc918f28ba9d4d6e4dc3",
+            "actual_size": 135,
+            "actual_sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_ctc.int8.onnx",
+            "destination": "models/gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "size": 224721181,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd",
+            "actual_size": 224721181,
+            "actual_sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd"
+          },
+          {
+            "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_vocab.txt",
+            "destination": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "size": 198,
+            "repo": "istupakov/gigaam-v3-onnx",
+            "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+            "git_blob_sha1": "218555fc2385ce241a873c001653e53f5e4b3432",
+            "actual_size": 198,
+            "actual_sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installed_files": [
+          {
+            "path": "models/gigaam-v3-onnx/config.json",
+            "bytes": 135,
+            "sha256": "0641fcf73f4af791c73f05083e38a658ff5dcbee3534a0c61396c10f4b97f0fe"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/LICENSE.txt",
+            "bytes": 1070,
+            "sha256": "f00de6715714c7a63d08639cdbfaa40224eefc407302614bd19f1a8b98c875aa"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/README.md",
+            "bytes": 1501,
+            "sha256": "5fe26483daa57aaccaa0b59981c0787951df3fc90444f26c7c454dc4342f9f57"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_ctc.int8.onnx",
+            "bytes": 224721181,
+            "sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd"
+          },
+          {
+            "path": "models/gigaam-v3-onnx/v3_vocab.txt",
+            "bytes": 198,
+            "sha256": "a9143c30844d3c0bee3e9e927e4084774eb1b9eeaafc473b2c4521e4911a7c07"
+          }
+        ],
+        "installer_sha256": "e5878900a66b939b428cfefc29ccc5907b9b02a2fc67745cf99f1c1c0ee48d53"
+      }
+    }
+  ],
+  "threads_requested": 8,
+  "executor": "agent",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "hardware": {
+    "cpu": "AMD Ryzen 7 5800H with Radeon Graphics",
+    "physical_cores": 8,
+    "logical_cores": 16,
+    "ram_bytes": 16539357184
+  },
+  "packages": {
+    "av": "16.0.1",
+    "numpy": "2.2.6",
+    "faster-whisper": "1.2.1",
+    "ctranslate2": "4.6.0",
+    "vosk": "0.3.45",
+    "onnx-asr": "0.12.0",
+    "onnxruntime": "1.23.2",
+    "psutil": "7.2.2"
+  },
+  "selection_rule": "eligible only: lowest aggregate WER, then median RTF, then peak worker RSS",
+  "normalization": "lowercase, yo/e, punctuation and whitespace; no semantic number or medical-word correction",
+  "recording_device_reported": "диктофон; точная модель и микрофон не уточнены",
+  "results": [
+    {
+      "model_id": "gigaam-ctc",
+      "status": "completed",
+      "attempts_recorded": 6,
+      "expected_attempts": 6,
+      "successful": 6,
+      "eligible": true,
+      "errors": 0,
+      "reference_words": 207,
+      "wer": 0.0,
+      "median_seconds": 0.6711772499999995,
+      "median_rtf": 0.02682274835586703,
+      "peak_worker_rss_bytes": 394129408,
+      "memory_measurement_complete": true,
+      "model_load_seconds": 1.8821511000000157,
+      "error": null
+    }
+  ],
+  "chosen_model": null,
+  "control_model": "gigaam-ctc",
+  "clinical_acceptance": "not evaluated; small single-reader fictional dataset",
+  "status": "completed"
+}
