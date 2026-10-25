@@ -1,0 +1,3794 @@
+[
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 2.1109768000005715,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 7,
+    "reference_words": 37,
+    "substitutions": 5,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.1891891891891892,
+    "rtf": 0.10340480597611752
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 1.9282550000007177,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 6,
+    "reference_words": 30,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.2,
+    "rtf": 0.08994277284935086
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.2178256999995938,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 8,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.07199253369588518
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 2.00390459999835,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.14705882352941177,
+    "rtf": 0.07744259545518434
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 1.9838703000004898,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 11,
+    "reference_words": 33,
+    "substitutions": 8,
+    "deletions": 3,
+    "insertions": 0,
+    "wer": 0.3333333333333333,
+    "rtf": 0.09799794013043321
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "whisper-base",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.914628200000152,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 15,
+    "reference_words": 29,
+    "substitutions": 11,
+    "deletions": 2,
+    "insertions": 2,
+    "wer": 0.5172413793103449,
+    "rtf": 0.09980236269004766
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 2.1348643000001175,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 7,
+    "reference_words": 37,
+    "substitutions": 5,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.1891891891891892,
+    "rtf": 0.10457491940545832
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 1.8743589999994583,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 6,
+    "reference_words": 30,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.2,
+    "rtf": 0.08742881298117985
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.284661199999391,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 8,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.07594355639627519
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 1.9062029999986407,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.14705882352941177,
+    "rtf": 0.07366683413196169
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 1.9455516999987594,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 11,
+    "reference_words": 33,
+    "substitutions": 8,
+    "deletions": 3,
+    "insertions": 0,
+    "wer": 0.3333333333333333,
+    "rtf": 0.09610510274643151
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "whisper-base",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.5468890000011015,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 15,
+    "reference_words": 29,
+    "substitutions": 11,
+    "deletions": 2,
+    "insertions": 2,
+    "wer": 0.5172413793103449,
+    "rtf": 0.08721027941381665
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 1.864934400000493,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 7,
+    "reference_words": 37,
+    "substitutions": 5,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.1891891891891892,
+    "rtf": 0.09135258132168289
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 1.6815377000002627,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 6,
+    "reference_words": 30,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.2,
+    "rtf": 0.07843473160380096
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.0905968000006396,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 8,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.06447131709627806
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 1.7858501999999135,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.14705882352941177,
+    "rtf": 0.06901569794403746
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 1.8184445000006235,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 11,
+    "reference_words": 33,
+    "substitutions": 8,
+    "deletions": 3,
+    "insertions": 0,
+    "wer": 0.3333333333333333,
+    "rtf": 0.08982634360801342
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "whisper-base",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.5321032000010746,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 15,
+    "reference_words": 29,
+    "substitutions": 11,
+    "deletions": 2,
+    "insertions": 2,
+    "wer": 0.5172413793103449,
+    "rtf": 0.08670398575541277
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 5.581396399998994,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 6,
+    "reference_words": 37,
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.16216216216216217,
+    "rtf": 0.2734010207111421
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 5.403416900000593,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 3,
+    "reference_words": 30,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.1,
+    "rtf": 0.252040471227569
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 3.112325600000986,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 5,
+    "deletions": 5,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.18398708914642858
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 5.553674200000387,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.21462645694853866
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 5.524112099999911,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 5,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.15151515151515152,
+    "rtf": 0.2728765115589761
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "whisper-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.5452741000008245,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 10,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.3448275862068966,
+    "rtf": 0.18988063621424547
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 5.496537700000772,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 6,
+    "reference_words": 37,
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.16216216216216217,
+    "rtf": 0.26924427327142636
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 5.242852200000925,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 3,
+    "reference_words": 30,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.1,
+    "rtf": 0.24455098755466842
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 3.117691299999933,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 5,
+    "deletions": 5,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.18430428588318357
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 5.472806699999637,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.2115012637192625
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 5.567904700001236,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 5,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.15151515151515152,
+    "rtf": 0.2750397500494584
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "whisper-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.659657799998968,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 10,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.3448275862068966,
+    "rtf": 0.19379734967809092
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 5.547460100000535,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 6,
+    "reference_words": 37,
+    "substitutions": 4,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.16216216216216217,
+    "rtf": 0.27173867344285996
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 5.302768699999433,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 3,
+    "reference_words": 30,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.1,
+    "rtf": 0.2473457715170032
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 3.068270499999926,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 10,
+    "reference_words": 25,
+    "substitutions": 5,
+    "deletions": 5,
+    "insertions": 0,
+    "wer": 0.4,
+    "rtf": 0.18138274414754824
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 5.555025999999998,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.2146786984077909
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 5.477421100000356,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 5,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.15151515151515152,
+    "rtf": 0.2705700997826692
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "whisper-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.508740100000068,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 10,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.3448275862068966,
+    "rtf": 0.18862964319956405
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 16.10276039999917,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 4,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.10810810810810811,
+    "rtf": 0.7887830955041154
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 14.890480399999433,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.6945611945693706
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 16.13207770000008,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 7,
+    "reference_words": 25,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.28,
+    "rtf": 0.953657939229137
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 14.807858699999997,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 4,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.11764705882352941,
+    "rtf": 0.5722622777863656
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 15.504942800000208,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 3,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.09090909090909091,
+    "rtf": 0.7659031219126757
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "whisper-medium",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 16.25186919999942,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.5564946308724633
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 16.598713299999872,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 4,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.10810810810810811,
+    "rtf": 0.8130770211397981
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 15.040634499999214,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.7015650794853563
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 17.19077379999908,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 7,
+    "reference_words": 25,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.28,
+    "rtf": 1.0162434263418703
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 16.542675099999542,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 4,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.11764705882352941,
+    "rtf": 0.6393057311794536
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 15.909902399998828,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 3,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.09090909090909091,
+    "rtf": 0.7859070539418508
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "whisper-medium",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 16.497449899999992,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.5649037768798792
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 16.966286099999706,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 4,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.10810810810810811,
+    "rtf": 0.8310823322668891
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 15.967783699999927,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.7448116261781383
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 16.953128600000127,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 7,
+    "reference_words": 25,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 3,
+    "wer": 0.28,
+    "rtf": 1.0021948805864345
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 15.837034900001527,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 4,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.11764705882352941,
+    "rtf": 0.6120356662545032
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 16.442512599998736,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 3,
+    "reference_words": 33,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.09090909090909091,
+    "rtf": 0.8122165876308406
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "whisper-medium",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 16.120266600000832,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.551988309820601
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 2.5930706999988615,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 5,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13513513513513514,
+    "rtf": 0.12701985763920517
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 2.59534530000019,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 5,
+    "reference_words": 30,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.16666666666666666,
+    "rtf": 0.12105896408071576
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.707620000001043,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 5,
+    "reference_words": 25,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.2,
+    "rtf": 0.10094703239542699
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 2.6748607000008633,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.14705882352941177,
+    "rtf": 0.10337226387389331
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 2.5669465999999375,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 6,
+    "reference_words": 33,
+    "substitutions": 4,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.18181818181818182,
+    "rtf": 0.12680036554040394
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "vosk-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.8304129999996803,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 8,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.27586206896551724,
+    "rtf": 0.09691867552388989
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 2.58618369999931,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 5,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13513513513513514,
+    "rtf": 0.12668250248745225
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 2.5797330000004877,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 5,
+    "reference_words": 30,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.16666666666666666,
+    "rtf": 0.12033073386607682
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.6940609000012046,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 5,
+    "reference_words": 25,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.2,
+    "rtf": 0.100145477654363
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 2.876002700000754,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.14705882352941177,
+    "rtf": 0.11114556732109886
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 2.5234844999995403,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 6,
+    "reference_words": 33,
+    "substitutions": 4,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.18181818181818182,
+    "rtf": 0.12465345287490319
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "vosk-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.871335599998929,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 8,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.27586206896551724,
+    "rtf": 0.09831994247359707
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 2.633444800001598,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 5,
+    "reference_words": 37,
+    "substitutions": 3,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13513513513513514,
+    "rtf": 0.12899755629380064
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 2.5137999999988097,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 5,
+    "reference_words": 30,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.16666666666666666,
+    "rtf": 0.117255312387888
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 1.6861492000007274,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 5,
+    "reference_words": 25,
+    "substitutions": 4,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.2,
+    "rtf": 0.09967777252309809
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 2.689162900000156,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 5,
+    "reference_words": 34,
+    "substitutions": 5,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.14705882352941177,
+    "rtf": 0.10392498454166624
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 2.541529599999194,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 6,
+    "reference_words": 33,
+    "substitutions": 4,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.18181818181818182,
+    "rtf": 0.12554483303690941
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "vosk-small",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 2.827086600000257,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 8,
+    "reference_words": 29,
+    "substitutions": 6,
+    "deletions": 0,
+    "insertions": 2,
+    "wer": 0.27586206896551724,
+    "rtf": 0.09680477331873226
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 3.479890399999931,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 2,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.05405405405405406,
+    "rtf": 0.1704601356253889
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 3.822479700000258,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 2,
+    "reference_words": 30,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.06666666666666667,
+    "rtf": 0.17829821438463797
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 2.698582400000305,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 1,
+    "reference_words": 25,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.04,
+    "rtf": 0.15952839914875294
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 4.1961983000001055,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 3,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.08823529411764706,
+    "rtf": 0.1621656477044406
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 4.4422536000001855,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.06060606060606061,
+    "rtf": 0.21943556609366655
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "vosk-large",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.219325899999603,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13793103448275862,
+    "rtf": 0.17871955554032334
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 3.4196569999985513,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 2,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.05405405405405406,
+    "rtf": 0.16750964226116866
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 3.8071966000006796,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 2,
+    "reference_words": 30,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.06666666666666667,
+    "rtf": 0.17758533958763473
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 2.6963863000000856,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 1,
+    "reference_words": 25,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.04,
+    "rtf": 0.1593985753133179
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 4.145064899999852,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 3,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.08823529411764706,
+    "rtf": 0.16018955402689178
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 4.701191199999812,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.06060606060606061,
+    "rtf": 0.23222639794506086
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "vosk-large",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.511056200000894,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13793103448275862,
+    "rtf": 0.18870895082868422
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 3.4425554999997985,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 2,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.05405405405405406,
+    "rtf": 0.1686313101780176
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 3.8526930999996694,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 2,
+    "reference_words": 30,
+    "substitutions": 2,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.06666666666666667,
+    "rtf": 0.17970750774736882
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 2.6621658000003663,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 1,
+    "reference_words": 25,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.04,
+    "rtf": 0.15737560889101243
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 3.991631500000949,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 3,
+    "reference_words": 34,
+    "substitutions": 3,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.08823529411764706,
+    "rtf": 0.15425998995211582
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 4.391703199999029,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.06060606060606061,
+    "rtf": 0.2169385101758066
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "vosk-large",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 5.325838199998543,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 1,
+    "wer": 0.13793103448275862,
+    "rtf": 0.18236673743317844
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.5440167999986443,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.02664830407022612
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.5734281000004557,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.02674735102139325
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.413919700000406,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.024469123906384845
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.6073251999987406,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.023470598237700594
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.4969578000000183,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.024548399525786323
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.7747790000012174,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.026529893165361505
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.48560209999959625,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.023786898525857733
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.5028258000002097,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.023454131695338613
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.4448294000012538,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.02629637030038152
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7375642000006337,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.02850379502243908
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.48234880000018165,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02382675360601569
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.7039912000000186,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.024105985481441536
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.4880403999995906,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.02390633704285655
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.5297126000004937,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.024708256977041793
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.4432388000004721,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.026202340978982743
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7035940000005212,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.02719098778793172
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.5481335000004037,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.027076343608002557
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8055447999995522,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.027583372140787297
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.5918153999991773,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.028989686959409854
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.6295738000007987,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.029366247350767094
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.586942400001135,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.0346974698510957
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7898411000005581,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.030524080228804994
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.5998893999985739,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.029632948033914936
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8817042999999103,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.03019121695657822
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.5908712000000378,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.028943435945323084
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.6191015999993397,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.028877775283554074
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.522759400000723,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.030903251359702233
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7356206999993447,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.028428686814010843
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.5966615999986971,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02947350326016089
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8821073999988585,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.03020501986025402
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.6113989000004949,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.02702702702702703,
+    "rtf": 0.02994897178810574
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.6369904999992286,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.029712196700438336
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.4909748000009131,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.02902428470092889
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7398157999996329,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 2,
+    "reference_words": 34,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.058823529411764705,
+    "rtf": 0.028590810016989984
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.5811403999996401,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 0,
+    "reference_words": 33,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.028706797075658964
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "gigaam-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8806339000002481,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 2,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06896551724137931,
+    "rtf": 0.03015456444323545
+  },
+  {
+    "id": "dialog01",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.6298399999996036,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.02702702702702703,
+    "rtf": 0.03085229690631334
+  },
+  {
+    "id": "dialog02",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.6110583999998198,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.028502603062795697
+  },
+  {
+    "id": "dialog03",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.4931363000014244,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.02915206313557723
+  },
+  {
+    "id": "dialog04",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7275903999998263,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 0,
+    "reference_words": 34,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02811834904930539
+  },
+  {
+    "id": "dialog05",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.6066867000008642,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06060606060606061,
+    "rtf": 0.029968716656829885
+  },
+  {
+    "id": "dialog06",
+    "repeat": 1,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8875676999996358,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.030391990823162435
+  },
+  {
+    "id": "dialog01",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.6820607999998174,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.02702702702702703,
+    "rtf": 0.03341029834523881
+  },
+  {
+    "id": "dialog02",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.5962872000000061,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.027813605660328138
+  },
+  {
+    "id": "dialog03",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.48891330000151356,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.028902417829363536
+  },
+  {
+    "id": "dialog04",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7738248000005115,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 0,
+    "reference_words": 34,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.029905116710485062
+  },
+  {
+    "id": "dialog05",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.7130450000004203,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06060606060606061,
+    "rtf": 0.0352225350721409
+  },
+  {
+    "id": "dialog06",
+    "repeat": 2,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8704381000006833,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.029805441035497992
+  },
+  {
+    "id": "dialog01",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+    "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+    "successful": true,
+    "seconds": 0.6279730000005657,
+    "duration_seconds": 20.4146875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 208000
+      },
+      {
+        "start_sample": 208000,
+        "end_sample": 326635
+      }
+    ],
+    "errors": 1,
+    "reference_words": 37,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.02702702702702703,
+    "rtf": 0.030760843142985446
+  },
+  {
+    "id": "dialog02",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+    "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+    "successful": true,
+    "seconds": 0.6579678000016429,
+    "duration_seconds": 21.4386875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 211200
+      },
+      {
+        "start_sample": 211200,
+        "end_sample": 343019
+      }
+    ],
+    "errors": 1,
+    "reference_words": 30,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.03333333333333333,
+    "rtf": 0.03069067544371095
+  },
+  {
+    "id": "dialog03",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+    "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+    "successful": true,
+    "seconds": 0.4728847999995196,
+    "duration_seconds": 16.916,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270656
+      }
+    ],
+    "errors": 3,
+    "reference_words": 25,
+    "substitutions": 2,
+    "deletions": 1,
+    "insertions": 0,
+    "wer": 0.12,
+    "rtf": 0.027954882951023857
+  },
+  {
+    "id": "dialog04",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+    "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+    "successful": true,
+    "seconds": 0.7677855000001728,
+    "duration_seconds": 25.876,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 225600
+      },
+      {
+        "start_sample": 225600,
+        "end_sample": 414016
+      }
+    ],
+    "errors": 0,
+    "reference_words": 34,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02967172283197452
+  },
+  {
+    "id": "dialog05",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+    "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+    "successful": true,
+    "seconds": 0.5952871999998024,
+    "duration_seconds": 20.244,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 198400
+      },
+      {
+        "start_sample": 198400,
+        "end_sample": 323904
+      }
+    ],
+    "errors": 2,
+    "reference_words": 33,
+    "substitutions": 1,
+    "deletions": 0,
+    "insertions": 1,
+    "wer": 0.06060606060606061,
+    "rtf": 0.029405611539211736
+  },
+  {
+    "id": "dialog06",
+    "repeat": 3,
+    "model_id": "gigaam-e2e-rnnt",
+    "audio_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+    "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+    "successful": true,
+    "seconds": 0.8472438000007969,
+    "duration_seconds": 29.204,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 265600
+      },
+      {
+        "start_sample": 265600,
+        "end_sample": 467264
+      }
+    ],
+    "errors": 4,
+    "reference_words": 29,
+    "substitutions": 1,
+    "deletions": 1,
+    "insertions": 2,
+    "wer": 0.13793103448275862,
+    "rtf": 0.029011224489823205
+  }
+]

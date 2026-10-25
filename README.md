@@ -11,7 +11,7 @@
 Проверенная платформа: Windows x64, Python 3.12 с Tcl/Tk, локальный CPU. Для первоначальной установки нужен интернет.
 
 ```powershell
-git clone https://github.com/YuraVeseliy/medical-audio-mvp.git
+git clone --branch asr-only-comparison https://github.com/YuraVeseliy/medical-audio-mvp.git
 cd medical-audio-mvp
 ```
 
@@ -105,9 +105,17 @@ cd medical-audio-mvp
 ## Материалы и совместная работа
 
 - [docs/asr-plan.md](docs/asr-plan.md) — требования, данные, модель разработки и план проверки.
+- [docs/asr-test-plan.md](docs/asr-test-plan.md) — план испытаний и объяснение всех 15 тестов.
+- [docs/asr-explanation.md](docs/asr-explanation.md) — разбор решений для подготовки к защите.
+- [docs/asr-analogues.md](docs/asr-analogues.md) — границы обзора продуктов и измерения ASR-компонента.
+- [docs/asr-final-report.md](docs/asr-final-report.md) — фактические результаты восьми конфигураций, контроль и отчёт о тестировании.
+- [docs/asr-defects.md](docs/asr-defects.md) — дефекты с шагами, ожидаемым/фактическим результатом и доказательствами.
+- [План в PDF](docs/ASR_план_разработки_и_проверки.pdf), [отчёт в PDF](docs/ASR_отчет_сравнение_и_тестирование.pdf).
 - [docs/manual-tests.md](docs/manual-tests.md) — личные ручные проверки.
 - `reports/asr-tdd/` — реальные red/green циклы нового поведения.
 - `reports/asr_checks/`, `reports/asr_gui*/` — инструментальные результаты текущей версии, когда они получены.
 - Остальные прежние отчёты, PDF и сравнения описывают версию с извлечением сведений. Их данные не переносятся в выводы нового ASR-эксперимента.
 
 Для изменений используйте отдельные ветки и pull request, быстрые проверки и просмотр вторым участником. Публичный репозиторий можно читать и скачивать без приглашения. Для прямой записи Михаилу нужен доступ collaborator. Личные аудиозаписи хранятся в `user_data/`, исключённой из Git.
+
+Измеренный выбор текущего небольшого набора — GigaAM v3 CTC: WER 4,79% на шести selection-записях; RNN-T имеет тот же WER и больший медианный RTF. Контроль CTC: 0% на двух записях. Это не оценка качества на пациентах/других голосах. Все восемь моделей завершили по 18 обработок; [таблица](reports/asr-comparison/selection/summary.md). Чистый архив текущих исходников без весов, голосовых записей и прежних сравнений: `python scripts/package_asr_source.py --out user_data/source.zip`.

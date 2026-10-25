@@ -1,0 +1,164 @@
+[
+  {
+    "id": "control01",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "4a8a00c2b439cba246e2c62dc22c823f7b43b7df99e8348d59a6f15c830b9d3c",
+    "reference_sha256": "cd842d91f07de64afac14ae0d7f0492084ccb61dfe024eb90cb1f7fe91787a5d",
+    "successful": true,
+    "seconds": 0.7280682999999897,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 233600
+      },
+      {
+        "start_sample": 233600,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02909632708317161
+  },
+  {
+    "id": "control02",
+    "repeat": 1,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "69fcad341c9e9b1ee71fc1b756a46c51c2615367b7efae85f795277c363851ca",
+    "reference_sha256": "1b68a53ea7d9f4d5282ab71e8c39adc147ffd08edc402c594cd049495e9470f5",
+    "successful": true,
+    "seconds": 0.63062579999999,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270400
+      },
+      {
+        "start_sample": 270400,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 32,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02520216103885684
+  },
+  {
+    "id": "control01",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "4a8a00c2b439cba246e2c62dc22c823f7b43b7df99e8348d59a6f15c830b9d3c",
+    "reference_sha256": "cd842d91f07de64afac14ae0d7f0492084ccb61dfe024eb90cb1f7fe91787a5d",
+    "successful": true,
+    "seconds": 0.5769659000000047,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 233600
+      },
+      {
+        "start_sample": 233600,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.023057711127152297
+  },
+  {
+    "id": "control02",
+    "repeat": 2,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "69fcad341c9e9b1ee71fc1b756a46c51c2615367b7efae85f795277c363851ca",
+    "reference_sha256": "1b68a53ea7d9f4d5282ab71e8c39adc147ffd08edc402c594cd049495e9470f5",
+    "successful": true,
+    "seconds": 0.7086647000000141,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270400
+      },
+      {
+        "start_sample": 270400,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 32,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.02832088679523389
+  },
+  {
+    "id": "control01",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "4a8a00c2b439cba246e2c62dc22c823f7b43b7df99e8348d59a6f15c830b9d3c",
+    "reference_sha256": "cd842d91f07de64afac14ae0d7f0492084ccb61dfe024eb90cb1f7fe91787a5d",
+    "successful": true,
+    "seconds": 0.7157809999999927,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 233600
+      },
+      {
+        "start_sample": 233600,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 37,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.028605280707757415
+  },
+  {
+    "id": "control02",
+    "repeat": 3,
+    "model_id": "gigaam-ctc",
+    "audio_sha256": "69fcad341c9e9b1ee71fc1b756a46c51c2615367b7efae85f795277c363851ca",
+    "reference_sha256": "1b68a53ea7d9f4d5282ab71e8c39adc147ffd08edc402c594cd049495e9470f5",
+    "successful": true,
+    "seconds": 0.6336897999999849,
+    "duration_seconds": 25.0226875,
+    "chunks": [
+      {
+        "start_sample": 0,
+        "end_sample": 270400
+      },
+      {
+        "start_sample": 270400,
+        "end_sample": 400363
+      }
+    ],
+    "errors": 0,
+    "reference_words": 32,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 0,
+    "wer": 0.0,
+    "rtf": 0.025324609916500172
+  }
+]

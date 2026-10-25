@@ -1,0 +1,284 @@
+{
+  "version": "human-audio-v1",
+  "created_at_utc": "2026-10-25T11:38:21.177712+00:00",
+  "commit": "37098d32198959efda0e0bb1d36b9b7c260396ae",
+  "source_sha256": "3734e992cc2ae8abd9b1d7545dc41262f95cdeb963039a601b174893455be514",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/audio.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/metrics.py",
+    "audio_mvp/model.py",
+    "audio_mvp/provenance.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_experiment_integrity.py",
+    "tests/test_metrics.py",
+    "tests/test_recording_stop.py",
+    "tests/test_transcription.py",
+    "run_app.pyw",
+    "scripts/check.py",
+    "scripts/compare_asr.py",
+    "scripts/check_gui_scenario.py",
+    "configs/asr-models.json",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "device_reported_by_user": "диктофон; точная модель и микрофон не уточнены",
+  "executor": "agent",
+  "reference_verification": {
+    "status": "confirmed_by_recording_author",
+    "verified_by": "Юрий; подтвердил прослушивание и соответствие TXT в чате",
+    "independent_second_reviewer": false
+  },
+  "processing": "whole audio -> mono PCM16 16kHz; no denoising, trimming or gain adjustment",
+  "items": [
+    {
+      "id": "dev01",
+      "split": "development",
+      "source_name": "dev01.m4a",
+      "source_sha256": "04df6d3b724ada6c0fb77fd123cb015556dad70916c77e179762ba836b4630b2",
+      "raw": "raw/dev01.m4a",
+      "reference": "references/dev01.txt",
+      "reference_sha256": "ff554cba27e0d4385069169060b9504caeda589fe9a2de2e141dcc8e2f9fbdd8",
+      "prepared": "prepared/dev01.wav",
+      "prepared_sha256": "62d639515bdc0248a1ac15376d8ae2d386eecd7b82574392b8ed7af4cb2f5350",
+      "decoded_pcm_sha256": "4404b93f8fe4866d1839a394a2ac6ffd1fe085b58e6d054561c5c79cde52fee7",
+      "duration_s": 21.1826875,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dev02",
+      "split": "development",
+      "source_name": "dev02.m4a",
+      "source_sha256": "01b7a72358b8254a03de5c56011ef6bd62377b96a21d847d9e4ec7bfe12d239e",
+      "raw": "raw/dev02.m4a",
+      "reference": "references/dev02.txt",
+      "reference_sha256": "80fc15b332e4971926c0194e5f590573244255b06ce1d247b58dc818cf93dd08",
+      "prepared": "prepared/dev02.wav",
+      "prepared_sha256": "cd1b0dc3a8e9e4c170a5c5255f76b3b60234ccf39baacc766093a65531fb2af0",
+      "decoded_pcm_sha256": "bc726742cfdf39345a6bc024c919f91188cd2c1835cec981561388d3c7ef02e5",
+      "duration_s": 19.5613125,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog01",
+      "split": "selection",
+      "source_name": "dialog01.m4a",
+      "source_sha256": "ad0c79b5d6de6605644dc1705f366efdf703629f1b332df5c838ab435e20995c",
+      "raw": "raw/dialog01.m4a",
+      "reference": "references/dialog01.txt",
+      "reference_sha256": "11db7537387a740316b35170569a517f67ddddbc4395076f5422c06b0be159fd",
+      "prepared": "prepared/dialog01.wav",
+      "prepared_sha256": "eabc1757a64a3fc3540b6104fe9565fad70ed70c3480980dbc61fcf5235db135",
+      "decoded_pcm_sha256": "b62b6795e9ac4c2051b854347ccc507df681b6b6cdd1dd4718fcd584883373a1",
+      "duration_s": 20.4146875,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog02",
+      "split": "selection",
+      "source_name": "dialog02.m4a",
+      "source_sha256": "9833029d2ac00c6b9d026d032b5b92ee5123de883ba52109d2a0cab735b0f131",
+      "raw": "raw/dialog02.m4a",
+      "reference": "references/dialog02.txt",
+      "reference_sha256": "43c54fa3daeda660b7356cc4a13f5a0441b2b551d955d26b5896d8533e53067b",
+      "prepared": "prepared/dialog02.wav",
+      "prepared_sha256": "0d1c44187e8d11b59d75134a98bffb61bafaa0ad9a14d23cfe65fb7d5f2181bf",
+      "decoded_pcm_sha256": "1520eeffdd9e23e063999208edddd6ae62b451383a33f8b852cd2566774c4f92",
+      "duration_s": 21.4386875,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog03",
+      "split": "selection",
+      "source_name": "dialog03.m4a",
+      "source_sha256": "993c5d04c1221110b5be370db5008dc69748514f9e40597429e031b0507df6a3",
+      "raw": "raw/dialog03.m4a",
+      "reference": "references/dialog03.txt",
+      "reference_sha256": "474580ced9aeb600025a1d9d3ef692994e3b737c6bbba667dd6fec7195263fb9",
+      "prepared": "prepared/dialog03.wav",
+      "prepared_sha256": "71add8f942eeea02f5fc56aaf6ff63d7cbc144b99d0eff17c1fddd3c8c628f1f",
+      "decoded_pcm_sha256": "9f46cfff4a41596fac0e905c718c0539db1f1e4fc0c7e13077e0d24db51ee119",
+      "duration_s": 16.916,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog04",
+      "split": "selection",
+      "source_name": "dialog04.m4a",
+      "source_sha256": "8c3bce3f57bb0268a9c55819a4ba67b0e88b4901c62da73560158cf5d5ec0006",
+      "raw": "raw/dialog04.m4a",
+      "reference": "references/dialog04.txt",
+      "reference_sha256": "ecb67ea77d46afc8130dfdb92251e5291005a0d4b1003acbb96d250fd88c62b3",
+      "prepared": "prepared/dialog04.wav",
+      "prepared_sha256": "5f5271856964260c2d6e21dcf5f8f2862fc2e089a3c48f5d51fb33083d854be1",
+      "decoded_pcm_sha256": "160e08a63f03665ad9c34166e07410dd7abf2da6de60135bf5797c167a69290c",
+      "duration_s": 25.876,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog05",
+      "split": "selection",
+      "source_name": "dialog05.m4a",
+      "source_sha256": "c28a7c5d51d2d4442c44e5b94192e08c4cda6c93744204ad2ba6f05ebd2707c9",
+      "raw": "raw/dialog05.m4a",
+      "reference": "references/dialog05.txt",
+      "reference_sha256": "c2bc35cf1a4a478aa7e7c72d5ef98b693dec7c82b53a5924d9560c2552e6db49",
+      "prepared": "prepared/dialog05.wav",
+      "prepared_sha256": "c90b357b214aae17c924b2c0424c268d5b288c64a44d3551477ab6bf96ca6e04",
+      "decoded_pcm_sha256": "caa3ee6a4558f3b0a9eb8009d76ff024afd41d4994ec548dc5fc21dd1a84a9ab",
+      "duration_s": 20.244,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "dialog06",
+      "split": "selection",
+      "source_name": "dialog06.m4a",
+      "source_sha256": "6b2458f6feebc8f6a1eb9100d147508b8681f2ab0f42d22bea8adb525be4aa7d",
+      "raw": "raw/dialog06.m4a",
+      "reference": "references/dialog06.txt",
+      "reference_sha256": "92477cc34225521575c85e957ba81cbf8e24d2e581b198bde6f2f2ebaa19b226",
+      "prepared": "prepared/dialog06.wav",
+      "prepared_sha256": "43b2de0c7822491475f9362d7c98d43f1e6d62c6ef3d13b65ecb269446c0aee0",
+      "decoded_pcm_sha256": "941aead95bd72dda53b8121b01373dd795d42e7b634fd87bf7f42d02833a353a",
+      "duration_s": 29.204,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "control01",
+      "split": "final_control",
+      "source_name": "control01.m4a",
+      "source_sha256": "90d39a1f0b34d798951c5634dc7ee334078650cd27a896b64b81f36d43eddc5f",
+      "raw": "raw/control01.m4a",
+      "reference": "references/control01.txt",
+      "reference_sha256": "cd842d91f07de64afac14ae0d7f0492084ccb61dfe024eb90cb1f7fe91787a5d",
+      "prepared": "prepared/control01.wav",
+      "prepared_sha256": "4a8a00c2b439cba246e2c62dc22c823f7b43b7df99e8348d59a6f15c830b9d3c",
+      "decoded_pcm_sha256": "891b446c5a6e06642cd235a0646d4a7a6e051f34af58b9203f1420ca82e5ae9b",
+      "duration_s": 25.0226875,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    },
+    {
+      "id": "control02",
+      "split": "final_control",
+      "source_name": "Control02.m4a",
+      "source_sha256": "00bb21f7caea878eebeffea249db8d6f076438c32eb3f16bd44a4029b6119724",
+      "raw": "raw/Control02.m4a",
+      "reference": "references/control02.txt",
+      "reference_sha256": "1b68a53ea7d9f4d5282ab71e8c39adc147ffd08edc402c594cd049495e9470f5",
+      "prepared": "prepared/control02.wav",
+      "prepared_sha256": "69fcad341c9e9b1ee71fc1b756a46c51c2615367b7efae85f795277c363851ca",
+      "decoded_pcm_sha256": "a6d07f6cb6c1f07be3c21d6cb43a5238aa232a9c581f1500d38b79c583a97da6",
+      "duration_s": 25.0226875,
+      "input": {
+        "sample_rate": 48000,
+        "channels": 1,
+        "codec": "aac"
+      },
+      "prepared_format": {
+        "sample_rate": 16000,
+        "channels": 1,
+        "sample_width_bytes": 2
+      },
+      "reference_status": "confirmed_by_recording_author"
+    }
+  ],
+  "duplicate_decoded_audio": [],
+  "preparation_successful": true,
+  "dataset_contents_sha256": "aea54933dadc13fdc461924e8562037ed080ddb9a6d6b45bbb15eb601ce2221d"
+}
