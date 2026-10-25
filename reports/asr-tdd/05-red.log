@@ -1,0 +1,14 @@
+test_t14_control_requires_same_settings_and_weights (test_experiment_integrity.ExperimentIntegrityTests.test_t14_control_requires_same_settings_and_weights) ... ERROR
+
+======================================================================
+ERROR: test_t14_control_requires_same_settings_and_weights (test_experiment_integrity.ExperimentIntegrityTests.test_t14_control_requires_same_settings_and_weights)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp_public\tests\test_experiment_integrity.py", line 44, in test_t14_control_requires_same_settings_and_weights
+    from scripts.compare_asr import validate_control
+ImportError: cannot import name 'validate_control' from 'scripts.compare_asr' (C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp_public\scripts\compare_asr.py)
+
+----------------------------------------------------------------------
+Ran 1 test in 0.233s
+
+FAILED (errors=1)

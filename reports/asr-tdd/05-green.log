@@ -1,0 +1,6 @@
+test_t14_control_requires_same_settings_and_weights (test_experiment_integrity.ExperimentIntegrityTests.test_t14_control_requires_same_settings_and_weights) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.212s
+
+OK

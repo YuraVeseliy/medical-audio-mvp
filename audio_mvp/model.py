@@ -1,22 +1,11 @@
 """Данные полного распознавания и отдельного пользовательского текста."""
 from dataclasses import dataclass, field
 
-SECTIONS = {"complaints": "Жалобы", "anamnesis": "Анамнез"}
-
-
 @dataclass(frozen=True)
 class Segment:
     start: float
     end: float
     text: str
-
-
-@dataclass(frozen=True)
-class Evidence:
-    section: str
-    quote: str
-    start: int
-    end: int
 
 
 @dataclass

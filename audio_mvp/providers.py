@@ -1,6 +1,7 @@
 """Восемь локальных конфигураций ASR; загрузка весов отделена от инференса."""
 from dataclasses import dataclass
 import gc
+import hashlib
 import json
 from pathlib import Path
 import time
@@ -18,17 +19,54 @@ class ModelConfig:
     variant: str = ''
 
 
-MODELS = (
-    ModelConfig('whisper-base', 'Whisper base · CPU int8', 'whisper', 'faster-whisper-base'),
-    ModelConfig('whisper-small', 'Whisper small · CPU int8', 'whisper', 'faster-whisper-small'),
-    ModelConfig('whisper-medium', 'Whisper medium · CPU int8', 'whisper', 'faster-whisper-medium'),
-    ModelConfig('vosk-small', 'Vosk small-ru-0.22', 'vosk', 'vosk-model-small-ru-0.22'),
-    ModelConfig('vosk-large', 'Vosk ru-0.42', 'vosk', 'vosk-model-ru-0.42'),
-    ModelConfig('gigaam-ctc', 'GigaAM v3 CTC · ONNX int8', 'gigaam', 'gigaam-v3-onnx', 'gigaam-v3-ctc'),
-    ModelConfig('gigaam-rnnt', 'GigaAM v3 RNN-T · ONNX int8', 'gigaam', 'gigaam-v3-onnx', 'gigaam-v3-rnnt'),
-    ModelConfig('gigaam-e2e-rnnt', 'GigaAM v3 E2E RNN-T · ONNX int8', 'gigaam', 'gigaam-v3-onnx', 'gigaam-v3-e2e-rnnt'),
-)
+_CATALOG = json.loads((Path(__file__).resolve().parents[1] / 'configs/asr-models.json').read_text(encoding='utf-8'))
+MODELS = tuple(ModelConfig(id=model_id, **{key: definition[key] for key in ('label','engine','folder','variant')})
+               for model_id, definition in _CATALOG['models'].items())
 MODEL_BY_ID = {item.id: item for item in MODELS}
+
+
+def default_model_id() -> str:
+    """Предпочтение интерфейса; в эксперименте модель всегда задана явно."""
+    path = Path(__file__).resolve().parents[1] / 'configs/preferred-model.json'
+    try:
+        model_id = json.loads(path.read_text(encoding='utf-8')).get('model_id')
+        if isinstance(model_id, str) and model_id in MODEL_BY_ID:
+            return model_id
+    except (OSError, ValueError, AttributeError):
+        pass
+    return 'whisper-small'
+
+
+def verify_installation(model_id, runtime):
+    """Подтвердить фактические локальные файлы и вернуть снимок происхождения."""
+    runtime = Path(runtime).resolve()
+    path = runtime / 'manifests' / (model_id + '.json')
+    try:
+        raw = path.read_bytes()
+        record = json.loads(raw)
+        if record['model_id'] != model_id or record['definition'] != _CATALOG['models'][model_id]:
+            raise ValueError('Каталог и установленная конфигурация отличаются')
+        files = record['installed_files']
+        if not files:
+            raise ValueError('Нет контрольных сумм фактических файлов')
+        expected = {_CATALOG['artifacts'][key]['destination'] for key in record['definition']['artifacts']
+                    if _CATALOG['artifacts'][key]['destination'].startswith('models/')}
+        if expected and {item['path'] for item in files} != expected:
+            raise ValueError('Список проверяемых файлов не соответствует каталогу')
+        model_root = (runtime / 'models' / MODEL_BY_ID[model_id].folder).resolve()
+        for item in files:
+            target = (runtime / item['path']).resolve()
+            if not target.is_relative_to(model_root) or target.stat().st_size != item['bytes']:
+                raise ValueError('Изменён путь или размер установленного файла')
+            with target.open('rb') as stream:
+                if hashlib.file_digest(stream, 'sha256').hexdigest() != item['sha256']:
+                    raise ValueError('Контрольная сумма установленного файла не совпадает')
+        fingerprint = hashlib.sha256(json.dumps({'definition': record['definition'], 'files': files},
+                                                sort_keys=True, ensure_ascii=False).encode('utf-8')).hexdigest()
+        return {'model_id': model_id, 'manifest_sha256': hashlib.sha256(raw).hexdigest(),
+                'fingerprint': fingerprint, 'manifest': record}
+    except (OSError, ValueError, KeyError, TypeError) as exc:
+        raise AppError(f'Установка модели {model_id} не подтверждена ({exc}). Повторите setup_asr_models.py --model {model_id}.') from exc
 
 
 class WhisperBackend:
@@ -81,6 +119,8 @@ class ASRRecognizer:
     def __init__(self, model_id='whisper-small', runtime=None, threads=8, backend=None):
         if model_id not in MODEL_BY_ID:
             raise AppError('Неизвестная конфигурация распознавания.')
+        if not isinstance(threads, int) or threads < 1:
+            raise AppError('Число потоков должно быть положительным целым числом.')
         self.config = MODEL_BY_ID[model_id]
         self.model_id = model_id
         self.runtime = Path(runtime or Path(__file__).resolve().parents[1] / '.runtime')
@@ -95,6 +135,7 @@ class ASRRecognizer:
         if not path.is_dir():
             raise AppError(f'Модель не установлена. Выполните: python scripts/setup_asr_models.py --model {self.model_id}')
         started = time.perf_counter()
+        verify_installation(self.model_id, self.runtime)
         try:
             if self.config.engine == 'whisper':
                 self.backend = WhisperBackend(path, self.threads)

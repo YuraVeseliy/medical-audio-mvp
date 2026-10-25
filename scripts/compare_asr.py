@@ -18,13 +18,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 from audio_mvp.metrics import word_errors, words
 from audio_mvp.provenance import source_version, hardware
-from audio_mvp.providers import ASRRecognizer, MODELS, MODEL_BY_ID
+from audio_mvp.providers import ASRRecognizer, MODELS, MODEL_BY_ID, verify_installation
 from audio_mvp.session import Session
-
-
-def write(path, data):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+from audio_mvp.storage import save_json as write
+from audio_mvp.model import AppError
 
 
 def sha(path):
@@ -36,12 +33,56 @@ def validate_dataset(folder):
     manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
     if manifest.get('reference_verification', {}).get('status') != 'confirmed_by_recording_author':
         raise ValueError('Перед WER подтвердите соответствие TXT звуку; сценарий чтения сам по себе не эталон.')
+    if manifest.get('duplicate_decoded_audio') or manifest.get('audit', {}).get('duplicate_decoded_audio'):
+        raise ValueError('Набор содержит дубликаты звука. Сначала устраните пересечение групп.')
+    if manifest.get('preparation_successful') is False:
+        raise ValueError('Подготовка набора не завершилась успешно.')
+    ids, audio_hashes = set(), set()
     for item in manifest['items']:
+        if item['id'] in ids:
+            raise ValueError('Дубликат ID в наборе: ' + item['id'])
+        ids.add(item['id'])
         for path_key, hash_key in [('prepared', 'prepared_sha256'), ('reference', 'reference_sha256')]:
             path = (folder / item[path_key]).resolve()
             if not path.is_relative_to(folder.resolve()) or sha(path) != item[hash_key]:
                 raise ValueError('Набор изменён или содержит неверный путь: ' + item['id'])
+        from audio_mvp.audio import read_audio
+        pcm = (read_audio(folder / item['prepared']) * 32768).astype('<i2').tobytes()
+        decoded_hash = hashlib.sha256(pcm).hexdigest()
+        if decoded_hash in audio_hashes:
+            raise ValueError('В разных случаях обнаружено одинаковое аудио: ' + item['id'])
+        audio_hashes.add(decoded_hash)
     return manifest
+
+
+def validate_control(previous, source_hash, dataset_hash, threads, installation):
+    model_id = previous.get('chosen_model')
+    if previous.get('split') != 'selection' or not model_id:
+        raise ValueError('Нет зафиксированного выбора модели на selection')
+    if previous.get('source_sha256') != source_hash or previous.get('dataset_manifest_sha256') != dataset_hash:
+        raise ValueError('Код или набор изменился после выбора модели')
+    if previous.get('threads_requested') != threads:
+        raise ValueError('Изменились настройки числа потоков')
+    earlier = next((row for row in previous.get('models', []) if row['model_id'] == model_id), None)
+    if (not earlier or installation.get('model_id') != model_id
+            or earlier.get('installation_fingerprint') != installation.get('fingerprint')):
+        raise ValueError('Изменились фактические веса или конфигурация модели')
+    return model_id
+
+
+def recover_worker_result(folder, model_id):
+    """Восстановить завершённые строки и пометить прерванный прогон неполным."""
+    def read_optional(name, default):
+        path = folder / name
+        try:
+            return json.loads(path.read_text(encoding='utf-8')) if path.is_file() else default
+        except (OSError, ValueError):
+            return default
+    checkpoint = read_optional('checkpoint.json', {})
+    return {**checkpoint, 'model_id': model_id, 'status': 'failed',
+            'rows': read_optional('rows.json', []),
+            'memory_measurement_complete': False,
+            'error': 'Worker interrupted; completed rows preserved. See console.log; later memory peak unknown.'}
 
 
 def run_worker(args):
@@ -64,6 +105,8 @@ def run_worker(args):
         development = next(item for item in manifest['items'] if item['id'] == 'dev01')
         warmup = Session(recognizer).process_file(args.dataset / development['prepared'])
         write(folder / 'warmup.json', asdict(warmup))
+        write(folder / 'checkpoint.json', {'model_load_seconds': load_seconds,
+              'peak_worker_rss_bytes': peak[0], 'last_completed_count': 0})
         selected = [item for item in manifest['items'] if item['split'] == args.split]
         for repeat in range(1, args.repeats + 1):
             for item in selected:
@@ -88,6 +131,8 @@ def run_worker(args):
                 row['rtf'] = row['seconds'] / row['duration_seconds']
                 rows.append(row)
                 write(folder / 'rows.json', rows)
+                write(folder / 'checkpoint.json', {'model_load_seconds': load_seconds,
+                      'peak_worker_rss_bytes': peak[0], 'last_completed_count': len(rows)})
                 print(json.dumps({'model': args.worker, 'id': item['id'], 'repeat': repeat,
                                   'ok': row['successful'], 'wer': row['wer'], 'seconds': row['seconds']}), flush=True)
         result = {'model_id': args.worker, 'status': 'completed', 'rows': rows,
@@ -150,14 +195,15 @@ def main():
         if not args.control_from:
             parser.error('Для контроля нужен --control-from с итогом выбора на selection')
         previous = json.loads(args.control_from.read_text(encoding='utf-8'))
-        if previous['split'] != 'selection' or not previous.get('chosen_model') or previous['source_sha256'] != version['source_sha256']:
-            parser.error('Контроль требует зафиксированного выбора той же версии кода')
-        if previous['dataset_manifest_sha256'] != sha(args.dataset / 'manifest.json'):
-            parser.error('Набор изменён после выбора модели')
-        model_ids = [previous['chosen_model']]
+        try:
+            installation = verify_installation(previous['chosen_model'], args.runtime)
+            chosen = validate_control(previous, version['source_sha256'], sha(args.dataset / 'manifest.json'),
+                                      args.threads, installation)
+        except (ValueError, KeyError) as error:
+            parser.error(str(error))
+        model_ids = [chosen]
     if any(model not in MODEL_BY_ID for model in model_ids):
         parser.error('Неизвестная модель')
-    args.out.mkdir(parents=True)
     entries = [item for item in manifest['items'] if item['split'] == args.split]
     if not entries:
         parser.error('В выбранной группе нет файлов')
@@ -165,8 +211,10 @@ def main():
         (args.dataset / item['reference']).read_text(encoding='utf-8'))) for item in entries) * args.repeats
     definitions = []
     for model_id in model_ids:
-        record = args.runtime / 'manifests' / (model_id + '.json')
-        definitions.append({'model_id': model_id, 'installation_manifest_sha256': sha(record) if record.is_file() else None})
+        installed = verify_installation(model_id, args.runtime)
+        definitions.append({'model_id': model_id, 'installation_manifest_sha256': installed['manifest_sha256'],
+                            'installation_fingerprint': installed['fingerprint'], 'installation': installed['manifest']})
+    args.out.mkdir(parents=True)
     freeze = {'time_utc': datetime.now(timezone.utc).isoformat(), **version,
               'dataset_manifest_sha256': sha(args.dataset / 'manifest.json'),
               'dataset_contents_sha256': manifest['dataset_contents_sha256'],
@@ -199,8 +247,11 @@ def main():
                 process.kill()
                 process.wait()
         record = folder / 'worker.json'
-        result = json.loads(record.read_text(encoding='utf-8')) if record.is_file() else {
-            'model_id': model_id, 'status': 'failed', 'rows': [], 'error': 'Worker did not produce a final result; see console.log'}
+        result = json.loads(record.read_text(encoding='utf-8')) if record.is_file() else recover_worker_result(folder, model_id)
+        if (sha(args.dataset / 'manifest.json') != freeze['dataset_manifest_sha256']
+                or source_version(ROOT)['source_sha256'] != freeze['source_sha256']):
+            write(args.out / 'invalidated.json', {'reason': 'Code or dataset changed during the run; no valid winner.'})
+            raise ValueError('Код или набор изменился во время измерений. Прогон не пригоден для выбора.')
         results.append(aggregate(result, len(entries) * args.repeats, expected_words))
         print(json.dumps(results[-1]), flush=True)
     eligible = [row for row in results if row['eligible']]
@@ -225,4 +276,8 @@ def main():
 
 
 if __name__ == '__main__':
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except (AppError, ValueError) as error:
+        print('Эксперимент не завершён: ' + str(error), file=sys.stderr)
+        raise SystemExit(2)

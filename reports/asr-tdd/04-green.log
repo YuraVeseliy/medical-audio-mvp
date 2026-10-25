@@ -1,0 +1,6 @@
+test_t13_duplicate_audio_cannot_cross_evaluation_groups (test_experiment_integrity.ExperimentIntegrityTests.test_t13_duplicate_audio_cannot_cross_evaluation_groups) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.223s
+
+OK

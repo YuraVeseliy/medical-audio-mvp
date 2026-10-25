@@ -18,7 +18,7 @@ from tkinter import filedialog, messagebox, ttk
 from typing import Any, Callable
 
 from .model import AppError, Document
-from .providers import ASRRecognizer, MODELS, MODEL_BY_ID
+from .providers import ASRRecognizer, MODELS, MODEL_BY_ID, default_model_id
 from .recording import AudioRecorder
 from .session import Session
 from .storage import export_text
@@ -30,7 +30,7 @@ class AudioApp:
     def __init__(self, root: tk.Tk, project_root: str | Path | None = None,
                  session: Session | None = None,
                  recorder: AudioRecorder | None = None,
-                 runtime_root: str | Path | None = None, model_id: str = "whisper-small",
+                 runtime_root: str | Path | None = None, model_id: str | None = None,
                  threads: int = 8) -> None:
         self.root = root
         default_root = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
@@ -38,6 +38,7 @@ class AudioApp:
         self.runtime_path = Path(runtime_root or os.environ.get("MEDICAL_AUDIO_RUNTIME") or self.project_root / ".runtime")
         self.threads = threads
         self._managed_recognizer = session is None
+        model_id = model_id or default_model_id()
         self.session = session or Session(ASRRecognizer(model_id, self.runtime_path, threads))
         self.model_name = tk.StringVar(value=MODEL_BY_ID[model_id].label)
         self._model_map = {item.label: item.id for item in MODELS}
@@ -286,7 +287,7 @@ class AudioApp:
             self.session.edit(self.editor.get("1.0", "end-1c"))
 
     def _editor_changed(self, event: tk.Event) -> None:
-        widget = event.widget
+        widget = self.editor
         changed = widget.edit_modified()
         widget.edit_modified(False)
         if not changed or self._loading or self._busy or self.session.document is None:
@@ -571,7 +572,7 @@ def main() -> None:
     import argparse
     parser = argparse.ArgumentParser(description="Локальный учебный аудиомодуль ВКР")
     parser.add_argument("--runtime-path", type=Path, default=None, help="Папка подготовленных ASR-моделей")
-    parser.add_argument("--model", choices=list(MODEL_BY_ID), default="whisper-small")
+    parser.add_argument("--model", choices=list(MODEL_BY_ID), default=default_model_id())
     parser.add_argument("--threads", type=int, default=8)
     args = parser.parse_args()
     if args.threads < 1:

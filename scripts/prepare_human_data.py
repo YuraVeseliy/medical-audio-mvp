@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import sys
 import wave
+import av
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
@@ -25,6 +26,7 @@ def main():
     parser.add_argument('--confirmed-references', action='store_true',
                         help='Указать только после личного прослушивания и сверки TXT со звуком')
     parser.add_argument('--executor', default='unspecified')
+    parser.add_argument('--reference-verifier', default=None)
     parser.add_argument('--device', default='диктофон; точная модель и микрофон не уточнены')
     args = parser.parse_args()
     if args.out.exists():
@@ -55,6 +57,11 @@ def main():
         ref = ref.decode('utf-8-sig').encode('utf-8')
         (args.out / 'references' / (key + '.txt')).write_bytes(ref)
         samples = read_audio(path)
+        with av.open(str(path)) as container:
+            stream = container.streams.audio[0]
+            input_format = {'sample_rate': stream.codec_context.sample_rate,
+                            'channels': stream.codec_context.channels,
+                            'codec': stream.codec_context.name}
         pcm = (samples * 32768).astype('<i2').tobytes()
         prepared = args.out / 'prepared' / (key + '.wav')
         with wave.open(str(prepared), 'wb') as out:
@@ -67,7 +74,9 @@ def main():
                       'raw': 'raw/' + path.name, 'reference': 'references/' + key + '.txt',
                       'reference_sha256': sha(ref), 'prepared': 'prepared/' + key + '.wav',
                       'prepared_sha256': sha(prepared.read_bytes()), 'decoded_pcm_sha256': sha(pcm),
-                      'duration_s': len(samples)/16000})
+                      'duration_s': len(samples)/16000, 'input': input_format,
+                      'prepared_format': {'sample_rate': 16000, 'channels': 1, 'sample_width_bytes': 2},
+                      'reference_status': 'confirmed_by_recording_author' if args.confirmed_references else 'pending'})
     duplicate_groups = []
     for i, item in enumerate(items):
         for other in items[i+1:]:
@@ -76,9 +85,11 @@ def main():
     manifest = {'version': 'human-audio-v1', 'created_at_utc': datetime.now(timezone.utc).isoformat(),
                 **source_version(ROOT), 'device_reported_by_user': args.device, 'executor': args.executor,
                 'reference_verification': {'status': 'confirmed_by_recording_author' if args.confirmed_references else 'pending',
-                                           'verified_by': args.executor, 'independent_second_reviewer': False},
+                                           'verified_by': (args.reference_verifier or args.executor) if args.confirmed_references else None,
+                                           'independent_second_reviewer': False},
                 'processing': 'whole audio -> mono PCM16 16kHz; no denoising, trimming or gain adjustment',
                 'items': items, 'duplicate_decoded_audio': duplicate_groups,
+                'preparation_successful': not duplicate_groups,
                 'dataset_contents_sha256': sha(json.dumps(items, sort_keys=True, ensure_ascii=False).encode('utf-8'))}
     (args.out / 'manifest.json').write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding='utf-8')
     if duplicate_groups:

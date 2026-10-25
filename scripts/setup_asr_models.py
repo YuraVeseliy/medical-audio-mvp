@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import shutil
 import time
+import sys
 from urllib import request
 import zipfile
 
@@ -132,14 +133,25 @@ def install(model, catalog, runtime, allow_unpinned=False):
         print('Проверено: ' + item['destination'], flush=True)
     manifests = runtime / 'manifests'
     manifests.mkdir(parents=True, exist_ok=True)
+    installed = set()
+    for record in records:
+        if record.get('archive_root'):
+            installed.update(p for p in (runtime / 'models' / record['archive_root']).rglob('*') if p.is_file())
+        elif record['destination'].startswith('models/'):
+            installed.add(runtime / record['destination'])
+    installed_files = [{'path': path.relative_to(runtime).as_posix(), 'bytes': path.stat().st_size,
+                        'sha256': digest_file(path)} for path in sorted(installed)]
     (manifests / (model + '.json')).write_text(json.dumps({'model_id': model, 'definition': definition,
-        'artifacts': records}, ensure_ascii=False, indent=2), encoding='utf-8')
+        'artifacts': records, 'installed_files': installed_files,
+        'installer_sha256': digest_file(Path(__file__))}, ensure_ascii=False, indent=2), encoding='utf-8')
     return records
 
 
 def main():
+    sys.path.insert(0, str(ROOT))
+    from audio_mvp.providers import default_model_id
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--model', default='whisper-small')
+    parser.add_argument('--model', default=default_model_id())
     parser.add_argument('--runtime', type=Path, default=ROOT / '.runtime')
     parser.add_argument('--allow-unpinned', action='store_true', help=argparse.SUPPRESS)
     args = parser.parse_args()

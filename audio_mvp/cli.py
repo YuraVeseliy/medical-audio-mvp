@@ -7,7 +7,7 @@ import time
 import sys
 
 from .model import AppError
-from .providers import ASRRecognizer, MODEL_BY_ID
+from .providers import ASRRecognizer, MODEL_BY_ID, default_model_id
 from .session import Session
 from .storage import export_text
 
@@ -18,7 +18,7 @@ def main(argv=None):
     project_root = Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parents[1]
     parser.add_argument("--runtime", type=Path, default=project_root / ".runtime")
     parser.add_argument("--out", type=Path, required=True)
-    parser.add_argument("--model", choices=list(MODEL_BY_ID), default="whisper-small")
+    parser.add_argument("--model", choices=list(MODEL_BY_ID), default=default_model_id())
     parser.add_argument("--threads", type=int, default=8)
     args = parser.parse_args(argv)
     recognizer = ASRRecognizer(args.model, args.runtime, args.threads)

@@ -9,7 +9,11 @@
         "faster-whisper-base/model.bin",
         "faster-whisper-base/tokenizer.json",
         "faster-whisper-base/vocabulary.txt"
-      ]
+      ],
+      "label": "Whisper base · CPU int8",
+      "engine": "whisper",
+      "folder": "faster-whisper-base",
+      "variant": ""
     },
     "whisper-small": {
       "repo": "Systran/faster-whisper-small",
@@ -20,7 +24,11 @@
         "faster-whisper-small/model.bin",
         "faster-whisper-small/tokenizer.json",
         "faster-whisper-small/vocabulary.txt"
-      ]
+      ],
+      "label": "Whisper small · CPU int8",
+      "engine": "whisper",
+      "folder": "faster-whisper-small",
+      "variant": ""
     },
     "whisper-medium": {
       "repo": "Systran/faster-whisper-medium",
@@ -31,7 +39,31 @@
         "faster-whisper-medium/model.bin",
         "faster-whisper-medium/tokenizer.json",
         "faster-whisper-medium/vocabulary.txt"
-      ]
+      ],
+      "label": "Whisper medium · CPU int8",
+      "engine": "whisper",
+      "folder": "faster-whisper-medium",
+      "variant": ""
+    },
+    "vosk-small": {
+      "artifacts": [
+        "vosk-model-small-ru-0.22.zip"
+      ],
+      "source": "official alphacephei.com versioned archive",
+      "label": "Vosk small-ru-0.22",
+      "engine": "vosk",
+      "folder": "vosk-model-small-ru-0.22",
+      "variant": ""
+    },
+    "vosk-large": {
+      "artifacts": [
+        "vosk-model-ru-0.42.zip"
+      ],
+      "source": "official alphacephei.com versioned archive",
+      "label": "Vosk ru-0.42",
+      "engine": "vosk",
+      "folder": "vosk-model-ru-0.42",
+      "variant": ""
     },
     "gigaam-ctc": {
       "repo": "istupakov/gigaam-v3-onnx",
@@ -42,7 +74,11 @@
         "gigaam-v3-onnx/config.json",
         "gigaam-v3-onnx/v3_ctc.int8.onnx",
         "gigaam-v3-onnx/v3_vocab.txt"
-      ]
+      ],
+      "label": "GigaAM v3 CTC · ONNX int8",
+      "engine": "gigaam",
+      "folder": "gigaam-v3-onnx",
+      "variant": "gigaam-v3-ctc"
     },
     "gigaam-rnnt": {
       "repo": "istupakov/gigaam-v3-onnx",
@@ -55,7 +91,11 @@
         "gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
         "gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
         "gigaam-v3-onnx/v3_vocab.txt"
-      ]
+      ],
+      "label": "GigaAM v3 RNN-T · ONNX int8",
+      "engine": "gigaam",
+      "folder": "gigaam-v3-onnx",
+      "variant": "gigaam-v3-rnnt"
     },
     "gigaam-e2e-rnnt": {
       "repo": "istupakov/gigaam-v3-onnx",
@@ -68,19 +108,11 @@
         "gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
         "gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
         "gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt"
-      ]
-    },
-    "vosk-small": {
-      "artifacts": [
-        "vosk-model-small-ru-0.22.zip"
       ],
-      "source": "official alphacephei.com versioned archive"
-    },
-    "vosk-large": {
-      "artifacts": [
-        "vosk-model-ru-0.42.zip"
-      ],
-      "source": "official alphacephei.com versioned archive"
+      "label": "GigaAM v3 E2E RNN-T · ONNX int8",
+      "engine": "gigaam",
+      "folder": "gigaam-v3-onnx",
+      "variant": "gigaam-v3-e2e-rnnt"
     }
   },
   "artifacts": {
@@ -310,7 +342,9 @@
     "vosk-model-ru-0.42.zip": {
       "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.42.zip",
       "destination": "downloads/vosk-model-ru-0.42.zip",
-      "archive_root": "vosk-model-ru-0.42"
+      "archive_root": "vosk-model-ru-0.42",
+      "size": 1937602113,
+      "sha256": "00eb9e5ed8230492da1acf702cd3548e1282256a5fdde8f188253e77217e9429"
     }
   }
 }

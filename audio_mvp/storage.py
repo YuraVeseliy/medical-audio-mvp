@@ -27,9 +27,12 @@ def _atomic_text(path, text):
             pass
 
 
-def save_document(document, path):
-    payload = {"format": "medical-audio-mvp", "version": 2, "document": asdict(document)}
+def save_json(path, payload):
     _atomic_text(path, json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False))
+
+
+def save_document(document, path):
+    save_json(path, {"format": "medical-audio-mvp", "version": 2, "document": asdict(document)})
 
 
 def load_document(path):

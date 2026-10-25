@@ -1,16 +1,17 @@
 """Одинаковый полный аудиовход для GUI, CLI и эксперимента."""
 from pathlib import Path
+from typing import Final
 import av
 import numpy as np
 from .model import AppError
 
-SAMPLE_RATE = 16000
+SAMPLE_RATE: Final = 16000
 
 
 def read_audio(path):
     """Декодировать весь первый аудиопоток в mono PCM16, затем float32 [-1, 1]."""
     try:
-        chunks = []
+        chunks: list[np.ndarray] = []
         resampler = av.AudioResampler(format='s16', layout='mono', rate=SAMPLE_RATE)
         with av.open(str(Path(path))) as source:
             if not source.streams.audio:
