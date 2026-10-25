@@ -1,0 +1,23 @@
+{
+  "format": "medical-audio-mvp",
+  "version": 2,
+  "document": {
+    "transcript": "Что вас беспокоит? Болит левое плечо.",
+    "text": "Что вас беспокоит? Болит левое плечо.\nПроверка сохранения: тестовая правка.",
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp_public\\data\\audio\\dev01.wav",
+    "model_id": "external-test-asr",
+    "segments": [
+      {
+        "start": 0,
+        "end": 1,
+        "text": "Что вас беспокоит?"
+      },
+      {
+        "start": 1,
+        "end": 2,
+        "text": "Болит левое плечо."
+      }
+    ],
+    "metrics": {}
+  }
+}

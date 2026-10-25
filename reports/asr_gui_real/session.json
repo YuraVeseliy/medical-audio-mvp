@@ -1,0 +1,36 @@
+{
+  "format": "medical-audio-mvp",
+  "version": 2,
+  "document": {
+    "transcript": "Как вы себя сейчас чувствуете? Слабость и сухость в арту? Когда вы последнее распили? Около двух часов назад. Глотать больно? Нет. Глотать не больно, просто сильно хочется пить.",
+    "text": "Как вы себя сейчас чувствуете? Слабость и сухость в арту? Когда вы последнее распили? Около двух часов назад. Глотать больно? Нет. Глотать не больно, просто сильно хочется пить.\nПроверка сохранения: тестовая правка.",
+    "source": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\work\\asr_human_v1\\raw\\dev02.m4a",
+    "model_id": "whisper-small",
+    "segments": [
+      {
+        "start": 0.0,
+        "end": 19.5613125,
+        "text": "Как вы себя сейчас чувствуете? Слабость и сухость в арту? Когда вы последнее распили? Около двух часов назад. Глотать больно? Нет. Глотать не больно, просто сильно хочется пить."
+      }
+    ],
+    "metrics": {
+      "model_id": "whisper-small",
+      "label": "Whisper small · CPU int8",
+      "engine": "whisper",
+      "cpu_threads_requested": 8,
+      "duration_seconds": 19.5613125,
+      "processing_seconds": 4.2468469999985246,
+      "model_load_seconds_this_call": 1.33796540000003,
+      "sample_rate": 16000,
+      "sample_count": 312981,
+      "chunks": [
+        {
+          "start_sample": 0,
+          "end_sample": 312981
+        }
+      ],
+      "timing_scope": "full decoding, common chunking and ASR; model loading measured separately",
+      "timestamp_scope": "common audio chunks, not word-level alignment"
+    }
+  }
+}

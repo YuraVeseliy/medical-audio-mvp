@@ -1,11 +1,12 @@
 """Сохранение пользовательского текста; атомарная замена файла после записи."""
 from dataclasses import asdict
 import json
+import math
 import os
 from pathlib import Path
 import uuid
 
-from .model import AppError, Document, Evidence, SECTIONS
+from .model import AppError, Document, Segment
 
 
 def _atomic_text(path, text):
@@ -27,41 +28,34 @@ def _atomic_text(path, text):
 
 
 def save_document(document, path):
-    payload = {"format": "medical-audio-mvp", "version": 1, "document": asdict(document)}
-    _atomic_text(path, json.dumps(payload, ensure_ascii=False, indent=2))
+    payload = {"format": "medical-audio-mvp", "version": 2, "document": asdict(document)}
+    _atomic_text(path, json.dumps(payload, ensure_ascii=False, indent=2, allow_nan=False))
 
 
 def load_document(path):
     try:
         payload = json.loads(Path(path).read_text(encoding="utf-8"))
-        if payload.get("format") != "medical-audio-mvp" or payload.get("version") != 1:
+        if payload.get("format") != "medical-audio-mvp" or payload.get("version") != 2:
             raise ValueError("Неизвестная версия сеанса")
         item = payload["document"]
-        if not isinstance(item["transcript"], str) or not isinstance(item["source"], str):
+        if not all(isinstance(item[key], str) for key in ("transcript", "text", "source", "model_id")):
             raise ValueError("Неверный текст")
-        if set(item["sections"]) != set(SECTIONS) or not all(
-                isinstance(value, str) for value in item["sections"].values()):
-            raise ValueError("Неверные разделы")
-        evidence = []
-        for row in item["evidence"]:
-            e = Evidence(**row)
-            if (e.section not in SECTIONS or not isinstance(e.quote, str)
-                    or type(e.start) is not int or type(e.end) is not int
-                    or e.start < 0 or e.end <= e.start
-                    or item["transcript"][e.start:e.end] != e.quote):
-                raise ValueError("Недостоверная ссылка на источник")
-            evidence.append(e)
-        warnings = item["warnings"]
-        if not isinstance(warnings, list) or not all(isinstance(x, str) for x in warnings):
-            raise ValueError("Неверные предупреждения")
-        return Document(item["transcript"], evidence, dict(item["sections"]), warnings, item["source"])
+        if not isinstance(item["segments"], list) or not isinstance(item["metrics"], dict):
+            raise ValueError("Неверные данные распознавания")
+        segments = []
+        for row in item["segments"]:
+            segment = Segment(**row)
+            if (not isinstance(segment.text, str)
+                    or type(segment.start) not in (float, int) or type(segment.end) not in (float, int)
+                    or not math.isfinite(segment.start) or not math.isfinite(segment.end)
+                    or segment.start < 0 or segment.end < segment.start):
+                raise ValueError("Неверные временные границы")
+            segments.append(segment)
+        return Document(transcript=item["transcript"], text=item["text"], source=item["source"],
+                        model_id=item["model_id"], segments=segments, metrics=item["metrics"])
     except (OSError, UnicodeError, ValueError, TypeError, KeyError, AttributeError) as exc:
         raise AppError("Не удалось открыть сеанс: файл повреждён или имеет неизвестный формат.") from exc
 
 
 def export_text(document, path):
-    parts = ["Учебный черновик. Проверьте сведения по исходной записи.", ""]
-    for key, title in SECTIONS.items():
-        parts.extend([title, document.sections.get(key, "") or "Сведения не выделены.", ""])
-    parts.extend(["Исходная транскрипция", document.transcript])
-    _atomic_text(path, "\n".join(parts) + "\n")
+    _atomic_text(path, document.text if document.text.endswith("\n") else document.text + "\n")

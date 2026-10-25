@@ -10,11 +10,11 @@ jobs:
           python-version: '3.12'
       - name: Установить декодер для быстрых проверок без моделей и микрофона
         # AV декодирует настоящие файлы; нейросетевые модели и аудиоустройства не нужны.
-        run: python -m pip install av==16.0.1
+        run: python -m pip install av==16.0.1 numpy==2.2.6
       - name: Основные проверки и регрессии
         run: python scripts/check.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: checks
-          path: reports/checks
+          name: asr-checks
+          path: reports/asr_checks

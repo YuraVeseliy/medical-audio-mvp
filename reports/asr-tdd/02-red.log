@@ -1,0 +1,14 @@
+test_t02_edit_save_open_preserves_original_and_current_text (test_transcription.TranscriptionTests.test_t02_edit_save_open_preserves_original_and_current_text) ... ERROR
+
+======================================================================
+ERROR: test_t02_edit_save_open_preserves_original_and_current_text (test_transcription.TranscriptionTests.test_t02_edit_save_open_preserves_original_and_current_text)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\chern\Documents\Codex\2026-09-30\cnbkm\project\medical_audio_mvp_public\tests\test_transcription.py", line 49, in test_t02_edit_save_open_preserves_original_and_current_text
+    session.edit('Болит левое плечо. Боль появилась вчера вечером.')
+TypeError: Session.edit() missing 1 required positional argument: 'text'
+
+----------------------------------------------------------------------
+Ran 1 test in 0.067s
+
+FAILED (errors=1)

@@ -1,0 +1,42 @@
+{
+  "time_utc": "2026-10-25T10:47:13.098523+00:00",
+  "commit": "fcea8bce4ab2706370e07d673d1b030070e83574",
+  "source_sha256": "ee8a32192a477aef4db9083926f250d5811d8e47673d340410b287994a4ddc2a",
+  "hashed_files": [
+    "audio_mvp/__init__.py",
+    "audio_mvp/__main__.py",
+    "audio_mvp/audio.py",
+    "audio_mvp/cli.py",
+    "audio_mvp/gui.py",
+    "audio_mvp/metrics.py",
+    "audio_mvp/model.py",
+    "audio_mvp/provenance.py",
+    "audio_mvp/providers.py",
+    "audio_mvp/recording.py",
+    "audio_mvp/session.py",
+    "audio_mvp/storage.py",
+    "tests/test_metrics.py",
+    "tests/test_recording_stop.py",
+    "tests/test_transcription.py",
+    "run_app.pyw",
+    "scripts/check.py",
+    "scripts/check_gui_scenario.py",
+    "configs/asr-models.json",
+    "requirements.txt",
+    "requirements-lock.txt"
+  ],
+  "scenario": "GUI import -> full ASR -> edit -> JSON/TXT -> new -> open",
+  "real_model": false,
+  "model_id": "external-test-asr",
+  "audio": "C:\\Users\\chern\\Documents\\Codex\\2026-09-30\\cnbkm\\project\\medical_audio_mvp_public\\data\\audio\\dev01.wav",
+  "heartbeats_during_processing": 16,
+  "successful": true,
+  "executor": "agent instrumented Tkinter scenario",
+  "not_student_manual_acceptance": true,
+  "boundaries_replaced": [
+    "OS file chooser",
+    "error message UI",
+    "external ASR"
+  ],
+  "document_metrics": {}
+}

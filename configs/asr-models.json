@@ -1,0 +1,316 @@
+{
+  "models": {
+    "whisper-base": {
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "artifacts": [
+        "faster-whisper-base/README.md",
+        "faster-whisper-base/config.json",
+        "faster-whisper-base/model.bin",
+        "faster-whisper-base/tokenizer.json",
+        "faster-whisper-base/vocabulary.txt"
+      ]
+    },
+    "whisper-small": {
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "artifacts": [
+        "faster-whisper-small/README.md",
+        "faster-whisper-small/config.json",
+        "faster-whisper-small/model.bin",
+        "faster-whisper-small/tokenizer.json",
+        "faster-whisper-small/vocabulary.txt"
+      ]
+    },
+    "whisper-medium": {
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "artifacts": [
+        "faster-whisper-medium/README.md",
+        "faster-whisper-medium/config.json",
+        "faster-whisper-medium/model.bin",
+        "faster-whisper-medium/tokenizer.json",
+        "faster-whisper-medium/vocabulary.txt"
+      ]
+    },
+    "gigaam-ctc": {
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "artifacts": [
+        "gigaam-v3-onnx/LICENSE.txt",
+        "gigaam-v3-onnx/README.md",
+        "gigaam-v3-onnx/config.json",
+        "gigaam-v3-onnx/v3_ctc.int8.onnx",
+        "gigaam-v3-onnx/v3_vocab.txt"
+      ]
+    },
+    "gigaam-rnnt": {
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "artifacts": [
+        "gigaam-v3-onnx/LICENSE.txt",
+        "gigaam-v3-onnx/README.md",
+        "gigaam-v3-onnx/config.json",
+        "gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx",
+        "gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
+        "gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
+        "gigaam-v3-onnx/v3_vocab.txt"
+      ]
+    },
+    "gigaam-e2e-rnnt": {
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "artifacts": [
+        "gigaam-v3-onnx/LICENSE.txt",
+        "gigaam-v3-onnx/README.md",
+        "gigaam-v3-onnx/config.json",
+        "gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx",
+        "gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
+        "gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
+        "gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt"
+      ]
+    },
+    "vosk-small": {
+      "artifacts": [
+        "vosk-model-small-ru-0.22.zip"
+      ],
+      "source": "official alphacephei.com versioned archive"
+    },
+    "vosk-large": {
+      "artifacts": [
+        "vosk-model-ru-0.42.zip"
+      ],
+      "source": "official alphacephei.com versioned archive"
+    }
+  },
+  "artifacts": {
+    "faster-whisper-base/README.md": {
+      "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/README.md",
+      "destination": "models/faster-whisper-base/README.md",
+      "size": 1991,
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "git_blob_sha1": "cddfec65ffb3e3df45d2234f09f3d261bf9a9c0a"
+    },
+    "faster-whisper-base/config.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/config.json",
+      "destination": "models/faster-whisper-base/config.json",
+      "size": 2309,
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "git_blob_sha1": "867cf1a0fece1394e01d55e287ba2f09a577c046"
+    },
+    "faster-whisper-base/model.bin": {
+      "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/model.bin",
+      "destination": "models/faster-whisper-base/model.bin",
+      "size": 145217532,
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "sha256": "d01c3014881c9c6f3133c182f3d2887eb6ca1c789a7538c5c007196857a0a6a9"
+    },
+    "faster-whisper-base/tokenizer.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/tokenizer.json",
+      "destination": "models/faster-whisper-base/tokenizer.json",
+      "size": 2203239,
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344"
+    },
+    "faster-whisper-base/vocabulary.txt": {
+      "url": "https://huggingface.co/Systran/faster-whisper-base/resolve/ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66/vocabulary.txt",
+      "destination": "models/faster-whisper-base/vocabulary.txt",
+      "size": 459861,
+      "repo": "Systran/faster-whisper-base",
+      "revision": "ebe41f70d5b6dfa9166e2c581c45c9c0cfc57b66",
+      "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75"
+    },
+    "faster-whisper-small/README.md": {
+      "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/README.md",
+      "destination": "models/faster-whisper-small/README.md",
+      "size": 1998,
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "git_blob_sha1": "16511f6106ead2fbc3a1480957a217c2661a5a98"
+    },
+    "faster-whisper-small/config.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/config.json",
+      "destination": "models/faster-whisper-small/config.json",
+      "size": 2370,
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "git_blob_sha1": "e5047537059bd8f182d9ca64c470201585015187"
+    },
+    "faster-whisper-small/model.bin": {
+      "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/model.bin",
+      "destination": "models/faster-whisper-small/model.bin",
+      "size": 483546902,
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "sha256": "3e305921506d8872816023e4c273e75d2419fb89b24da97b4fe7bce14170d671"
+    },
+    "faster-whisper-small/tokenizer.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/tokenizer.json",
+      "destination": "models/faster-whisper-small/tokenizer.json",
+      "size": 2203239,
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344"
+    },
+    "faster-whisper-small/vocabulary.txt": {
+      "url": "https://huggingface.co/Systran/faster-whisper-small/resolve/536b0662742c02347bc0e980a01041f333bce120/vocabulary.txt",
+      "destination": "models/faster-whisper-small/vocabulary.txt",
+      "size": 459861,
+      "repo": "Systran/faster-whisper-small",
+      "revision": "536b0662742c02347bc0e980a01041f333bce120",
+      "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75"
+    },
+    "faster-whisper-medium/README.md": {
+      "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/README.md",
+      "destination": "models/faster-whisper-medium/README.md",
+      "size": 2005,
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "git_blob_sha1": "68a6ff5e20f337a8b4e27e4ea4cca73afb9a40fb"
+    },
+    "faster-whisper-medium/config.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/config.json",
+      "destination": "models/faster-whisper-medium/config.json",
+      "size": 2257,
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "git_blob_sha1": "242aa06a480a7b5509375c645097e87af5136774"
+    },
+    "faster-whisper-medium/model.bin": {
+      "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/model.bin",
+      "destination": "models/faster-whisper-medium/model.bin",
+      "size": 1527906378,
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "sha256": "9b45e1009dcc4ab601eff815b61d80e60ce3fd8c74c1a14f4a282258286b51ae"
+    },
+    "faster-whisper-medium/tokenizer.json": {
+      "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/tokenizer.json",
+      "destination": "models/faster-whisper-medium/tokenizer.json",
+      "size": 2203239,
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "git_blob_sha1": "7818adb6de9fa3064d3ff81226fdd675be1f6344"
+    },
+    "faster-whisper-medium/vocabulary.txt": {
+      "url": "https://huggingface.co/Systran/faster-whisper-medium/resolve/08e178d48790749d25932bbc082711ddcfdfbc4f/vocabulary.txt",
+      "destination": "models/faster-whisper-medium/vocabulary.txt",
+      "size": 459861,
+      "repo": "Systran/faster-whisper-medium",
+      "revision": "08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "git_blob_sha1": "c9074644d9d1205686f16d411564729461324b75"
+    },
+    "gigaam-v3-onnx/LICENSE.txt": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/LICENSE.txt",
+      "destination": "models/gigaam-v3-onnx/LICENSE.txt",
+      "size": 1070,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "git_blob_sha1": "8d9a2e761e0feada9c9347a3f2265aee4653dba7"
+    },
+    "gigaam-v3-onnx/README.md": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/README.md",
+      "destination": "models/gigaam-v3-onnx/README.md",
+      "size": 1501,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "git_blob_sha1": "7ae91ca1c26bb055a24214bbd2e5fd20abcb70b0"
+    },
+    "gigaam-v3-onnx/config.json": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/config.json",
+      "destination": "models/gigaam-v3-onnx/config.json",
+      "size": 135,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "git_blob_sha1": "cdd16848240c6b03c0a0bc918f28ba9d4d6e4dc3"
+    },
+    "gigaam-v3-onnx/v3_ctc.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_ctc.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_ctc.int8.onnx",
+      "size": 224721181,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "ceb61454e2e1a2dec5872cbac1de0fe0a4271d1148f6b26b5bda53ff30a12acd"
+    },
+    "gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_decoder.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_decoder.int8.onnx",
+      "size": 1159170,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "89014e134865615b91e037157e46e389b1271e6072460efc010ea08e61e23146"
+    },
+    "gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_encoder.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_encoder.int8.onnx",
+      "size": 224570477,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "4e0e076a6076cd110277e529b8ac8f32cd5297f7fbebad5341ae8ddb7d00817b"
+    },
+    "gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_joint.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_joint.int8.onnx",
+      "size": 687791,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "ade116563dbf66e503b0994efab6b5861412743e52bf31c39fc3fffa3783d5d1"
+    },
+    "gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_e2e_rnnt_vocab.txt",
+      "destination": "models/gigaam-v3-onnx/v3_e2e_rnnt_vocab.txt",
+      "size": 13354,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "git_blob_sha1": "bd0cf91adfec3b5c83b7cf5769cf7b14059e4d51"
+    },
+    "gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_decoder.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_rnnt_decoder.int8.onnx",
+      "size": 842048,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "b9ad90cf00a5619d7fe23b054d307406d8ab37b4b1556857690a65c2aba36c30"
+    },
+    "gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_encoder.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_rnnt_encoder.int8.onnx",
+      "size": 224570473,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "fee39808a937beb46e870bb45c306e89e587f5b57db85c6c7627adcd30b767b8"
+    },
+    "gigaam-v3-onnx/v3_rnnt_joint.int8.onnx": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_rnnt_joint.int8.onnx",
+      "destination": "models/gigaam-v3-onnx/v3_rnnt_joint.int8.onnx",
+      "size": 366698,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "sha256": "343e49187edf9afce666b8e37e43b976a67861723d113bdc59e79ec5be796491"
+    },
+    "gigaam-v3-onnx/v3_vocab.txt": {
+      "url": "https://huggingface.co/istupakov/gigaam-v3-onnx/resolve/322c3b29492673eb7d0b434bfa9dfb8653e34d02/v3_vocab.txt",
+      "destination": "models/gigaam-v3-onnx/v3_vocab.txt",
+      "size": 198,
+      "repo": "istupakov/gigaam-v3-onnx",
+      "revision": "322c3b29492673eb7d0b434bfa9dfb8653e34d02",
+      "git_blob_sha1": "218555fc2385ce241a873c001653e53f5e4b3432"
+    },
+    "vosk-model-small-ru-0.22.zip": {
+      "url": "https://alphacephei.com/vosk/models/vosk-model-small-ru-0.22.zip",
+      "destination": "downloads/vosk-model-small-ru-0.22.zip",
+      "archive_root": "vosk-model-small-ru-0.22",
+      "size": 46236750,
+      "sha256": "961d5ff98a17f4aa6de69864d0aa71fa5bac682301d2b5d17a3f24c5c99a46d4"
+    },
+    "vosk-model-ru-0.42.zip": {
+      "url": "https://alphacephei.com/vosk/models/vosk-model-ru-0.42.zip",
+      "destination": "downloads/vosk-model-ru-0.42.zip",
+      "archive_root": "vosk-model-ru-0.42"
+    }
+  }
+}
