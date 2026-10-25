@@ -65,3 +65,4 @@ class ExperimentIntegrityTests(unittest.TestCase):
         self.assertEqual((summary['successful'],summary['errors'],summary['reference_words'],summary['wer']),
                          (1,3,4,0.75))
         self.assertFalse(summary['eligible'])
+        self.assertFalse(summary['memory_measurement_complete'])

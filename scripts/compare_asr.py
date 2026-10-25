@@ -165,6 +165,7 @@ def aggregate(result, expected_count, expected_words):
             'median_seconds': statistics.median(row['seconds'] for row in rows) if rows else None,
             'median_rtf': statistics.median(row['rtf'] for row in rows) if rows else None,
             'peak_worker_rss_bytes': result.get('peak_worker_rss_bytes'),
+            'memory_measurement_complete': result.get('memory_measurement_complete', result['status'] == 'completed'),
             'model_load_seconds': result.get('model_load_seconds'), 'error': result.get('error')}
 
 
@@ -248,6 +249,12 @@ def main():
                 process.wait()
         record = folder / 'worker.json'
         result = json.loads(record.read_text(encoding='utf-8')) if record.is_file() else recover_worker_result(folder, model_id)
+        try:
+            validate_dataset(args.dataset)
+        except (OSError, ValueError) as error:
+            write(args.out / 'invalidated.json', {'reason': 'Dataset files changed during the run; no valid winner.',
+                                                'detail': str(error)})
+            raise ValueError('Содержимое аудио или TXT изменилось во время измерений. Прогон не пригоден для выбора.') from error
         if (sha(args.dataset / 'manifest.json') != freeze['dataset_manifest_sha256']
                 or source_version(ROOT)['source_sha256'] != freeze['source_sha256']):
             write(args.out / 'invalidated.json', {'reason': 'Code or dataset changed during the run; no valid winner.'})
@@ -268,6 +275,8 @@ def main():
         seconds = f"{row['median_seconds']:.3f}" if row['median_seconds'] is not None else '—'
         rtf = f"{row['median_rtf']:.3f}" if row['median_rtf'] is not None else '—'
         memory = f"{row['peak_worker_rss_bytes']/1048576:.1f}" if row['peak_worker_rss_bytes'] else '—'
+        if not row['memory_measurement_complete']:
+            memory = '≥ ' + memory + ' (прервано)' if row['peak_worker_rss_bytes'] else 'не измерено'
         lines.append(f"| {row['model_id']} | {row['successful']}/{row['expected_attempts']} | {row['wer']*100:.2f} | {seconds} | {rtf} | {memory} |")
     lines += ['', 'Выбранная конфигурация: ' + str(summary['chosen_model']), '',
               'Прогоны одного файла не являются новыми независимыми записями. Сбои учитываются, а не исключаются из WER. Числа и варианты записи слов требуют отдельного разбора. Это не клиническая приёмка.']
